@@ -1,0 +1,21 @@
+{
+  "lead_id": "reddit_1rowbgb",
+  "lead_title": "[For Hire] Software Developer - Based in Canada - For All Your Development Needs",
+  "lead_url": "https://reddit.com/r/forhire/comments/1rowbgb/for_hire_software_developer_based_in_canada_for/",
+  "generated_at": "2026-03-10T00:21:00.028152",
+  "fiverr": {
+    "platform": "Fiverr",
+    "type": "Proposal",
+    "content": "Hey there!\n\nI'm a versatile software developer with a strong background in Python and a growing portfolio since college. I offer a range of services including website creation, AI chatbots, SaaS development, automation, and Next.js. Whether you need a functional website, help with automation, or want to integrate the latest APIs, I\u2019ve got you covered!\n\nLet's chat to see how I can help bring your project to life!\n\nBest,\n[Your Name]"
+  },
+  "upwork": {
+    "platform": "Upwork",
+    "type": "Proposal",
+    "content": "Certainly!\n\n---\n\nHi [Client's Name],\n\nI\u2019m a Python-focused software developer with 2+ years of experience. I specialize in AI chatbots, SaaS development, and automation. I\u2019ve built responsive websites and developed robust applications. Let\u2019s create something amazing together. Check out my portfolio: [Portfolio Link].\n\nLooking forward to collaborating!\n\nBest,\n[Your Name]\n\n---\n\nFeel free to customize the [Portfolio Link] with your actual portfolio URL."
+  },
+  "cold_email": {
+    "platform": "Email",
+    "type": "Cold Email",
+    "content": "Hook: Noticed your post looking for a software developer.\nValue prop: RAGSPRO offers a versatile team with Python expertise and a knack for delivering high-quality solutions.\nSoft CTA: Want to chat about how we can help?"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "leads": [
+    {
+      "name": "Test Client",
+      "email": "test@example.com",
+      "company": "Test Company",
+      "designation": "CEO",
+      "industry": "Technology",
+      "source": "Manual",
+      "id": "lead_20260306142003",
+      "created_at": "2026-03-06T14:20:03.543230",
+      "status": "NEW"
+    }
+  ],
+  "clients": [],
+  "content": [
+    {
+      "platform": "linkedin",
+      "topic": "No-code automation",
+      "content": "Stop building \"digital glue\" with duct tape and spreadsheets. \ud83d\uded1\u2702\ufe0f\n\nIf your team is still manually copying data from emails to CRMs, or if you're the \"human API\" passing information between three different apps just to close a deal, you aren't just losing time\u2014you're bleeding revenue.\n\nThe era of needing a dedicated engineering team to automate your business processes is over. Welcome to the age of **No-Code Automation**.\n\nAt **RAGSPPRO**, we don't just talk about efficiency; we engineer it. Here's why no-code is the game-changer your business needs right now:\n\n\u2705 **Speed to Market**: What used to take months of development now takes days. We deploy workflows that solve immediate bottlenecks before you can finish your coffee.\n\u2705 **Cost Efficiency**: Why pay for expensive custom software when you can connect your existing tools (Slack, HubSpot, Airtable, Salesforce, etc.) to talk to each other instantly?\n\u2705 **Empowerment**: No-code isn't just for developers. It allows your operations team to tweak and optimize processes as the business evolves, without waiting on IT tickets.\n\u2705 **Scalability**: Automate the repetitive so you can focus on the creative. Let the bots handle the data entry while your humans handle the strategy.\n\n**The RAGSPRO Approach:**\nWe don't believe in \"one-size-fits-all\" scripts. We audit your specific workflow, identify the friction points, and build a custom automation architecture that fits your unique business logic.\n\nImagine a world where:\n\ud83d\udd39 New leads are instantly qualified, enriched, and added to your CRM.\n\ud83d\udd39 Invoices are generated and sent the second a project is marked \"complete.\"\n\ud83d\udd39 Your team receives a daily digest of key metrics without opening a single dashboard.\n\nThis isn't the future. It's available today.\n\nStop letting manual tasks slow down your growth. It's time to work smarter, not harder.\n\n\ud83d\ude80 **Ready to reclaim your time?**\nClick the link in the comments or visit **ragspro.com** to book your free automation audit. Let's build the engine that drives your business forward.\n\n#NoCode #BusinessAutomation #AI #RAGSPRO #DigitalTransformation",
+      "generated_at": "2026-03-06T14:09:44.317744",
+      "id": "content_20260306140944",
+      "created_at": "2026-03-06T14:09:44.318624"
+    },
+    {
+      "platform": "twitter",
+      "topic": "No-code automation",
+      "content": "Stop drowning in repetitive tasks! \ud83d\uded1\u2728 Automate your workflow in minutes with RAGSPRO's no-code magic. No coding skills? No problem. \ud83d\ude80\n\nReady to reclaim your time?\n\ud83d\udc49 ragspro.com\n\n#NoCode #Automation #Productivity",
+      "generated_at": "2026-03-06T14:09:45.342630",
+      "id": "content_20260306140945",
+      "created_at": "2026-03-06T14:09:45.343045"
+    }
+  ],
+  "tasks": [],
+  "analytics": {
+    "total_leads": 0,
+    "total_clients": 0,
+    "conversion_rate": 0
+  },
+  "settings": {
+    "agency_name": "RAGSPRO",
+    "website": "https://ragspro.com"
+  }
+}

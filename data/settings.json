@@ -1,0 +1,26 @@
+{
+  "agency_name": "RAGSPRO",
+  "tagline": "AI Chatbots, SaaS & Automation Solutions",
+  "website": "https://ragspro.com",
+  "calendly": "https://calendly.com/ragspro/discovery",
+  "email": "ragsproai@gmail.com",
+  "phone": "",
+  "services": ["AI Chatbots", "SaaS Development", "Automation", "Next.js", "Python"],
+  "socials": {
+    "linkedin": "https://linkedin.com/company/ragspro",
+    "twitter": "https://twitter.com/ragspro",
+    "instagram": "https://instagram.com/ragspro",
+    "github": "https://github.com/ragspro"
+  },
+  "theme": "dark",
+  "notifications": {
+    "telegram": true,
+    "email": false
+  },
+  "automation": {
+    "content_time": "07:00",
+    "lead_scrape_time": "07:30",
+    "telegram_brief_time": "08:00",
+    "proposal_time": "09:00"
+  }
+}

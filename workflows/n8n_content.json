@@ -1,0 +1,54 @@
+{
+  "name": "RAGSPRO - Content Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "hours", "hoursInterval": 6}]
+        }
+      },
+      "name": "Every 6 Hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://integrate.api.nvidia.com/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {"name": "Authorization", "value": "Bearer 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"},
+            {"name": "Content-Type", "value": "application/json"}
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\"model\": \"qwen/qwen3.5-122b-a10b\", \"messages\": [{\"role\": \"system\", \"content\": \"You are a social media content creator for RAGSPRO AI Agency.\"}, {\"role\": \"user\", \"content\": \"Generate content for: 1) Twitter post about automation (under 280 chars) 2) LinkedIn post about AI benefits 3) Instagram caption about tech productivity\"}], \"max_tokens\": 1000}"
+      },
+      "name": "Generate All Content",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.telegram.org/bot8708095134:AAFGDnlmWn6D9tDozP8PXmBDb-vfXoXbn3M/sendMessage",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\"chat_id\": \"1451671418\", \"text\": \"🎨 RAGSPRO Daily Content\\n\\n\" + $json.choices[0].message.content + \"\\n\\n⏰ \" + new Date().toISOString(), \"parse_mode\": \"Markdown\"}"
+      },
+      "name": "Telegram Delivery",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Every 6 Hours": {"main": [[{"node": "Generate All Content", "type": "main", "index": 0}]]},
+    "Generate All Content": {"main": [[{"node": "Telegram Delivery", "type": "main", "index": 0}]]}
+  },
+  "active": false
+}

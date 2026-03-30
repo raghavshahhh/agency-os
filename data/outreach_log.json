@@ -1,0 +1,12 @@
+[
+  {
+    "id": "outreach-001",
+    "lead_id": "lead-001",
+    "lead_name": "Sample Lead",
+    "channel": "email",
+    "status": "sent",
+    "sent_at": "2025-03-30T10:00:00Z",
+    "opened": false,
+    "replied": false
+  }
+]

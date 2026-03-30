@@ -1,0 +1,11 @@
+[
+  {
+    "role": "user",
+    "content": "kise leads ke pass emaisl hai??"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on the current dashboard data, there is 1 lead with an email associated with it. This lead has the ID: `reddit_1rp4548`. Would you like me to generate an email for this lead or take any other action? [ACTION_NAME params]",
+    "action_results": []
+  }
+]

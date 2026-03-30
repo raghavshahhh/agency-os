@@ -1,0 +1,54 @@
+{
+  "name": "RAGSPRO - Lead Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "hours", "hoursInterval": 24}]
+        }
+      },
+      "name": "Daily Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://integrate.api.nvidia.com/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {"name": "Authorization", "value": "Bearer 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"},
+            {"name": "Content-Type", "value": "application/json"}
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\"model\": \"qwen/qwen3.5-122b-a10b\", \"messages\": [{\"role\": \"system\", \"content\": \"Generate B2B lead search queries for RAGSPRO agency.\"}, {\"role\": \"user\", \"content\": \"Generate 5 search queries to find startup founders and CTOs who need AI/automation services\"}], \"max_tokens\": 500}"
+      },
+      "name": "Generate Queries (Qwen)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.telegram.org/bot8708095134:AAFGDnlmWn6D9tDozP8PXmBDb-vfXoXbn3M/sendMessage",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\"chat_id\": \"1451671418\", \"text\": \"🚀 RAGSPRO Lead Generator Started\\n\\nQueries generated for today!\\n\\n⏰ \" + new Date().toISOString()}"
+      },
+      "name": "Telegram Alert",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Daily Trigger": {"main": [[{"node": "Generate Queries (Qwen)", "type": "main", "index": 0}]]},
+    "Generate Queries (Qwen)": {"main": [[{"node": "Telegram Alert", "type": "main", "index": 0}]]}
+  },
+  "active": false
+}

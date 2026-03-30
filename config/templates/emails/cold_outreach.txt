@@ -1,0 +1,76 @@
+# Email Templates for RAGSPRO
+
+## Cold Outreach Template
+
+Subject: Quick question about {company}'s tech stack
+
+Hi {name},
+
+I noticed {company} is doing interesting work in {industry}.
+
+At RAGSPRO, we help businesses like yours build custom software solutions in just 20 days - from idea to launch.
+
+Would you be open to a quick 15-minute call to explore if there's a fit?
+
+Book here: https://calendly.com/ragspro/discovery
+
+Best,
+Raghav Shah
+Founder, RAGSPRO
+ragspro.com
+
+---
+
+## Follow-up Template
+
+Subject: Re: Quick question about {company}
+
+Hi {name},
+
+Following up on my previous email about helping {company} with custom software development.
+
+We've helped similar companies reduce development time by 60% while cutting costs.
+
+Worth a conversation?
+
+Book here: https://calendly.com/ragspro/discovery
+
+Best,
+Raghav
+
+---
+
+## Meeting Request Template
+
+Subject: Let's schedule a call - RAGSPRO
+
+Hi {name},
+
+Great connecting earlier!
+
+Here's the link to book our discovery call: https://calendly.com/ragspro/discovery
+
+Looking forward to exploring how RAGSPRO can help {company}.
+
+Best,
+Raghav
+
+---
+
+## Thank You Template
+
+Subject: Thanks for connecting!
+
+Hi {name},
+
+Thanks for taking the time to chat today.
+
+As discussed, here's what RAGSPRO can do for {company}:
+- Custom SaaS development (20 days)
+- AI & Automation solutions
+- Process optimization
+
+Let me know if you have any questions!
+
+Best,
+Raghav

@@ -1,0 +1,21 @@
+{
+  "lead_id": "reddit_1rp4548",
+  "lead_title": "[FOR HIRE] I built a full business ERP from scratch in a week \u2014 websites, web apps, SaaS builds",
+  "lead_url": "https://reddit.com/r/forhire/comments/1rp4548/for_hire_i_built_a_full_business_erp_from_scratch/",
+  "generated_at": "2026-03-10T00:20:21.780607",
+  "fiverr": {
+    "platform": "Fiverr",
+    "type": "Proposal",
+    "content": "Build your business management system faster and more efficiently. With BizTrackr, I built a full-fledged business ERP with sales tracking, inventory management, and reporting in just a week. This was done using Next.js, Python, and PostgreSQL\u2014proven technologies that deliver results quickly and reliably. \n\nFrom business websites that convert to robust web apps and SaaS solutions, I bring speed and quality to every project. Let's discuss how I can help you streamline your business operations today."
+  },
+  "upwork": {
+    "platform": "Upwork",
+    "type": "Proposal",
+    "content": "Sure, here's a concise Upwork proposal:\n\n---\n\nHi [Client's Name],\n\nI built BizTrackr, a full business OS with sales tracking, inventory management, and reporting, in just one week. With skills in Next.js, Python, and PostgreSQL, I deliver high-quality web applications and business websites quickly and affordably. Check out my work: [https://biztrackr-grand-enterprise.vercel.app/]\n\nLet's build your project together.\n\nBest,\n[Your Name]\n\n---\n\nFeel free to adjust as needed!"
+  },
+  "cold_email": {
+    "platform": "Email",
+    "type": "Cold Email",
+    "content": "Subject: Quick Win for Your Business Management Needs\n\nnoticed your post for a business management system? I built BizTrackr \u2014 a full business OS \u2014 in just a week, with sales tracking, inventory management, and reporting.\n\nwant to chat about how we can save you time and money?"
+  }
+}
