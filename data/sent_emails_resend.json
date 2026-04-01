@@ -1,0 +1,17 @@
+[
+  {
+    "email": "m.kim@good-works.co.jp",
+    "id": "1bced57a-6816-4f8f-97ad-b96f992ce438",
+    "status": "SENT"
+  },
+  {
+    "email": "apply@aandbtalent.com",
+    "id": "74c94693-a472-4c43-a34a-c2a571d85e5f",
+    "status": "SENT"
+  },
+  {
+    "email": "contact@kingswhocode.com",
+    "id": "e734c264-3de2-41cf-8a60-419d2cb9248d",
+    "status": "SENT"
+  }
+]

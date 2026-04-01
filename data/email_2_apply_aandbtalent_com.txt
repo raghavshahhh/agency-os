@@ -1,0 +1,34 @@
+TO: apply@aandbtalent.com
+FROM: raghav@ragspro.com
+DATE: 2026-03-31T17:27:02.692873
+==================================================
+
+Subject: Need dev work done fast? | Solo founder available
+
+Hi Apply,
+
+Saw you're looking for developers.
+
+I'm Raghav - 22yo founder building AI-powered tools for businesses. Stack: Next.js, Python, FastAPI, Supabase.
+
+**I build:**
+- AI chatbots & automation
+- Lead scrapers & outreach systems  
+- SaaS MVPs
+- Workflow automation
+
+**Why me vs agencies:**
+- You talk to the builder (not a PM)
+- Fixed prices, no scope creep
+- Delivery in days, not months
+- Revenue share option for startups
+
+Recent project: Lead scraper found 200+ qualified leads in 48h.
+
+Portfolio: ragspro.com
+
+Free to chat this week?
+
+Best,
+Raghav Shah
++91 98765 43210

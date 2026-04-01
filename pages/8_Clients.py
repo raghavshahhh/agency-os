@@ -1,272 +1,409 @@
 """
-RAGSPRO Client Management — Track clients, projects, and communication
+RAGSPRO Client Management — Uses CRMSystem class
+Enhanced with YC Leads, Source Filters, and Smart Actions
 """
 
 import streamlit as st
-import json
 from datetime import datetime
 from pathlib import Path
+import sys
 
-st.set_page_config(page_title="RAGSPRO - Clients", page_icon="👥", layout="wide")
+# Add engine to path
+sys.path.insert(0, str(Path(__file__).parent.parent / "engine"))
+from crm_system import CRMSystem
 
-DATA_DIR = Path(__file__).parent.parent / "data"
-CLIENTS_FILE = DATA_DIR / "clients.json"
+st.set_page_config(page_title="RAGSPRO - Clients & CRM", page_icon="👥", layout="wide")
+
+# ─── Init CRM ───
+crm = CRMSystem()
 
 # ─── Custom CSS ───
 st.markdown("""
 <style>
-    .client-card {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 10px;
-        padding: 1rem;
-        margin-bottom: 0.75rem;
-        transition: box-shadow 0.2s;
-    }
-    .client-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .status-active { color: #10b981; font-weight: 600; }
-    .status-completed { color: #6b7280; }
-    .status-paused { color: #f59e0b; }
-    .project-tag {
-        display: inline-block;
-        background: #eef2ff;
-        color: #667eea;
-        padding: 2px 8px;
-        border-radius: 12px;
-        font-size: 0.72rem;
-        margin: 2px;
-    }
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+ .main { font-family: 'Inter', sans-serif; }
+
+ .client-card {
+ background: #fff;
+ border: 1px solid #e5e7eb;
+ border-radius: 12px;
+ padding: 1.25rem;
+ margin-bottom: 1rem;
+ transition: all 0.2s;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+ }
+ .client-card:hover {
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ transform: translateY(-1px);
+ }
+
+ .status-lead { color: #f59e0b; font-weight: 600; }
+ .status-prospect { color: #3b82f6; font-weight: 600; }
+ .status-client { color: #10b981; font-weight: 600; }
+ .status-churned { color: #ef4444; font-weight: 600; }
+
+ .source-badge {
+ display: inline-block;
+ padding: 2px 8px;
+ border-radius: 12px;
+ font-size: 0.7rem;
+ font-weight: 500;
+ }
+ .source-yc { background: #fef3c7; color: #92400e; }
+ .source-reddit { background: #fee2e2; color: #991b1b; }
+ .source-linkedin { background: #dbeafe; color: #1e40af; }
+ .source-website { background: #d1fae5; color: #065f46; }
+ .source-other { background: #f3f4f6; color: #374151; }
+
+ .project-tag {
+ display: inline-block;
+ background: #eef2ff;
+ color: #667eea;
+ padding: 2px 8px;
+ border-radius: 12px;
+ font-size: 0.72rem;
+ margin: 2px;
+ }
+
+ .deal-card {
+ background: #f8f9ff;
+ border-left: 3px solid #667eea;
+ padding: 0.5rem 0.75rem;
+ margin: 0.25rem 0;
+ border-radius: 4px;
+ font-size: 0.8rem;
+ }
+
+ .batch-badge {
+ display: inline-block;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 2px 8px;
+ border-radius: 10px;
+ font-size: 0.7rem;
+ font-weight: 600;
+ }
+
+ .company-desc {
+ color: #6b7280;
+ font-size: 0.85rem;
+ line-height: 1.5;
+ margin-top: 0.5rem;
+ }
+
+ .contact-row {
+ display: flex;
+ gap: 1rem;
+ align-items: center;
+ margin-top: 0.5rem;
+ }
+
+ .action-btn {
+ padding: 4px 12px;
+ border-radius: 6px;
+ font-size: 0.75rem;
+ font-weight: 500;
+ cursor: pointer;
+ border: none;
+ transition: all 0.2s;
+ }
 </style>
 """, unsafe_allow_html=True)
 
+# ─── Load Data ───
+clients = crm.clients
+deals = crm.deals
 
-def load_clients():
-    if CLIENTS_FILE.exists():
-        try:
-            with open(CLIENTS_FILE, 'r') as f:
-                return json.load(f)
-        except Exception:
-            return []
-    return []
+# ─── Helper Functions ───
+def get_source_badge(source):
+    """Get styled source badge"""
+    if not source:
+        return '<span class="source-badge source-other">Unknown</span>'
+
+    source_lower = source.lower()
+    if 'yc' in source_lower or 'ycombinator' in source_lower:
+        batch = source.split('_')[-1] if '_' in source else ''
+        return f'<span class="source-badge source-yc">🚀 YC {batch}</span>'
+    elif 'reddit' in source_lower:
+        return '<span class="source-badge source-reddit">Reddit</span>'
+    elif 'linkedin' in source_lower:
+        return '<span class="source-badge source-linkedin">LinkedIn</span>'
+    elif 'website' in source_lower:
+        return '<span class="source-badge source-website">Website</span>'
+    else:
+        return f'<span class="source-badge source-other">{source}</span>'
 
 
-def save_clients(clients):
-    CLIENTS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(CLIENTS_FILE, 'w') as f:
-        json.dump(clients, f, indent=2, default=str)
+def get_status_badge(status):
+    """Get styled status badge"""
+    status_class = f"status-{status}" if status else "status-lead"
+    return f'<span class="{status_class}">{status.title() if status else "Lead"}</span>'
 
 
-# ─── Main ─────────────────────────────────────────────────────────────────────
+# ─── Main ───
+st.title("👥 CRM - Clients & Deals")
+st.caption(f"Total contacts: {len(clients)} | Last updated: {datetime.now().strftime('%H:%M')}")
 
-st.title("👥 Client Management")
+# ─── Stats ───
+col1, col2, col3, col4, col5, col6 = st.columns(6)
 
-clients = load_clients()
+# Calculate stats
+leads = len([c for c in clients if c.get("status") == "lead"])
+prospects = len([c for c in clients if c.get("status") == "prospect"])
+active = len([c for c in clients if c.get("status") == "client"])
+churned = len([c for c in clients if c.get("status") == "churned"])
+yc_leads = len([c for c in clients if 'yc' in str(c.get("source", "")).lower()])
+total_deals = len(deals)
 
-# ─── Stats ────────────────────────────────────────────────────────────────────
+forecast = crm.get_revenue_forecast()
 
-col1, col2, col3, col4 = st.columns(4)
-active = len([c for c in clients if c.get("status") == "Active"])
-completed = len([c for c in clients if c.get("status") == "Completed"])
-total_revenue = sum(c.get("total_paid", 0) for c in clients)
-
-col1.metric("Total Clients", len(clients))
-col2.metric("Active", active)
-col3.metric("Completed", completed)
-col4.metric("Revenue", f"₹{total_revenue:,}")
-
-st.divider()
-
-# ─── Add New Client ──────────────────────────────────────────────────────────
-
-with st.expander("➕ Add New Client", expanded=len(clients) == 0):
-    with st.form("new_client"):
-        col1, col2 = st.columns(2)
-        with col1:
-            name = st.text_input("Client Name *", placeholder="e.g. TechStart Inc")
-            email = st.text_input("Email", placeholder="client@company.com")
-            phone = st.text_input("Phone", placeholder="+91 98765 43210")
-            company = st.text_input("Company", placeholder="Company name")
-        with col2:
-            industry = st.selectbox("Industry", [
-                "SaaS", "E-commerce", "Agency", "Real Estate",
-                "Healthcare", "Education", "Finance", "Technology", "Other"
-            ])
-            source = st.selectbox("Source", [
-                "Fiverr", "Upwork", "LinkedIn", "Reddit", "Referral",
-                "Website", "Cold Email", "Other"
-            ])
-            project_name = st.text_input("Project Name", placeholder="AI Chatbot for Website")
-            project_value = st.number_input("Project Value (₹)", min_value=0, step=1000, value=0)
-
-        notes = st.text_area("Notes", placeholder="Additional details...", height=80)
-
-        submitted = st.form_submit_button("Add Client", use_container_width=True)
-
-        if submitted and name:
-            new_client = {
-                "id": f"client_{datetime.now().strftime('%Y%m%d%H%M%S')}",
-                "name": name,
-                "email": email,
-                "phone": phone,
-                "company": company,
-                "industry": industry,
-                "source": source,
-                "status": "Active",
-                "projects": [{
-                    "name": project_name or "Main Project",
-                    "value": project_value,
-                    "status": "In Progress",
-                    "started_at": datetime.now().isoformat()
-                }] if project_name or project_value > 0 else [],
-                "total_paid": 0,
-                "notes": notes,
-                "created_at": datetime.now().isoformat(),
-                "communication_log": []
-            }
-            clients.append(new_client)
-            save_clients(clients)
-            st.success(f"✅ Client '{name}' added!")
-            st.rerun()
-
-st.divider()
-
-# ─── Filter ───────────────────────────────────────────────────────────────────
-
-col1, col2 = st.columns([2, 1])
 with col1:
-    search = st.text_input("🔍 Search clients", placeholder="Name, company, or industry...")
+    st.metric("🎯 Leads", leads, delta=yc_leads, delta_color="normal", help=f"{yc_leads} from YC")
 with col2:
-    status_filter = st.selectbox("Status", ["All", "Active", "Completed", "Paused"])
+    st.metric("👀 Prospects", prospects)
+with col3:
+    st.metric("✅ Active Clients", active)
+with col4:
+    st.metric("💼 Total Deals", total_deals)
+with col5:
+    st.metric("💰 Pipeline", f"₹{forecast['total_pipeline']/1000:.0f}K")
+with col6:
+    progress = min(forecast['progress'], 100)
+    st.metric("📈 Monthly Goal", f"{progress:.0f}%", delta=f"₹{forecast['won_revenue']:,}")
 
-filtered = clients
-if status_filter != "All":
-    filtered = [c for c in filtered if c.get("status") == status_filter]
+st.divider()
+
+# ─── Filters Row ───
+st.subheader("🔍 Filter & Search")
+
+filter_col1, filter_col2, filter_col3, filter_col4 = st.columns([2, 1, 1, 1])
+
+with filter_col1:
+    search = st.text_input("Search by name, company, or email...", placeholder="e.g. Egress Health", label_visibility="collapsed")
+
+with filter_col2:
+    status_filter = st.selectbox("Status", ["All", "lead", "prospect", "client", "churned"], label_visibility="collapsed")
+
+with filter_col3:
+    # Get unique sources
+    sources = list(set([c.get("source", "Unknown") for c in clients]))
+    source_options = ["All Sources"] + sorted([s for s in sources if s])[:10]
+    source_filter = st.selectbox("Source", source_options, label_visibility="collapsed")
+
+with filter_col4:
+    sort_by = st.selectbox("Sort", ["Newest First", "Oldest First", "Name A-Z"], label_visibility="collapsed")
+
+# ─── Apply Filters ───
+filtered_clients = clients
+
 if search:
     search_lower = search.lower()
-    filtered = [c for c in filtered if
+    filtered_clients = [c for c in filtered_clients if
         search_lower in c.get("name", "").lower() or
         search_lower in c.get("company", "").lower() or
-        search_lower in c.get("industry", "").lower()
-    ]
+        search_lower in c.get("email", "").lower() or
+        search_lower in c.get("notes", "").lower()]
 
-# ─── Client Cards ─────────────────────────────────────────────────────────────
+if status_filter != "All":
+    filtered_clients = [c for c in filtered_clients if c.get("status") == status_filter]
 
-if filtered:
-    for client in filtered:
+if source_filter != "All Sources":
+    filtered_clients = [c for c in filtered_clients if source_filter in str(c.get("source", ""))]
+
+# Sort
+if sort_by == "Newest First":
+    filtered_clients = sorted(filtered_clients, key=lambda x: x.get("created_at", ""), reverse=True)
+elif sort_by == "Oldest First":
+    filtered_clients = sorted(filtered_clients, key=lambda x: x.get("created_at", ""))
+elif sort_by == "Name A-Z":
+    filtered_clients = sorted(filtered_clients, key=lambda x: x.get("name", "").lower())
+
+# ─── Results Count ───
+st.markdown(f"**{len(filtered_clients)}** contacts found")
+
+# ─── Clients List ───
+if filtered_clients:
+    for client in filtered_clients:
         client_id = client.get("id", "")
+        status = client.get("status", "lead")
+        source = client.get("source", "")
+
         with st.container():
-            col1, col2, col3 = st.columns([3, 2, 1])
+            col1, col2 = st.columns([4, 1])
 
             with col1:
-                status_class = f"status-{client.get('status','Active').lower()}"
-                st.markdown(f"### {client.get('name', 'Unknown')}")
-                st.markdown(f"🏢 {client.get('company', 'N/A')} | 📧 {client.get('email', 'N/A')}")
-                st.markdown(f"<span class='{status_class}'>{client.get('status', 'Active')}</span> | "
-                           f"Source: {client.get('source', 'N/A')} | "
-                           f"Industry: {client.get('industry', 'N/A')}",
-                           unsafe_allow_html=True)
+                # Header with name and badges
+                header_col1, header_col2 = st.columns([3, 1])
+                with header_col1:
+                    st.markdown(f"### {client.get('name', 'Unknown')}")
+                with header_col2:
+                    st.markdown(get_source_badge(source), unsafe_allow_html=True)
+
+                # Company and contact info
+                st.markdown(f"🏢 **{client.get('company', 'N/A')}** | {get_status_badge(status)}")
+
+                # Contact row
+                email = client.get('email', '')
+                phone = client.get('phone', '')
+                email_link = f"📧 [{email}](mailto:{email})" if email else "📧 No email"
+                phone_display = f" | 📞 {phone}" if phone else ""
+                st.markdown(f"{email_link}{phone_display}")
+
+                # Description/Notes (truncated)
+                notes = client.get("notes", "")
+                if notes and "YC Batch:" in notes:
+                    # Extract description from YC notes
+                    desc_lines = [l for l in notes.split('\n') if not l.startswith(('YC Batch:', 'Location:', 'Team:'))]
+                    desc = ' '.join(desc_lines).strip()[:200]
+                    if desc:
+                        st.markdown(f"<div class='company-desc'>{desc}...</div>", unsafe_allow_html=True)
+
+                # Tags
+                tags = client.get("tags", [])
+                if tags:
+                    st.markdown(" ".join([f"<span class='project-tag'>{t}</span>" for t in tags[:5]]), unsafe_allow_html=True)
 
             with col2:
-                projects = client.get("projects", [])
-                if projects:
-                    for proj in projects:
-                        st.markdown(f"<span class='project-tag'>{proj.get('name', 'Project')}</span> "
-                                   f"₹{proj.get('value', 0):,} — {proj.get('status', 'In Progress')}",
-                                   unsafe_allow_html=True)
-                else:
-                    st.caption("No projects yet")
-
-                st.caption(f"Total Paid: ₹{client.get('total_paid', 0):,}")
-
-            with col3:
-                new_status = st.selectbox("Status", ["Active", "Completed", "Paused"],
-                    index=["Active", "Completed", "Paused"].index(client.get("status", "Active")),
-                    key=f"status_{client_id}", label_visibility="collapsed")
-                if new_status != client.get("status"):
+                # Status changer
+                new_status = st.selectbox(
+                    "Status",
+                    ["lead", "prospect", "client", "churned"],
+                    index=["lead", "prospect", "client", "churned"].index(status) if status in ["lead", "prospect", "client", "churned"] else 0,
+                    key=f"status_{client_id}",
+                    label_visibility="collapsed"
+                )
+                if new_status != status:
                     client["status"] = new_status
-                    save_clients(clients)
+                    crm.save_clients()
                     st.rerun()
 
-                if st.button("🗑 Delete", key=f"del_{client_id}"):
-                    clients = [c for c in clients if c["id"] != client_id]
-                    save_clients(clients)
-                    st.rerun()
-
-            # Expandable details
-            with st.expander("📝 Details & Communication Log"):
-                st.markdown(f"**Notes:** {client.get('notes', 'No notes')}")
-                st.markdown(f"**Phone:** {client.get('phone', 'N/A')}")
-                st.markdown(f"**Added:** {client.get('created_at', '')[:10]}")
-
-                # Add communication log
+                # Quick actions
                 st.markdown("---")
-                st.markdown("**Communication Log:**")
 
-                log = client.get("communication_log", [])
-                for entry in log[-5:]:
-                    st.markdown(f"• **{entry.get('date', '')}** [{entry.get('type', '')}] — {entry.get('note', '')}")
+                # Show deals count
+                client_deals = [d for d in deals if d.get("client_id") == client_id]
+                if client_deals:
+                    st.markdown(f"💼 **{len(client_deals)}** deals")
+                    for deal in client_deals[:2]:
+                        st.markdown(f"• ₹{deal.get('value', 0):,}")
+                else:
+                    st.caption("No deals")
 
-                with st.form(f"log_{client_id}"):
-                    col_a, col_b = st.columns([1, 3])
-                    with col_a:
-                        log_type = st.selectbox("Type", ["Call", "Email", "Meeting", "Message", "Other"], key=f"lt_{client_id}")
-                    with col_b:
-                        log_note = st.text_input("Note", placeholder="What happened?", key=f"ln_{client_id}")
-                    if st.form_submit_button("Add Log Entry"):
-                        if log_note:
-                            if "communication_log" not in client:
-                                client["communication_log"] = []
-                            client["communication_log"].append({
-                                "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
-                                "type": log_type,
-                                "note": log_note
-                            })
-                            save_clients(clients)
-                            st.success("Log entry added!")
-                            st.rerun()
-
-                # Add project
-                st.markdown("---")
-                with st.form(f"proj_{client_id}"):
-                    st.markdown("**Add Project:**")
-                    col_p1, col_p2 = st.columns(2)
-                    with col_p1:
-                        proj_name = st.text_input("Project Name", key=f"pn_{client_id}")
-                    with col_p2:
-                        proj_value = st.number_input("Value (₹)", min_value=0, step=1000, key=f"pv_{client_id}")
-                    if st.form_submit_button("Add Project"):
-                        if proj_name:
-                            if "projects" not in client:
-                                client["projects"] = []
-                            client["projects"].append({
-                                "name": proj_name,
-                                "value": proj_value,
-                                "status": "In Progress",
-                                "started_at": datetime.now().isoformat()
-                            })
-                            save_clients(clients)
-                            st.success(f"Project '{proj_name}' added!")
-                            st.rerun()
-
-                # Record payment
-                st.markdown("---")
-                with st.form(f"pay_{client_id}"):
-                    st.markdown("**Record Payment:**")
-                    payment = st.number_input("Payment Amount (₹)", min_value=0, step=500, key=f"pa_{client_id}")
-                    if st.form_submit_button("Record Payment"):
-                        if payment > 0:
-                            client["total_paid"] = client.get("total_paid", 0) + payment
-                            if "communication_log" not in client:
-                                client["communication_log"] = []
-                            client["communication_log"].append({
-                                "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
-                                "type": "Payment",
-                                "note": f"Received ₹{payment:,}"
-                            })
-                            save_clients(clients)
-                            st.success(f"₹{payment:,} payment recorded!")
+                # Add deal button
+                with st.expander("➕ Deal"):
+                    deal_title = st.text_input("Title", key=f"dt_{client_id}", placeholder="AI Chatbot project")
+                    deal_value = st.number_input("Value (₹)", min_value=0, step=5000, value=25000, key=f"dv_{client_id}")
+                    if st.button("Add Deal", key=f"ad_{client_id}", use_container_width=True):
+                        if deal_title:
+                            crm.add_deal(client_id, deal_title, deal_value, "general")
+                            st.success("✅ Deal added!")
                             st.rerun()
 
             st.markdown("---")
 else:
-    st.info("No clients found. Add your first client above! 👆")
+    st.info("No contacts found. Try adjusting filters or add new clients! 👆")
+
+# ─── Add New Client ───
+st.divider()
+with st.expander("➕ Add New Client"):
+    col1, col2 = st.columns(2)
+    with col1:
+        name = st.text_input("Name *", placeholder="e.g. Rahul Sharma")
+        email = st.text_input("Email *", placeholder="rahul@company.com")
+        phone = st.text_input("Phone", placeholder="+91 98765 43210")
+    with col2:
+        company = st.text_input("Company", placeholder="Company name")
+        source = st.selectbox("Source", ["Website", "Reddit", "LinkedIn", "YC", "Referral", "Cold Email", "Other"])
+        tags = st.text_input("Tags (comma separated)", placeholder="saas, ai, urgent")
+
+    if st.button("Add Client", use_container_width=True, type="primary"):
+        if name and email:
+            client = crm.add_client(
+                name=name,
+                email=email,
+                phone=phone,
+                company=company,
+                source=source,
+                tags=[t.strip() for t in tags.split(",") if t.strip()]
+            )
+            st.success(f"✅ Client '{name}' added!")
+            st.rerun()
+        else:
+            st.error("Name and email are required")
+
+# ─── Pipeline Section ───
+st.divider()
+st.subheader("💼 Pipeline View")
+
+pipeline = crm.get_deals_pipeline()
+
+cols = st.columns(5)
+stage_names = ["lead", "proposal_sent", "negotiating", "won", "lost"]
+stage_labels = ["🆕 Lead", "📧 Proposal Sent", "🤝 Negotiating", "✅ Won", "❌ Lost"]
+stage_colors = ["#9ca3af", "#3b82f6", "#f59e0b", "#10b981", "#ef4444"]
+
+for i, (stage, label, color) in enumerate(zip(stage_names, stage_labels, stage_colors)):
+    with cols[i]:
+        stage_deals = [d for d in deals if d.get("status") == stage]
+        stage_value = sum(d.get("value", 0) for d in stage_deals)
+
+        st.markdown(f"""
+        <div style='background:{color}15; border:1px solid {color}40; border-radius:8px; padding:0.75rem;'>
+            <div style='font-weight:600; color:{color}; font-size:0.9rem;'>
+                {label}
+            </div>
+            <div style='font-size:1.5rem; font-weight:700; color:#1a1a2e;'>
+                {len(stage_deals)}
+            </div>
+            <div style='font-size:0.75rem; color:#666;'>
+                ₹{stage_value/1000:.0f}K
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Show top 3 deals
+        for deal in sorted(stage_deals, key=lambda x: x.get("value", 0), reverse=True)[:3]:
+            client = crm.get_client(deal.get("client_id", ""))
+            client_name = client.get("name", "Unknown")[:15] if client else "Unknown"
+
+            st.markdown(f"""
+            <div style='background:white; border-left:3px solid {color}; padding:0.5rem; margin:0.25rem 0; border-radius:4px;'>
+                <div style='font-size:0.75rem; font-weight:500;'>{deal.get('title', '')[:25]}...</div>
+                <div style='font-size:0.7rem; color:#666;'>👤 {client_name} | ₹{deal.get('value', 0):,}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+# ─── Revenue Forecast ───
+st.divider()
+st.subheader("💰 Revenue Forecast")
+
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.metric("Won Revenue", f"₹{forecast['won_revenue']:,}")
+with col2:
+    st.metric("Pipeline Value", f"₹{forecast['total_pipeline']:,}")
+with col3:
+    st.metric("Weighted Forecast", f"₹{forecast['weighted_forecast']:,}")
+with col4:
+    st.metric("Monthly Target", f"₹{forecast['target']:,}")
+
+# Progress bar
+st.progress(min(forecast['progress'] / 100, 1.0))
+st.caption(f"Progress: {forecast['progress']:.1f}% (₹{forecast['won_revenue']:,} / ₹{forecast['target']:,})")
+
+# ─── Quick Actions ───
+st.divider()
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    if st.button("🚀 Import YC Leads", use_container_width=True, type="primary"):
+        st.info("Run: `python engine/yc_lead_scraper.py` in terminal")
+
+with col2:
+    if st.button("📊 Generate Report", use_container_width=True):
+        report = crm.generate_report()
+        st.text_area("CRM Report", report, height=300)
+
+with col3:
+    if st.button("🔄 Refresh Data", use_container_width=True):
+        st.rerun()

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "deal_001",
+    "client_id": "",
+    "title": "Sample Project \u2014 AI Chatbot",
+    "value": 25000,
+    "service": "general",
+    "status": "new",
+    "stage": "contacted",
+    "probability": 50,
+    "created_at": "2026-03-12T00:00:00",
+    "expected_close": "2026-04-01T18:46:09.175653",
+    "activities": []
+  }
+]

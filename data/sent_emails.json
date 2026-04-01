@@ -1,0 +1,23 @@
+{
+  "sales@squareyards.com": {
+    "company": "Square Yards",
+    "sent_at": "2026-03-31T01:05:45.095834",
+    "subject": "AI chatbot for property inquiries - 10 min demo?",
+    "email_id": "9e8f1663-ff0c-444c-b867-87cca1c77f02",
+    "status": "sent"
+  },
+  "c@nobroker.in": {
+    "company": "NoBroker",
+    "sent_at": "2026-03-31T01:05:48.687628",
+    "subject": "Automating property lead qualification",
+    "email_id": "15549e84-073f-46f7-889b-d477224905c0",
+    "status": "sent"
+  },
+  "vp.technology@delhivery.com": {
+    "company": "Delhivery",
+    "sent_at": "2026-03-31T01:05:51.994752",
+    "subject": "AI assistant for shipment queries",
+    "email_id": "772e0697-3f1a-4783-9a33-7ab017e700b3",
+    "status": "sent"
+  }
+}
