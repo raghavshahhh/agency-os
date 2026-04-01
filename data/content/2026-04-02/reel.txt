@@ -1,0 +1,20 @@
+[HOOK - 0-3s]
+Text: "oye bkl, lawyer ko 2 min mein document banake dikhaya 😂"
+Visual: Shocked lawyer face
+
+[POINT 1 - 3-10s]
+Text: "Pehle: 2 ghante manual typing"
+Visual: Typing animation, tired face
+
+[POINT 2 - 10-17s]
+Text: "Ab: 2 minutes AI magic ✨"
+Visual: Form fill → Generated document
+
+[POINT 3 - 17-25s]
+Text: "Lawyer: 'Ye kaise hua?!' 🤯"
+Visual: Reaction clip, AI interface
+
+[CTA - 25-30s]
+Text: "DM for demo 📩 | Follow for more 🔥"
+Visual: Profile pic, follow button
+Music: Trending audio

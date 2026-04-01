@@ -55,57 +55,52 @@ st.markdown("""
  .source-website { background: #d1fae5; color: #065f46; }
  .source-other { background: #f3f4f6; color: #374151; }
 
- .project-tag {
- display: inline-block;
- background: #eef2ff;
- color: #667eea;
- padding: 2px 8px;
- border-radius: 12px;
- font-size: 0.72rem;
- margin: 2px;
- }
-
- .deal-card {
- background: #f8f9ff;
- border-left: 3px solid #667eea;
- padding: 0.5rem 0.75rem;
- margin: 0.25rem 0;
- border-radius: 4px;
- font-size: 0.8rem;
- }
-
  .batch-badge {
  display: inline-block;
- background: linear-gradient(135deg, #667eea, #764ba2);
+ background: linear-gradient(135deg, #f59e0b, #d97706);
  color: white;
  padding: 2px 8px;
  border-radius: 10px;
  font-size: 0.7rem;
  font-weight: 600;
+ margin-left: 8px;
+ }
+
+ .hiring-badge {
+ display: inline-block;
+ background: #10b981;
+ color: white;
+ padding: 2px 8px;
+ border-radius: 10px;
+ font-size: 0.7rem;
+ font-weight: 600;
+ margin-left: 8px;
+ }
+
+ .contact-link {
+ color: #667eea;
+ text-decoration: none;
+ font-size: 0.85rem;
+ }
+ .contact-link:hover {
+ text-decoration: underline;
  }
 
  .company-desc {
- color: #6b7280;
- font-size: 0.85rem;
+ color: #4b5563;
+ font-size: 0.9rem;
  line-height: 1.5;
- margin-top: 0.5rem;
+ margin: 0.5rem 0;
  }
 
- .contact-row {
- display: flex;
- gap: 1rem;
- align-items: center;
- margin-top: 0.5rem;
- }
-
- .action-btn {
- padding: 4px 12px;
- border-radius: 6px;
+ .tag-pill {
+ display: inline-block;
+ background: #eef2ff;
+ color: #667eea;
+ padding: 3px 10px;
+ border-radius: 20px;
  font-size: 0.75rem;
- font-weight: 500;
- cursor: pointer;
- border: none;
- transition: all 0.2s;
+ margin: 2px;
  }
 </style>
 """, unsafe_allow_html=True)
@@ -147,33 +142,31 @@ st.caption(f"Total contacts: {len(clients)} | Last updated: {datetime.now().strf
 # ─── Stats ───
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 
-# Calculate stats
 leads = len([c for c in clients if c.get("status") == "lead"])
 prospects = len([c for c in clients if c.get("status") == "prospect"])
 active = len([c for c in clients if c.get("status") == "client"])
-churned = len([c for c in clients if c.get("status") == "churned"])
 yc_leads = len([c for c in clients if 'yc' in str(c.get("source", "")).lower()])
+hiring = len([c for c in clients if c.get("is_hiring")])
 total_deals = len(deals)
 
 forecast = crm.get_revenue_forecast()
 
 with col1:
-    st.metric("🎯 Leads", leads, delta=yc_leads, delta_color="normal", help=f"{yc_leads} from YC")
+    st.metric("🎯 Leads", leads, help=f"{yc_leads} from YC")
 with col2:
     st.metric("👀 Prospects", prospects)
 with col3:
-    st.metric("✅ Active Clients", active)
+    st.metric("✅ Active", active)
 with col4:
-    st.metric("💼 Total Deals", total_deals)
+    st.metric("💼 Deals", total_deals)
 with col5:
     st.metric("💰 Pipeline", f"₹{forecast['total_pipeline']/1000:.0f}K")
 with col6:
-    progress = min(forecast['progress'], 100)
-    st.metric("📈 Monthly Goal", f"{progress:.0f}%", delta=f"₹{forecast['won_revenue']:,}")
+    st.metric("🔥 Hiring", hiring, delta="YC Only")
 
 st.divider()
 
-# ─── Filters Row ───
+# ─── Filters ───
 st.subheader("🔍 Filter & Search")
 
 filter_col1, filter_col2, filter_col3, filter_col4 = st.columns([2, 1, 1, 1])
@@ -185,13 +178,12 @@ with filter_col2:
     status_filter = st.selectbox("Status", ["All", "lead", "prospect", "client", "churned"], label_visibility="collapsed")
 
 with filter_col3:
-    # Get unique sources
     sources = list(set([c.get("source", "Unknown") for c in clients]))
     source_options = ["All Sources"] + sorted([s for s in sources if s])[:10]
     source_filter = st.selectbox("Source", source_options, label_visibility="collapsed")
 
 with filter_col4:
-    sort_by = st.selectbox("Sort", ["Newest First", "Oldest First", "Name A-Z"], label_visibility="collapsed")
+    sort_by = st.selectbox("Sort", ["Newest First", "Oldest First", "Name A-Z", "Score High-Low"], label_visibility="collapsed")
 
 # ─── Apply Filters ───
 filtered_clients = clients
@@ -217,8 +209,9 @@ elif sort_by == "Oldest First":
     filtered_clients = sorted(filtered_clients, key=lambda x: x.get("created_at", ""))
 elif sort_by == "Name A-Z":
     filtered_clients = sorted(filtered_clients, key=lambda x: x.get("name", "").lower())
+elif sort_by == "Score High-Low":
+    filtered_clients = sorted(filtered_clients, key=lambda x: x.get("yc_score", 0), reverse=True)
 
-# ─── Results Count ───
 st.markdown(f"**{len(filtered_clients)}** contacts found")
 
 # ─── Clients List ───
@@ -227,46 +220,67 @@ if filtered_clients:
         client_id = client.get("id", "")
         status = client.get("status", "lead")
         source = client.get("source", "")
+        is_hiring = client.get("is_hiring", False)
+        batch = client.get("batch", "")
 
         with st.container():
+            # Header row
             col1, col2 = st.columns([4, 1])
 
             with col1:
-                # Header with name and badges
-                header_col1, header_col2 = st.columns([3, 1])
-                with header_col1:
-                    st.markdown(f"### {client.get('name', 'Unknown')}")
-                with header_col2:
-                    st.markdown(get_source_badge(source), unsafe_allow_html=True)
+                # Name with badges
+                header = f"### {client.get('name', 'Unknown')}"
+                if batch:
+                    header += f' <span class="batch-badge">{batch}</span>'
+                if is_hiring:
+                    header += ' <span class="hiring-badge">🔥 Hiring</span>'
+                st.markdown(header, unsafe_allow_html=True)
 
-                # Company and contact info
+                # Source badge
+                st.markdown(get_source_badge(source), unsafe_allow_html=True)
+
+                # Company + Status
                 st.markdown(f"🏢 **{client.get('company', 'N/A')}** | {get_status_badge(status)}")
 
-                # Contact row
-                email = client.get('email', '')
-                phone = client.get('phone', '')
-                email_link = f"📧 [{email}](mailto:{email})" if email else "📧 No email"
-                phone_display = f" | 📞 {phone}" if phone else ""
-                st.markdown(f"{email_link}{phone_display}")
+                # Contact Links
+                contact_cols = st.columns([1, 1, 1, 1])
 
-                # Description/Notes (truncated)
-                notes = client.get("notes", "")
-                if notes and "YC Batch:" in notes:
-                    # Extract description from YC notes
-                    desc_lines = [l for l in notes.split('\n') if not l.startswith(('YC Batch:', 'Location:', 'Team:'))]
-                    desc = ' '.join(desc_lines).strip()[:200]
-                    if desc:
-                        st.markdown(f"<div class='company-desc'>{desc}...</div>", unsafe_allow_html=True)
+                with contact_cols[0]:
+                    email = client.get('email') or (client.get('all_emails', {}).get('from_description', [])[0] if client.get('all_emails') else None)
+                    if email:
+                        st.markdown(f"📧 [{email}](mailto:{email})", unsafe_allow_html=True)
+                    else:
+                        st.caption("📧 No email")
+
+                with contact_cols[1]:
+                    website = client.get('company_website') or client.get('website')
+                    if website:
+                        st.markdown(f"🌐 [Website]({website})", unsafe_allow_html=True)
+
+                with contact_cols[2]:
+                    linkedin = client.get('company_linkedin') or client.get('linkedin_company')
+                    if linkedin:
+                        st.markdown(f"💼 [LinkedIn]({linkedin})", unsafe_allow_html=True)
+
+                with contact_cols[3]:
+                    domain = client.get('company_domain') or client.get('domain')
+                    if domain:
+                        st.markdown(f"🔗 {domain}")
+
+                # Description
+                desc = client.get("company_description") or client.get("notes", "")[:200]
+                if desc:
+                    st.markdown(f"<div class='company-desc'>{desc}</div>", unsafe_allow_html=True)
 
                 # Tags
-                tags = client.get("tags", [])
+                tags = client.get("tags", []) or client.get("industry", [])
                 if tags:
-                    st.markdown(" ".join([f"<span class='project-tag'>{t}</span>" for t in tags[:5]]), unsafe_allow_html=True)
+                    st.markdown(" ".join([f'<span class="tag-pill">{t}</span>' for t in tags[:5]]), unsafe_allow_html=True)
 
             with col2:
                 # Status changer
                 new_status = st.selectbox(
-                    "Status",
+                    "Update",
                     ["lead", "prospect", "client", "churned"],
                     index=["lead", "prospect", "client", "churned"].index(status) if status in ["lead", "prospect", "client", "churned"] else 0,
                     key=f"status_{client_id}",
@@ -277,23 +291,18 @@ if filtered_clients:
                     crm.save_clients()
                     st.rerun()
 
-                # Quick actions
-                st.markdown("---")
-
-                # Show deals count
+                # Deals count
                 client_deals = [d for d in deals if d.get("client_id") == client_id]
                 if client_deals:
                     st.markdown(f"💼 **{len(client_deals)}** deals")
-                    for deal in client_deals[:2]:
-                        st.markdown(f"• ₹{deal.get('value', 0):,}")
-                else:
-                    st.caption("No deals")
+                    total_val = sum(d.get('value', 0) for d in client_deals)
+                    st.caption(f"₹{total_val:,}")
 
-                # Add deal button
-                with st.expander("➕ Deal"):
+                # Quick add deal
+                with st.expander("➕ Add Deal"):
                     deal_title = st.text_input("Title", key=f"dt_{client_id}", placeholder="AI Chatbot project")
                     deal_value = st.number_input("Value (₹)", min_value=0, step=5000, value=25000, key=f"dv_{client_id}")
-                    if st.button("Add Deal", key=f"ad_{client_id}", use_container_width=True):
+                    if st.button("Add Deal", key=f"ad_{client_id}", use_container_width=True, type="primary"):
                         if deal_title:
                             crm.add_deal(client_id, deal_title, deal_value, "general")
                             st.success("✅ Deal added!")
@@ -339,7 +348,7 @@ pipeline = crm.get_deals_pipeline()
 
 cols = st.columns(5)
 stage_names = ["lead", "proposal_sent", "negotiating", "won", "lost"]
-stage_labels = ["🆕 Lead", "📧 Proposal Sent", "🤝 Negotiating", "✅ Won", "❌ Lost"]
+stage_labels = ["🆕 Lead", "📧 Proposal", "🤝 Negotiating", "✅ Won", "❌ Lost"]
 stage_colors = ["#9ca3af", "#3b82f6", "#f59e0b", "#10b981", "#ef4444"]
 
 for i, (stage, label, color) in enumerate(zip(stage_names, stage_labels, stage_colors)):
@@ -349,23 +358,15 @@ for i, (stage, label, color) in enumerate(zip(stage_names, stage_labels, stage_c
 
         st.markdown(f"""
         <div style='background:{color}15; border:1px solid {color}40; border-radius:8px; padding:0.75rem;'>
-            <div style='font-weight:600; color:{color}; font-size:0.9rem;'>
-                {label}
-            </div>
-            <div style='font-size:1.5rem; font-weight:700; color:#1a1a2e;'>
-                {len(stage_deals)}
-            </div>
-            <div style='font-size:0.75rem; color:#666;'>
-                ₹{stage_value/1000:.0f}K
-            </div>
+            <div style='font-weight:600; color:{color}; font-size:0.9rem;'>{label}</div>
+            <div style='font-size:1.5rem; font-weight:700; color:#1a1a2e;'>{len(stage_deals)}</div>
+            <div style='font-size:0.75rem; color:#666;'>₹{stage_value/1000:.0f}K</div>
         </div>
         """, unsafe_allow_html=True)
 
-        # Show top 3 deals
         for deal in sorted(stage_deals, key=lambda x: x.get("value", 0), reverse=True)[:3]:
             client = crm.get_client(deal.get("client_id", ""))
             client_name = client.get("name", "Unknown")[:15] if client else "Unknown"
-
             st.markdown(f"""
             <div style='background:white; border-left:3px solid {color}; padding:0.5rem; margin:0.25rem 0; border-radius:4px;'>
                 <div style='font-size:0.75rem; font-weight:500;'>{deal.get('title', '')[:25]}...</div>
@@ -387,23 +388,25 @@ with col3:
 with col4:
     st.metric("Monthly Target", f"₹{forecast['target']:,}")
 
-# Progress bar
 st.progress(min(forecast['progress'] / 100, 1.0))
-st.caption(f"Progress: {forecast['progress']:.1f}% (₹{forecast['won_revenue']:,} / ₹{forecast['target']:,})")
 
 # ─── Quick Actions ───
 st.divider()
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     if st.button("🚀 Import YC Leads", use_container_width=True, type="primary"):
-        st.info("Run: `python engine/yc_lead_scraper.py` in terminal")
+        st.info("Run: `python engine/yc_lead_scraper_v4.py`")
 
 with col2:
-    if st.button("📊 Generate Report", use_container_width=True):
-        report = crm.generate_report()
-        st.text_area("CRM Report", report, height=300)
+    if st.button("🔍 Enrich Emails", use_container_width=True):
+        st.info("Add HUNTER_API_KEY to .env for email enrichment")
 
 with col3:
-    if st.button("🔄 Refresh Data", use_container_width=True):
+    if st.button("📊 Generate Report", use_container_width=True):
+        report = crm.generate_report()
+        st.text_area("CRM Report", report, height=200)
+
+with col4:
+    if st.button("🔄 Refresh", use_container_width=True):
         st.rerun()

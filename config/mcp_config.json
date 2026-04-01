@@ -1,0 +1,52 @@
+{
+  "mcpServers": {
+    "linkedin": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-linkedin"],
+      "env": {
+        "LINKEDIN_ACCESS_TOKEN": ""
+      },
+      "disabled": false,
+      "autoApprove": ["post", "schedule"]
+    },
+    "twitter": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-twitter"],
+      "env": {
+        "TWITTER_API_KEY": "",
+        "TWITTER_API_SECRET": "",
+        "TWITTER_ACCESS_TOKEN": "",
+        "TWITTER_ACCESS_SECRET": ""
+      },
+      "disabled": false,
+      "autoApprove": ["post", "thread"]
+    },
+    "tavily": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp"],
+      "env": {
+        "TAVILY_API_KEY": ""
+      },
+      "disabled": false,
+      "autoApprove": ["search"]
+    },
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "exa-mcp"],
+      "env": {
+        "EXA_API_KEY": ""
+      },
+      "disabled": false,
+      "autoApprove": ["search", "findSimilar"]
+    }
+  },
+  "settings": {
+    "auto_post_enabled": false,
+    "approval_required": true,
+    "daily_schedule": {
+      "linkedin": "09:00",
+      "twitter": "09:30",
+      "instagram": "10:00"
+    }
+  }
+}

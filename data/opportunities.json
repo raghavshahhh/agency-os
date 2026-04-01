@@ -1,0 +1,41 @@
+{
+  "opportunities": [
+    {
+      "id": "comp_builderai",
+      "title": "Gap: Builder.ai too expensive ($5K-50K+)",
+      "source": "Competitor Analysis",
+      "source_url": "https://builder.ai",
+      "niche": "SMB AI Apps",
+      "type": "competitor_gap",
+      "description": "Builder.ai charges $5K-50K+. You can do same at 1/3 price.",
+      "suggested_service": "AI apps at \u20b950K-2L ($600-2400)",
+      "price_point": "\u20b950,000 - \u20b92,00,000",
+      "income_score": 9,
+      "effort_score": 6,
+      "roi": 9.5,
+      "competition": "medium",
+      "validated": true,
+      "discovered_at": "2026-04-02T00:36:33.789865",
+      "action_required": "Update pricing page"
+    },
+    {
+      "id": "comp_fiverr",
+      "title": "Gap: Fiverr AI quality issues",
+      "source": "Competitor Analysis",
+      "source_url": "https://fiverr.com",
+      "niche": "Professional AI",
+      "type": "competitor_gap",
+      "description": "Fiverr has cheap AI devs but quality issues. Position as premium.",
+      "suggested_service": "Professional AI with support",
+      "price_point": "$500 - $5,000",
+      "income_score": 7,
+      "effort_score": 5,
+      "roi": 8.0,
+      "competition": "high",
+      "validated": true,
+      "discovered_at": "2026-04-02T00:36:33.789912",
+      "action_required": "Create Fiverr gig"
+    }
+  ],
+  "last_updated": "2026-04-02T00:36:33.791055"
+}

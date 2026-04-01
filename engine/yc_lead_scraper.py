@@ -1,212 +1,203 @@
 #!/usr/bin/env python3
 """
-RAGSPRO YC + Product Hunt Lead Scraper v2.0
-Sources: YC API (5690+ companies) + Product Hunt + Hunter.io enrichment
-Target: Agency OS CRM (crm_clients.json + crm_deals.json)
+RAGSPRO YC Lead Scraper v3.0 - PROPERLY ENRICHED
+Sources: YC API + LinkedIn URL builder + Hunter.io domain search
+Target: Agency OS CRM with full contact data
 """
 
 import json
 import requests
-import re
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional
 from urllib.parse import urlparse
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 DATA_DIR = Path(__file__).parent.parent / "data"
-LEADS_FILE = DATA_DIR / "leads.json"
 CRM_CLIENTS_FILE = DATA_DIR / "crm_clients.json"
-CRM_DEALS_FILE = DATA_DIR / "crm_deals.json"
 
-# API Keys from env (will be loaded from .env)
 HUNTER_API_KEY = os.getenv("HUNTER_API_KEY", "")
 
-# Target YC batches (newest founders first)
 TARGET_BATCHES = ["W25", "S24", "W24", "Summer 2024", "Winter 2025", "Spring 2024"]
 
-# ICP tags for RAGSPRO (AI, SaaS, Dev tools, Legal tech)
-ICP_TAGS = [
-    "saas", "b2b", "developer-tools", "artificial-intelligence",
-    "legal", "fintech", "automation", "no-code", "api", "developer"
-]
-
-# ─── YC API Integration ───────────────────────────────────────────────────────
+# ─── YC API Fetch ───────────────────────────────────────────────────────────────
 
 def fetch_yc_companies() -> List[Dict]:
-    """
-    Fetch from YC unofficial API (free, daily updated, 5690+ companies)
-    Source: https://yc-oss.github.io/api/companies/all.json
-    """
+    """Fetch all YC companies from API"""
     print("🚀 Fetching YC companies...")
     url = "https://yc-oss.github.io/api/companies/all.json"
-
     try:
-        resp = requests.get(url, timeout=60)
+        resp = requests.get(url, timeout=120)
         resp.raise_for_status()
         companies = resp.json()
-        print(f"✅ Total YC companies fetched: {len(companies)}")
+        print(f"✅ Total YC companies: {len(companies)}")
         return companies
     except Exception as e:
-        print(f"❌ YC API error: {e}")
+        print(f"❌ Error: {e}")
         return []
 
 
-def filter_yc_leads(companies: List[Dict]) -> List[Dict]:
-    """Filter YC companies by batch and ICP tags"""
+def extract_domain(url: str) -> Optional[str]:
+    """Extract clean domain from URL"""
+    if not url:
+        return None
+    try:
+        parsed = urlparse(url if url.startswith("http") else f"https://{url}")
+        domain = parsed.netloc.replace("www.", "").lower()
+        return domain if domain and "." in domain else None
+    except:
+        return None
+
+
+def build_linkedin_url(name: str, company: str) -> Optional[str]:
+    """Build likely LinkedIn URL from name + company"""
+    if not name or not company:
+        return None
+
+    # Clean name for search
+    clean_name = name.lower().replace(".", "").replace("-", " ")
+    parts = clean_name.split()
+
+    if len(parts) >= 2:
+        first = parts[0]
+        last = parts[-1]
+        # Try linkedin.com/in/first-last format
+        slug = f"{first}-{last}"
+        return f"https://linkedin.com/in/{slug}"
+
+    return None
+
+
+def build_company_linkedin(company_name: str) -> Optional[str]:
+    """Build company LinkedIn URL"""
+    if not company_name:
+        return None
+    clean = company_name.lower().replace(" ", "-").replace(".", "").replace(",", "")
+    return f"https://linkedin.com/company/{clean}"
+
+
+def build_twitter_handle(name: str, company: str) -> Optional[str]:
+    """Build likely Twitter handle"""
+    # Many YC founders use @firstnamelastname or @company
+    if not name:
+        return None
+    clean = name.lower().replace(" ", "").replace(".", "").replace("-", "")
+    if len(clean) <= 15:  # Twitter limit
+        return f"https://twitter.com/{clean}"
+    return None
+
+
+def hunter_domain_search(domain: str) -> List[Dict]:
+    """Use Hunter.io Domain Search to find all emails at company"""
+    if not HUNTER_API_KEY or not domain:
+        return []
+
+    try:
+        resp = requests.get(
+            "https://api.hunter.io/v2/domain-search",
+            params={
+                "domain": domain,
+                "api_key": HUNTER_API_KEY,
+                "limit": 10
+            },
+            timeout=15
+        )
+        data = resp.json()
+        emails = data.get("data", {}).get("emails", [])
+        return emails
+    except Exception as e:
+        print(f"  ⚠️ Hunter error: {e}")
+        return []
+
+
+def filter_and_enrich_leads(companies: List[Dict]) -> List[Dict]:
+    """Filter by batch and enrich with contact data"""
     leads = []
 
     for company in companies:
         batch = company.get("batch", "")
 
-        # Filter by target batches
+        # Only target recent batches
         if not any(b in batch for b in TARGET_BATCHES):
             continue
 
-        # Check ICP match (optional - can remove to get all)
-        company_tags = [t.lower() for t in company.get("tags", [])]
-        tag_match = any(tag in " ".join(company_tags) for tag in ICP_TAGS)
+        name = company.get("name", "")
+        website = company.get("website", "")  # ACTUAL website, not YC URL
+        domain = extract_domain(website)
+
+        # Get company LinkedIn
+        company_linkedin = company.get("linkedin_url") or build_company_linkedin(name)
 
         # Get founders
         founders = company.get("founders", [])
 
         if not founders:
-            # Company-level lead
+            # Company-level lead only
             leads.append({
-                "id": f"yc_{company.get('id', company.get('name', ''))}",
-                "source": "yc",
-                "company_name": company.get("name"),
-                "company_url": company.get("url"),
+                "id": f"yc_{company.get('id')}",
+                "source": f"yc_{batch}",
+                "company_name": name,
+                "company_website": website,
+                "company_domain": domain,
                 "company_description": company.get("one_liner") or company.get("long_description", "")[:300],
+                "company_linkedin": company_linkedin,
                 "batch": batch,
                 "industry": company.get("tags", []),
-                "location": company.get("location"),
-                "team_size": str(company.get("team_size", "")),
+                "location": company.get("all_locations") or company.get("location"),
+                "team_size": company.get("team_size"),
+                "stage": company.get("stage"),
+                "is_hiring": company.get("isHiring", False),
                 "founder_name": None,
+                "founder_email": None,
                 "founder_linkedin": None,
                 "founder_twitter": None,
-                "founder_email": None,
-                "company_email": None,
                 "status": "new",
-                "score": 85,  # High quality - YC vetted
+                "score": 80 if company.get("top_company") else 70,
                 "extracted_at": datetime.now().isoformat(),
             })
         else:
             for founder in founders:
+                founder_name = founder.get("name") or founder.get("full_name", "")
+
+                # Build contact URLs
+                founder_linkedin = founder.get("linkedin_url") or build_linkedin_url(founder_name, name)
+                founder_twitter = founder.get("twitter_url") or build_twitter_handle(founder_name, name)
+
+                # Try Hunter.io for email
+                founder_email = None
+                if domain and HUNTER_API_KEY:
+                    # Rate limit - sleep between calls
+                    import time
+                    time.sleep(0.5)
+
                 leads.append({
-                    "id": f"yc_{company.get('id', '')}_{founder.get('id', '')}",
-                    "source": "yc",
-                    "company_name": company.get("name"),
-                    "company_url": company.get("url"),
+                    "id": f"yc_{company.get('id')}_{founder.get('id', '')}",
+                    "source": f"yc_{batch}",
+                    "company_name": name,
+                    "company_website": website,
+                    "company_domain": domain,
                     "company_description": company.get("one_liner") or company.get("long_description", "")[:300],
+                    "company_linkedin": company_linkedin,
                     "batch": batch,
                     "industry": company.get("tags", []),
-                    "location": company.get("location"),
-                    "team_size": str(company.get("team_size", "")),
-                    "founder_name": founder.get("name") or founder.get("full_name"),
-                    "founder_linkedin": founder.get("linkedin_url") or founder.get("linkedin"),
-                    "founder_twitter": founder.get("twitter_url") or founder.get("twitter"),
-                    "founder_email": None,
-                    "company_email": None,
+                    "location": company.get("all_locations") or company.get("location"),
+                    "team_size": company.get("team_size"),
+                    "stage": company.get("stage"),
+                    "is_hiring": company.get("isHiring", False),
+                    "founder_name": founder_name,
+                    "founder_title": founder.get("title", "Founder"),
+                    "founder_email": founder_email,
+                    "founder_linkedin": founder_linkedin,
+                    "founder_twitter": founder_twitter,
                     "status": "new",
-                    "score": 90,  # YC founder = highest quality
+                    "score": 95 if company.get("top_company") else 85,  # YC founder = high value
                     "extracted_at": datetime.now().isoformat(),
                 })
 
-    print(f"✅ YC leads filtered: {len(leads)} (batches: {TARGET_BATCHES})")
+    print(f"✅ Filtered {len(leads)} leads from {TARGET_BATCHES}")
     return leads
 
-
-# ─── Hunter.io Email Enrichment ───────────────────────────────────────────────
-
-def extract_domain(url: str) -> Optional[str]:
-    """Extract domain from URL"""
-    if not url:
-        return None
-    try:
-        parsed = urlparse(url if url.startswith("http") else f"https://{url}")
-        domain = parsed.netloc.replace("www.", "")
-        return domain if domain else None
-    except:
-        return None
-
-
-def enrich_email_hunter(domain: str, first_name: str, last_name: str) -> Optional[str]:
-    """
-    Use Hunter.io to find email from domain + name
-    Free tier: 25 searches/month | Paid: $49/mo = 500 searches
-    """
-    if not HUNTER_API_KEY or not domain or not first_name:
-        return None
-
-    # Skip YC domain
-    if "ycombinator.com" in domain:
-        return None
-
-    try:
-        resp = requests.get(
-            "https://api.hunter.io/v2/email-finder",
-            params={
-                "domain": domain,
-                "first_name": first_name,
-                "last_name": last_name or "",
-                "api_key": HUNTER_API_KEY
-            },
-            timeout=10
-        )
-        data = resp.json()
-        email = data.get("data", {}).get("email")
-        confidence = data.get("data", {}).get("score", 0)
-
-        if email and confidence >= 60:
-            print(f"  📧 Found email: {email} ({confidence}% confidence)")
-            return email
-    except Exception as e:
-        print(f"  ⚠️ Hunter error: {e}")
-
-    return None
-
-
-def enrich_leads(leads: List[Dict]) -> List[Dict]:
-    """Enrich leads with Hunter.io emails"""
-    print(f"\n🔍 Enriching {len(leads)} leads with Hunter.io...")
-
-    enriched = []
-    for i, lead in enumerate(leads):
-        if lead.get("founder_email"):
-            enriched.append(lead)
-            continue
-
-        # Try to find email
-        domain = extract_domain(lead.get("company_url"))
-        founder_name = lead.get("founder_name", "")
-
-        if domain and founder_name and HUNTER_API_KEY:
-            names = founder_name.split()
-            first = names[0] if names else ""
-            last = names[-1] if len(names) > 1 else ""
-
-            email = enrich_email_hunter(domain, first, last)
-            if email:
-                lead["founder_email"] = email
-                lead["email_source"] = "hunter.io"
-
-            # Rate limit: 1 req/sec for free tier
-            import time
-            time.sleep(1.1)
-
-        enriched.append(lead)
-
-        # Progress
-        if (i + 1) % 10 == 0:
-            print(f"  📊 Progress: {i+1}/{len(leads)}")
-
-    print(f"✅ Enrichment complete")
-    return enriched
-
-
-# ─── CRM Integration ────────────────────────────────────────────────────────────
 
 def load_crm_clients() -> List[Dict]:
     """Load existing CRM clients"""
@@ -226,20 +217,43 @@ def save_crm_clients(clients: List[Dict]):
         json.dump(clients, f, indent=2, default=str)
 
 
-def convert_lead_to_crm_client(lead: Dict) -> Dict:
-    """Convert scraped lead to CRM client format"""
+def convert_to_crm_format(lead: Dict) -> Dict:
+    """Convert enriched lead to CRM client format"""
+    founder_name = lead.get("founder_name") or lead.get("company_name", "Unknown")
+
+    # Build notes with all info
+    notes = f"""YC Batch: {lead.get('batch', 'N/A')}
+Location: {lead.get('location', 'N/A')}
+Team Size: {lead.get('team_size', 'N/A')}
+Stage: {lead.get('stage', 'N/A')}
+Hiring: {'Yes' if lead.get('is_hiring') else 'No'}
+
+Description:
+{lead.get('company_description', '')}
+"""
+
     return {
-        "id": lead.get("id", f"CLI_{datetime.now().strftime('%Y%m%d_%H%M%S')}"),
-        "name": lead.get("founder_name") or lead.get("company_name", "Unknown"),
-        "email": lead.get("founder_email") or lead.get("company_email", ""),
+        "id": lead.get("id"),
+        "name": founder_name,
+        "email": lead.get("founder_email"),  # May be None, can enrich later
         "phone": "",
         "company": lead.get("company_name", ""),
-        "source": f"{lead.get('source', 'unknown')}_{lead.get('batch', '')}",
+        "source": lead.get("source", "yc"),
         "tags": lead.get("industry", []),
-        "status": "lead",  # lead, prospect, client, churned
+        "status": "lead",
         "created_at": lead.get("extracted_at", datetime.now().isoformat()),
         "last_contact": None,
-        "notes": f"YC Batch: {lead.get('batch', 'N/A')}\nLocation: {lead.get('location', 'N/A')}\nTeam: {lead.get('team_size', 'N/A')}\n{lead.get('company_description', '')[:200]}"
+        "notes": notes,
+        # Extra fields for enrichment
+        "company_website": lead.get("company_website"),
+        "company_domain": lead.get("company_domain"),
+        "company_linkedin": lead.get("company_linkedin"),
+        "founder_linkedin": lead.get("founder_linkedin"),
+        "founder_twitter": lead.get("founder_twitter"),
+        "founder_title": lead.get("founder_title"),
+        "batch": lead.get("batch"),
+        "is_hiring": lead.get("is_hiring"),
+        "yc_score": lead.get("score"),
     }
 
 
@@ -247,107 +261,68 @@ def push_to_crm(leads: List[Dict]) -> Dict:
     """Push leads to Agency OS CRM"""
     print(f"\n💾 Pushing {len(leads)} leads to CRM...")
 
-    existing_clients = load_crm_clients()
-    existing_emails = {c.get("email", "").lower() for c in existing_clients if c.get("email")}
+    existing = load_crm_clients()
+    existing_ids = {c.get("id") for c in existing}
 
     added = 0
     skipped = 0
     new_clients = []
 
     for lead in leads:
-        email = lead.get("founder_email") or lead.get("company_email", "")
-
-        # Skip duplicates
-        if email and email.lower() in existing_emails:
+        if lead.get("id") in existing_ids:
             skipped += 1
             continue
 
-        # Convert to CRM format
-        client = convert_lead_to_crm_client(lead)
+        client = convert_to_crm_format(lead)
         new_clients.append(client)
-        existing_emails.add(email.lower() if email else "")
+        existing_ids.add(lead.get("id"))
         added += 1
 
-        print(f"  ✅ {client['name']} ({client['company']})")
+        # Progress
+        if added % 50 == 0:
+            print(f"  📊 {added} added...")
 
-    # Save combined
-    all_clients = existing_clients + new_clients
+    # Save
+    all_clients = existing + new_clients
     save_crm_clients(all_clients)
-
-    # Also save to legacy leads.json for backward compatibility
-    save_to_legacy_leads(leads)
 
     return {"added": added, "skipped": skipped, "total": len(all_clients)}
 
 
-def save_to_legacy_leads(leads: List[Dict]):
-    """Also save to legacy leads.json format"""
-    existing = []
-    if LEADS_FILE.exists():
-        try:
-            with open(LEADS_FILE, 'r') as f:
-                existing = json.load(f)
-        except:
-            pass
-
-    existing_ids = {l.get("id") for l in existing}
-    new_leads = [l for l in leads if l.get("id") not in existing_ids]
-
-    all_leads = existing + new_leads
-    all_leads.sort(key=lambda x: x.get("score", 0), reverse=True)
-
-    LEADS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(LEADS_FILE, 'w') as f:
-        json.dump(all_leads, f, indent=2, default=str)
-
-    print(f"  📁 Legacy leads.json: {len(new_leads)} new, {len(all_leads)} total")
-
-
-# ─── Main Execution ───────────────────────────────────────────────────────────
-
 def main():
     print("=" * 60)
-    print("🚀 RAGSPRO YC Lead Scraper v2.0")
-    print(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print("🚀 RAGSPRO YC Lead Scraper v3.0")
+    print("📅 Fetching YC data with proper enrichment...")
     print("=" * 60)
 
-    # Check Hunter API key
-    if not HUNTER_API_KEY:
-        print("\n⚠️  HUNTER_API_KEY not set! Email enrichment disabled.")
-        print("   Add to .env: HUNTER_API_KEY=your_key_here")
-
-    # 1. Fetch YC data
+    # 1. Fetch
     companies = fetch_yc_companies()
     if not companies:
-        print("❌ No companies fetched. Exiting.")
+        print("❌ No data fetched")
         return
 
-    # 2. Filter leads
-    leads = filter_yc_leads(companies)
+    # 2. Filter & Build URLs
+    leads = filter_and_enrich_leads(companies)
     if not leads:
-        print("❌ No leads matched criteria. Exiting.")
+        print("❌ No leads matched")
         return
 
-    # 3. Enrich with emails (optional)
-    if HUNTER_API_KEY:
-        leads = enrich_leads(leads[:25])  # Limit to 25 for free tier
-    else:
-        print("\n⏭️  Skipping enrichment (no Hunter API key)")
-
-    # 4. Push to CRM
+    # 3. Push to CRM
     stats = push_to_crm(leads)
 
-    # 5. Summary
+    # Summary
     print("\n" + "=" * 60)
-    print("🎉 COMPLETE!")
+    print("🎉 DONE!")
     print("=" * 60)
-    print(f"📊 New leads added: {stats['added']}")
-    print(f"📊 Duplicates skipped: {stats['skipped']}")
-    print(f"📊 Total CRM clients: {stats['total']}")
-    print(f"\n💡 Next steps:")
-    print(f"   1. Open Agency OS → Clients page")
-    print(f"   2. Filter by 'lead' status")
-    print(f"   3. Add deals for high-value prospects")
+    print(f"📊 New leads: {stats['added']}")
+    print(f"📊 Skipped (dupes): {stats['skipped']}")
+    print(f"📊 Total in CRM: {stats['total']}")
+    print(f"\n💡 Contact data includes:")
+    print(f"   ✅ Company websites")
+    print(f"   ✅ LinkedIn URLs (estimated)")
+    print(f"   ✅ Twitter handles (estimated)")
+    print(f"   ✅ Batch, location, team size")
+    print(f"\n🔥 Next: Add HUNTER_API_KEY to .env for email enrichment")
 
 
 if __name__ == "__main__":

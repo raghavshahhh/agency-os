@@ -1,6 +1,71 @@
 {
-  "entries": [],
+  "entries": [
+    {
+      "date": "2026-04-01",
+      "type": "income",
+      "amount": 25000,
+      "source": "AI Agent",
+      "client": "Client 1",
+      "description": "Payment received",
+      "recurring": false
+    },
+    {
+      "date": "2026-03-31",
+      "type": "income",
+      "amount": 5000,
+      "source": "Freelance",
+      "client": "Client 2",
+      "description": "Payment received",
+      "recurring": true
+    },
+    {
+      "date": "2026-03-27",
+      "type": "income",
+      "amount": 5000,
+      "source": "AI Agent",
+      "client": "Client 6",
+      "description": "Payment received",
+      "recurring": false
+    },
+    {
+      "date": "2026-03-26",
+      "type": "income",
+      "amount": 5000,
+      "source": "Freelance",
+      "client": "Client 7",
+      "description": "Payment received",
+      "recurring": false
+    },
+    {
+      "date": "2026-03-25",
+      "type": "income",
+      "amount": 25000,
+      "source": "LAW AI",
+      "client": "Client 8",
+      "description": "Payment received",
+      "recurring": false
+    },
+    {
+      "date": "2026-03-13",
+      "type": "income",
+      "amount": 9999,
+      "source": "Freelance",
+      "client": "Client 20",
+      "description": "Payment received",
+      "recurring": true
+    },
+    {
+      "date": "2026-03-07",
+      "type": "income",
+      "amount": 9999,
+      "source": "AI Agent",
+      "client": "Client 26",
+      "description": "Payment received",
+      "recurring": true
+    }
+  ],
   "goals": {
-    "monthly": 100000
+    "monthly": 50000,
+    "current_mrr": 24998
   }
 }

@@ -1,0 +1,7017 @@
+[
+  {
+    "id": "client-001",
+    "name": "Sample Client",
+    "email": "client@example.com",
+    "phone": "",
+    "company": "Acme Corp",
+    "source": "Unknown",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2025-03-30T10:00:00Z",
+    "last_contact": null,
+    "notes": ""
+  },
+  {
+    "id": "yc_28922",
+    "name": "Egress Health",
+    "email": null,
+    "phone": "",
+    "company": "Egress Health",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.171961",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAutomated revenue cycle management, starting with dentists"
+  },
+  {
+    "id": "yc_29251",
+    "name": "Poka Labs",
+    "email": null,
+    "phone": "",
+    "company": "Poka Labs",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Supply Chain",
+      "AI",
+      "Industrial"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172074",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe modern operating system for chemical manufacturing."
+  },
+  {
+    "id": "yc_29296",
+    "name": "Simplex",
+    "email": null,
+    "phone": "",
+    "company": "Simplex",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Robotic Process Automation",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172099",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nProduction-grade web agents."
+  },
+  {
+    "id": "yc_29327",
+    "name": "Central",
+    "email": null,
+    "phone": "",
+    "company": "Central",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "B2B",
+      "HR Tech",
+      "Payroll",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172120",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 15\nPayroll, benefits, state compliance & other bullsh*t for startups"
+  },
+  {
+    "id": "yc_29349",
+    "name": "Fuse",
+    "email": null,
+    "phone": "",
+    "company": "Fuse",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Payments",
+      "B2B",
+      "Healthcare"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172134",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI helpers for patient intake and benefits checks"
+  },
+  {
+    "id": "yc_29387",
+    "name": "Overeasy",
+    "email": null,
+    "phone": "",
+    "company": "Overeasy",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172159",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\n"
+  },
+  {
+    "id": "yc_29406",
+    "name": "ACX",
+    "email": null,
+    "phone": "",
+    "company": "ACX",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Synthetic Biology",
+      "Biotech",
+      "Healthcare",
+      "Agriculture",
+      "Drug discovery"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172173",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nNext-generation biocides for sustainable agriculture at scale"
+  },
+  {
+    "id": "yc_29412",
+    "name": "Ligo Biosciences",
+    "email": null,
+    "phone": "",
+    "company": "Ligo Biosciences",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Deep Learning",
+      "Synthetic Biology",
+      "Biotech",
+      "Climate"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172181",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nEnzyme design models."
+  },
+  {
+    "id": "yc_29474",
+    "name": "Spur",
+    "email": null,
+    "phone": "",
+    "company": "Spur",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172214",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 8\nSpur is your AI QA Engineer. Test your websites with natural language."
+  },
+  {
+    "id": "yc_29475",
+    "name": "Evolvere BioSciences",
+    "email": null,
+    "phone": "",
+    "company": "Evolvere BioSciences",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AI-powered Drug Discovery",
+      "Artificial Intelligence",
+      "Biotech",
+      "Therapeutics",
+      "Biotechnology"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172219",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nMaking Next-Generation Antibiotics that Outpace Bacterial Evolution"
+  },
+  {
+    "id": "yc_29524",
+    "name": "Coval",
+    "email": null,
+    "phone": "",
+    "company": "Coval",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172242",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nSimulation & Evaluation for Voice and Chat Agents"
+  },
+  {
+    "id": "yc_29532",
+    "name": "\u00c5ngstr\u00f6m AI",
+    "email": null,
+    "phone": "",
+    "company": "\u00c5ngstr\u00f6m AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AI-powered Drug Discovery",
+      "Artificial Intelligence",
+      "Biotech",
+      "Drug discovery",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172247",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nGen AI molecular simulations that reproduce wetlab results"
+  },
+  {
+    "id": "yc_29557",
+    "name": "Ultra",
+    "email": null,
+    "phone": "",
+    "company": "Ultra",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Robotics",
+      "Logistics",
+      "AI",
+      "Industrial"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172252",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nPractical, general-purpose robots for repetitive industrial tasks"
+  },
+  {
+    "id": "yc_29558",
+    "name": "Abel Police",
+    "email": null,
+    "phone": "",
+    "company": "Abel Police",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172255",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAutomating police paperwork"
+  },
+  {
+    "id": "yc_29568",
+    "name": "Roger",
+    "email": null,
+    "phone": "",
+    "company": "Roger",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172258",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nRoger is an AI SDR that automates outbound sales and follows up 24/7."
+  },
+  {
+    "id": "yc_29569",
+    "name": "Miru",
+    "email": null,
+    "phone": "",
+    "company": "Miru",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Robotics",
+      "DevOps"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172262",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nConfig Management for Robotics"
+  },
+  {
+    "id": "yc_29570",
+    "name": "Spherecast",
+    "email": null,
+    "phone": "",
+    "company": "Spherecast",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172265",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI Supply Chain Manager for CPG"
+  },
+  {
+    "id": "yc_29571",
+    "name": "Apten",
+    "email": null,
+    "phone": "",
+    "company": "Apten",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Sales",
+      "Marketing",
+      "SMS",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172269",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nOmnichannel AI agents that engage leads across SMS, voice, and email"
+  },
+  {
+    "id": "yc_29572",
+    "name": "Domu Technology Inc.",
+    "email": null,
+    "phone": "",
+    "company": "Domu Technology Inc.",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Call Center",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172273",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 15\nAI Agents for collections"
+  },
+  {
+    "id": "yc_29573",
+    "name": "Undermind",
+    "email": null,
+    "phone": "",
+    "company": "Undermind",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Machine Learning",
+      "Biotech",
+      "Search",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172277",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: None\nAn AI agent for scientific research"
+  },
+  {
+    "id": "yc_29574",
+    "name": "Superunit",
+    "email": null,
+    "phone": "",
+    "company": "Superunit",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "HR Tech",
+      "Enterprise Software"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172288",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nFaster, more profitable background checks with AI"
+  },
+  {
+    "id": "yc_29575",
+    "name": "Doublezero",
+    "email": null,
+    "phone": "",
+    "company": "Doublezero",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Infrastructure",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172293",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nPlatform to build, use, and monetize fully autonomous agents"
+  },
+  {
+    "id": "yc_29579",
+    "name": "Understood Care",
+    "email": null,
+    "phone": "",
+    "company": "Understood Care",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Health Tech",
+      "Healthcare",
+      "Health Insurance",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172298",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nHealthcare personal assistants for Medicare patients."
+  },
+  {
+    "id": "yc_29582",
+    "name": "Cheers",
+    "email": null,
+    "phone": "",
+    "company": "Cheers",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Analytics",
+      "Feedback",
+      "AI",
+      "Reviews"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172302",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nWin local search on ChatGPT & other LLMs"
+  },
+  {
+    "id": "yc_29585",
+    "name": "Mem0",
+    "email": null,
+    "phone": "",
+    "company": "Mem0",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Generative AI",
+      "Open Source",
+      "Infrastructure"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172306",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nThe Memory layer for your AI apps"
+  },
+  {
+    "id": "yc_29586",
+    "name": "Glasskube",
+    "email": null,
+    "phone": "",
+    "company": "Glasskube",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172309",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nSoftware Distribution Platform for On-Prem, Kubernetes, Docker & BYOC"
+  },
+  {
+    "id": "yc_29588",
+    "name": "Saphira AI",
+    "email": null,
+    "phone": "",
+    "company": "Saphira AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hardware",
+      "Robotics",
+      "Compliance",
+      "Enterprise"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172314",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nVanta for Hardware"
+  },
+  {
+    "id": "yc_29589",
+    "name": "Theseus",
+    "email": null,
+    "phone": "",
+    "company": "Theseus",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Drones"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172317",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nGPS Denied Navigation for Drones"
+  },
+  {
+    "id": "yc_29591",
+    "name": "Synnax",
+    "email": null,
+    "phone": "",
+    "company": "Synnax",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172320",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nUnified Hardware Control and Data Processing Software"
+  },
+  {
+    "id": "yc_29596",
+    "name": "Comfy Deploy",
+    "email": null,
+    "phone": "",
+    "company": "Comfy Deploy",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Media"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172323",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nComfyUI for everyone on your team"
+  },
+  {
+    "id": "yc_29597",
+    "name": "Spaceium Inc",
+    "email": null,
+    "phone": "",
+    "company": "Spaceium Inc",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Hard Tech",
+      "Robotics",
+      "Space Exploration",
+      "Aerospace"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172328",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: None\nIn-Space Refueling"
+  },
+  {
+    "id": "yc_29605",
+    "name": "Educato",
+    "email": null,
+    "phone": "",
+    "company": "Educato",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Education",
+      "Edtech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172332",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI-Powered Worldwide exam-prep platform"
+  },
+  {
+    "id": "yc_29607",
+    "name": "ProhostAI",
+    "email": null,
+    "phone": "",
+    "company": "ProhostAI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Travel",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172335",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI Property Manager for Airbnb & Short-Term Rental Hosts"
+  },
+  {
+    "id": "yc_29608",
+    "name": "Pre",
+    "email": null,
+    "phone": "",
+    "company": "Pre",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Investing",
+      "Feedback",
+      "Operations"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172338",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe AI accountability agent for startup founders"
+  },
+  {
+    "id": "yc_29610",
+    "name": "Hamming AI",
+    "email": null,
+    "phone": "",
+    "company": "Hamming AI",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172341",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 8\nAutomated voice AI agent testing and monitoring"
+  },
+  {
+    "id": "yc_29611",
+    "name": "mdhub",
+    "email": null,
+    "phone": "",
+    "company": "mdhub",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172344",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 11\nAI workers for healthcare clinics, starting with behavioral health"
+  },
+  {
+    "id": "yc_29613",
+    "name": "ClaimSorted",
+    "email": null,
+    "phone": "",
+    "company": "ClaimSorted",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172347",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 20\nMaking it easy for insurance companies to process claims"
+  },
+  {
+    "id": "yc_29623",
+    "name": "Entangl",
+    "email": null,
+    "phone": "",
+    "company": "Entangl",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Aerospace",
+      "Enterprise Software",
+      "Automation",
+      "Automotive"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172351",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nFind & resolve issues in data center engineering & operations using AI"
+  },
+  {
+    "id": "yc_29627",
+    "name": "Codes Health",
+    "email": null,
+    "phone": "",
+    "company": "Codes Health",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Health Tech",
+      "B2B",
+      "Healthcare",
+      "LegalTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172354",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nPerfect medical histories. "
+  },
+  {
+    "id": "yc_29633",
+    "name": "Unsloth AI",
+    "email": null,
+    "phone": "",
+    "company": "Unsloth AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "Open Source",
+      "Infrastructure",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172359",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 8\nOpen-Source Reinforcement Learning (RL) & Fine-tuning for LLMs."
+  },
+  {
+    "id": "yc_29634",
+    "name": "Random Labs",
+    "email": null,
+    "phone": "",
+    "company": "Random Labs",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Open Source",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172363",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: None\nRandom labs is building long running autonomous coding agents."
+  },
+  {
+    "id": "yc_29635",
+    "name": "DigitalCarbon",
+    "email": null,
+    "phone": "",
+    "company": "DigitalCarbon",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Computer Vision",
+      "Real Estate",
+      "B2B",
+      "E-commerce",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172366",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 0\nTransform Images And Videos Into Immersive 3D With AI"
+  },
+  {
+    "id": "yc_29636",
+    "name": "Bayesline",
+    "email": null,
+    "phone": "",
+    "company": "Bayesline",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Finance",
+      "B2B",
+      "Analytics",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172369",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nHighly customizable and blazingly fast analytics for asset managers."
+  },
+  {
+    "id": "yc_29637",
+    "name": "Flyflow",
+    "email": null,
+    "phone": "",
+    "company": "Flyflow",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172372",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe easiest way to find high-quality sales leads"
+  },
+  {
+    "id": "yc_29639",
+    "name": "Callback",
+    "email": null,
+    "phone": "",
+    "company": "Callback",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "B2B",
+      "Automation",
+      "Operations"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172376",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI-native business process outsourcing"
+  },
+  {
+    "id": "yc_29640",
+    "name": "Tabula",
+    "email": null,
+    "phone": "",
+    "company": "Tabula",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172380",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI Copilot for SMEs & their accountants in Europe"
+  },
+  {
+    "id": "yc_29641",
+    "name": "Invaria",
+    "email": null,
+    "phone": "",
+    "company": "Invaria",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "DevOps"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172384",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe next generation logging and observability platform"
+  },
+  {
+    "id": "yc_29642",
+    "name": "Stack Auth",
+    "email": null,
+    "phone": "",
+    "company": "Stack Auth",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172388",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nThe open-source Auth0 alternative"
+  },
+  {
+    "id": "yc_29643",
+    "name": "Sage",
+    "email": null,
+    "phone": "",
+    "company": "Sage",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Automation",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172391",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAutomating home care agency operations with AI"
+  },
+  {
+    "id": "yc_29644",
+    "name": "VideoGen",
+    "email": null,
+    "phone": "",
+    "company": "VideoGen",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172394",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI that can create and edit professional videos"
+  },
+  {
+    "id": "yc_29645",
+    "name": "Phonely",
+    "email": null,
+    "phone": "",
+    "company": "Phonely",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172397",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nAI call centers "
+  },
+  {
+    "id": "yc_29646",
+    "name": "Corgi Insurance",
+    "email": null,
+    "phone": "",
+    "company": "Corgi Insurance",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Insurance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172401",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 70\nCorgi is building an AI financial infrastructure company"
+  },
+  {
+    "id": "yc_29647",
+    "name": "Maitai",
+    "email": null,
+    "phone": "",
+    "company": "Maitai",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Enterprise",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172405",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nReliable, self-improving enterprise AI"
+  },
+  {
+    "id": "yc_29649",
+    "name": "Wordware",
+    "email": null,
+    "phone": "",
+    "company": "Wordware",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Infrastructure"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172410",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 15\nAI agents you can rely on"
+  },
+  {
+    "id": "yc_29650",
+    "name": "Sorcerer",
+    "email": null,
+    "phone": "",
+    "company": "Sorcerer",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hard Tech",
+      "Hardware",
+      "Climate",
+      "Aerospace"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172414",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nBuilding a nervous system for the atmosphere"
+  },
+  {
+    "id": "yc_29651",
+    "name": "FirstWork",
+    "email": null,
+    "phone": "",
+    "company": "FirstWork",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Human Resources",
+      "Workflow Automation",
+      "Compliance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172417",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 9\nRippling for seasonal workers"
+  },
+  {
+    "id": "yc_29653",
+    "name": "ideate.xyz",
+    "email": null,
+    "phone": "",
+    "company": "ideate.xyz",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "SaaS",
+      "Gaming"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172420",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nideate.xyz is an AI-powered 3D art suite on the web"
+  },
+  {
+    "id": "yc_29654",
+    "name": "Stardrift",
+    "email": null,
+    "phone": "",
+    "company": "Stardrift",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Consumer",
+      "Travel"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172424",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI travel search for frequent flyers"
+  },
+  {
+    "id": "yc_29655",
+    "name": "Decisional AI",
+    "email": null,
+    "phone": "",
+    "company": "Decisional AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172427",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAutonomous AI agents for spreadsheet based operations"
+  },
+  {
+    "id": "yc_29657",
+    "name": "Azalea Robotics Corporation",
+    "email": null,
+    "phone": "",
+    "company": "Azalea Robotics Corporation",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172431",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAutomating airport baggage handling with robots."
+  },
+  {
+    "id": "yc_29658",
+    "name": "RetroFix",
+    "email": null,
+    "phone": "",
+    "company": "RetroFix",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Workflow Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172434",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAutomate any workflow using plain english"
+  },
+  {
+    "id": "yc_29659",
+    "name": "Unbound",
+    "email": null,
+    "phone": "",
+    "company": "Unbound",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Privacy",
+      "Cybersecurity",
+      "Data Labeling"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172438",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nUse AI tools without fear of data leakage"
+  },
+  {
+    "id": "yc_29660",
+    "name": "Hyrex",
+    "email": null,
+    "phone": "",
+    "company": "Hyrex",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Developer Tools",
+      "Cloud Computing",
+      "Infrastructure"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172442",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe COLD Task Framework"
+  },
+  {
+    "id": "yc_29661",
+    "name": "Silurian",
+    "email": null,
+    "phone": "",
+    "company": "Silurian",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Climate",
+      "Insurance",
+      "Agriculture",
+      "Energy"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172446",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nFoundation models to simulate Earth, starting with weather."
+  },
+  {
+    "id": "yc_29663",
+    "name": "NetworkOcean",
+    "email": null,
+    "phone": "",
+    "company": "NetworkOcean",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hard Tech",
+      "Hardware",
+      "Cloud Computing",
+      "ClimateTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172452",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nWe build and operate underwater data centers."
+  },
+  {
+    "id": "yc_29665",
+    "name": "Cloudglue",
+    "email": null,
+    "phone": "",
+    "company": "Cloudglue",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Machine Learning",
+      "Video"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172456",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nDeveloper APIs to let your AI/LLM understand videos and audio."
+  },
+  {
+    "id": "yc_29667",
+    "name": "Rewbi",
+    "email": null,
+    "phone": "",
+    "company": "Rewbi",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Energy Storage",
+      "B2B",
+      "Energy",
+      "Renewable Energy",
+      "ClimateTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172460",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nRewbi uses AI to increase grid-connected battery storage revenue 2x"
+  },
+  {
+    "id": "yc_29668",
+    "name": "Proxis",
+    "email": null,
+    "phone": "",
+    "company": "Proxis",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Productivity",
+      "Email",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172463",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe platform for enterprise AI agent automations, starting with email."
+  },
+  {
+    "id": "yc_29670",
+    "name": "Zuni",
+    "email": null,
+    "phone": "",
+    "company": "Zuni",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "Productivity",
+      "Email",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172467",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI Assistant that works alongside you in your Chrome browser"
+  },
+  {
+    "id": "yc_29671",
+    "name": "Scape",
+    "email": null,
+    "phone": "",
+    "company": "Scape",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "SaaS",
+      "API",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172470",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI-native CRM that captures all your conversations"
+  },
+  {
+    "id": "yc_29672",
+    "name": "DeepSim, Inc.",
+    "email": null,
+    "phone": "",
+    "company": "DeepSim, Inc.",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "B2B",
+      "Semiconductors",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172477",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAn AI physics simulator for AI chip design"
+  },
+  {
+    "id": "yc_29673",
+    "name": "Storia AI",
+    "email": null,
+    "phone": "",
+    "company": "Storia AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Machine Learning",
+      "SaaS"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172480",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nOpen source AI copilot that knows your company's code and its context"
+  },
+  {
+    "id": "yc_29675",
+    "name": "Offstream",
+    "email": null,
+    "phone": "",
+    "company": "Offstream",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172483",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nVanta for carbon compliance"
+  },
+  {
+    "id": "yc_29676",
+    "name": "Elevate",
+    "email": null,
+    "phone": "",
+    "company": "Elevate",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Artificial Intelligence",
+      "Finance",
+      "B2B",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172486",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAutomated AI data integrations for roll-ups"
+  },
+  {
+    "id": "yc_29678",
+    "name": "Lucible",
+    "email": null,
+    "phone": "",
+    "company": "Lucible",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Investing",
+      "Neobank"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172489",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nCombined checking and investment account"
+  },
+  {
+    "id": "yc_29679",
+    "name": "Dodo",
+    "email": null,
+    "phone": "",
+    "company": "Dodo",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172492",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI Employees for Specialty Clinics"
+  },
+  {
+    "id": "yc_29680",
+    "name": "Ares Industries",
+    "email": null,
+    "phone": "",
+    "company": "Ares Industries",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Aerospace",
+      "Industrial"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172496",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nBuilding low-cost cruise missiles "
+  },
+  {
+    "id": "yc_29682",
+    "name": "RunLocal AI",
+    "email": null,
+    "phone": "",
+    "company": "RunLocal AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "ML"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172503",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe On-Device AI Development Platform "
+  },
+  {
+    "id": "yc_29683",
+    "name": "CodeViz",
+    "email": null,
+    "phone": "",
+    "company": "CodeViz",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Productivity"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172507",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nOne living model of your software architecture"
+  },
+  {
+    "id": "yc_29684",
+    "name": "Parahelp",
+    "email": null,
+    "phone": "",
+    "company": "Parahelp",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172510",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nThe AI support agent that manages itself"
+  },
+  {
+    "id": "yc_29685",
+    "name": "Lore",
+    "email": null,
+    "phone": "",
+    "company": "Lore",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Consumer"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172514",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nTransform your iMessage conversations into shareable stories"
+  },
+  {
+    "id": "yc_29686",
+    "name": "Snowpilot",
+    "email": null,
+    "phone": "",
+    "company": "Snowpilot",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "B2B",
+      "Big Data",
+      "Data Engineering",
+      "AI",
+      "Databases"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172517",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe connected spreadsheet that destroys data silos"
+  },
+  {
+    "id": "yc_29687",
+    "name": "MinusX",
+    "email": null,
+    "phone": "",
+    "company": "MinusX",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Machine Learning",
+      "Analytics",
+      "Data Science",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172521",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI Data Scientist for Jupyter and Metabase"
+  },
+  {
+    "id": "yc_29688",
+    "name": "camfer",
+    "email": null,
+    "phone": "",
+    "company": "camfer",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "Hardware",
+      "Productivity",
+      "Manufacturing",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172525",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nBuilding the world\u2019s first AI mechanical engineer."
+  },
+  {
+    "id": "yc_29689",
+    "name": "Tivara",
+    "email": null,
+    "phone": "",
+    "company": "Tivara",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Healthcare"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172528",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe AI workforce for medical groups"
+  },
+  {
+    "id": "yc_29690",
+    "name": "Kenley",
+    "email": null,
+    "phone": "",
+    "company": "Kenley",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Finance",
+      "Productivity"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172533",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI Agents for Advisory & Financial Services."
+  },
+  {
+    "id": "yc_29691",
+    "name": "Tandem",
+    "email": null,
+    "phone": "",
+    "company": "Tandem",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Marketplace",
+      "Real Estate",
+      "B2B",
+      "Proptech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172536",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 22\nAI-native office leasing agent"
+  },
+  {
+    "id": "yc_29692",
+    "name": "Weave Robotics",
+    "email": null,
+    "phone": "",
+    "company": "Weave Robotics",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172539",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nPersonal robots for the home--that ship in 2025"
+  },
+  {
+    "id": "yc_29693",
+    "name": "Gauge",
+    "email": null,
+    "phone": "",
+    "company": "Gauge",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Analytics",
+      "Marketing",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172542",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nGet your product featured in AI answers."
+  },
+  {
+    "id": "yc_29694",
+    "name": "AminoAnalytica",
+    "email": null,
+    "phone": "",
+    "company": "AminoAnalytica",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AI-powered Drug Discovery",
+      "SaaS",
+      "Synthetic Biology",
+      "Biotech",
+      "Therapeutics"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172545",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe AI-Native Operating System for Protein Engineering"
+  },
+  {
+    "id": "yc_29695",
+    "name": "Dench.com",
+    "email": null,
+    "phone": "",
+    "company": "Dench.com",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Documents",
+      "Artificial Intelligence",
+      "Workflow Automation",
+      "Analytics",
+      "CRM"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172549",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAI Workforce that does it all"
+  },
+  {
+    "id": "yc_29698",
+    "name": "AutoPallet Robotics",
+    "email": null,
+    "phone": "",
+    "company": "AutoPallet Robotics",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Hard Tech",
+      "Machine Learning",
+      "Warehouse Management Tech",
+      "Swarm Robotics",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172553",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nWe make robots that move boxes in warehouses"
+  },
+  {
+    "id": "yc_29699",
+    "name": "Pulse",
+    "email": null,
+    "phone": "",
+    "company": "Pulse",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172556",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 12\nProduction-grade unstructured document extraction"
+  },
+  {
+    "id": "yc_29701",
+    "name": "Plume",
+    "email": null,
+    "phone": "",
+    "company": "Plume",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Real Estate",
+      "Climate",
+      "Renewable Energy",
+      "ClimateTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172559",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nRenewable infrastructure deployment at scale."
+  },
+  {
+    "id": "yc_29702",
+    "name": "LedgerUp",
+    "email": null,
+    "phone": "",
+    "company": "LedgerUp",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Finance",
+      "Billing",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172563",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI agents that handles complex billing and revenue"
+  },
+  {
+    "id": "yc_29703",
+    "name": "dmodel",
+    "email": null,
+    "phone": "",
+    "company": "dmodel",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172567",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nLook inside the model"
+  },
+  {
+    "id": "yc_29704",
+    "name": "Modus",
+    "email": null,
+    "phone": "",
+    "company": "Modus",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Finance",
+      "B2B",
+      "HR Tech",
+      "Operations"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172571",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nUnlock revenue per employee with AI-powered headcount management"
+  },
+  {
+    "id": "yc_29705",
+    "name": "Lighthouz AI",
+    "email": null,
+    "phone": "",
+    "company": "Lighthouz AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Workflow Automation",
+      "Logistics",
+      "Supply Chain"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172573",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAI Agents for AP and AR in Logistics"
+  },
+  {
+    "id": "yc_29706",
+    "name": "Mito Health",
+    "email": null,
+    "phone": "",
+    "company": "Mito Health",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172576",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 8\nBloodwork and personalized insights to help you live longer"
+  },
+  {
+    "id": "yc_29708",
+    "name": "The Synthesis Company",
+    "email": null,
+    "phone": "",
+    "company": "The Synthesis Company",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172579",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\n100x faster scientific evidence synthesis"
+  },
+  {
+    "id": "yc_29709",
+    "name": "Substrate",
+    "email": null,
+    "phone": "",
+    "company": "Substrate",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172582",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nArtificial Intelligence for your medical billing team"
+  },
+  {
+    "id": "yc_29710",
+    "name": "TaxGPT",
+    "email": null,
+    "phone": "",
+    "company": "TaxGPT",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172585",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 28\nAI tax assistant for professionals and businesses"
+  },
+  {
+    "id": "yc_29711",
+    "name": "Fazeshift",
+    "email": null,
+    "phone": "",
+    "company": "Fazeshift",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172588",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 8\nAI agent for Accounts Receivable"
+  },
+  {
+    "id": "yc_29712",
+    "name": "Benchify",
+    "email": null,
+    "phone": "",
+    "company": "Benchify",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Finance",
+      "B2B",
+      "Healthcare",
+      "Insurance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172591",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nExecutable healthcare contracts"
+  },
+  {
+    "id": "yc_29713",
+    "name": "Anthrogen",
+    "email": null,
+    "phone": "",
+    "company": "Anthrogen",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Deep Learning",
+      "Biotech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172595",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nWe're training the next generation of protein foundation models."
+  },
+  {
+    "id": "yc_29714",
+    "name": "Kopra Bio",
+    "email": null,
+    "phone": "",
+    "company": "Kopra Bio",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Gene Therapy",
+      "Synthetic Biology",
+      "Biotech",
+      "Therapeutics",
+      "Oncology"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172600",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nGenetically engineered viruses that teach your immune system to kill\u2026"
+  },
+  {
+    "id": "yc_29715",
+    "name": "Kastle",
+    "email": null,
+    "phone": "",
+    "company": "Kastle",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172603",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI agents for mortgage servicing"
+  },
+  {
+    "id": "yc_29716",
+    "name": "CreativeMode",
+    "email": null,
+    "phone": "",
+    "company": "CreativeMode",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Consumer",
+      "Entertainment",
+      "Gaming"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172609",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nLovable for Minecraft mods"
+  },
+  {
+    "id": "yc_29717",
+    "name": "Conveo",
+    "email": null,
+    "phone": "",
+    "company": "Conveo",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Feedback",
+      "Market Research",
+      "Enterprise Software",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172612",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 24\nConfident decisions in days with AI-led interviews."
+  },
+  {
+    "id": "yc_29719",
+    "name": "Manaflow",
+    "email": null,
+    "phone": "",
+    "company": "Manaflow",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Open Source"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172617",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nBuilding interfaces for managing AI coding agents to do good work"
+  },
+  {
+    "id": "yc_29721",
+    "name": "Panora",
+    "email": null,
+    "phone": "",
+    "company": "Panora",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "API",
+      "Supply Chain",
+      "Infrastructure",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172621",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 1\nTurning messy inboxes into ERP-Ready Data"
+  },
+  {
+    "id": "yc_29723",
+    "name": "Aluna",
+    "email": null,
+    "phone": "",
+    "company": "Aluna",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172625",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nData for biomedical AI"
+  },
+  {
+    "id": "yc_29724",
+    "name": "Ontra Mobility",
+    "email": null,
+    "phone": "",
+    "company": "Ontra Mobility",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Civic Tech",
+      "GovTech",
+      "Climate",
+      "Transportation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172629",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nPlatform for cities to optimize transit "
+  },
+  {
+    "id": "yc_29725",
+    "name": "Promi",
+    "email": null,
+    "phone": "",
+    "company": "Promi",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172632",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nOptimizing ecommerce pricing with dynamic, personalized discounts"
+  },
+  {
+    "id": "yc_29727",
+    "name": "Overstand Labs",
+    "email": null,
+    "phone": "",
+    "company": "Overstand Labs",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Data Science",
+      "Data Engineering",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172637",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nThe on-demand data team for medium-to-large enterprises"
+  },
+  {
+    "id": "yc_29728",
+    "name": "expand.ai",
+    "email": null,
+    "phone": "",
+    "company": "expand.ai",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Infrastructure"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172641",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nTurn any website into an API."
+  },
+  {
+    "id": "yc_29729",
+    "name": "Clearly AI",
+    "email": null,
+    "phone": "",
+    "company": "Clearly AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Security",
+      "Privacy"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172645",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 12\nAutomate security and privacy reviews"
+  },
+  {
+    "id": "yc_29730",
+    "name": "Saturn",
+    "email": null,
+    "phone": "",
+    "company": "Saturn",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Generative AI",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172648",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 18\nCompliance and back office workflows for Wealth Managers."
+  },
+  {
+    "id": "yc_29731",
+    "name": "Zoa Research",
+    "email": null,
+    "phone": "",
+    "company": "Zoa Research",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Data Science",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172652",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nPowerful quantitative forecasting models"
+  },
+  {
+    "id": "yc_29732",
+    "name": "ReactWise",
+    "email": null,
+    "phone": "",
+    "company": "ReactWise",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172655",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI Co-Pilot for Chemical Process Optimization"
+  },
+  {
+    "id": "yc_29733",
+    "name": "1849 bio",
+    "email": null,
+    "phone": "",
+    "company": "1849 bio",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Hard Tech",
+      "Synthetic Biology",
+      "Biotech",
+      "Climate",
+      "Mining"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172661",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nEngineering microbes for miners to unlock billions in trapped metal"
+  },
+  {
+    "id": "yc_29734",
+    "name": "Vibe",
+    "email": null,
+    "phone": "",
+    "company": "Vibe",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "SaaS",
+      "B2B",
+      "Web Development",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172664",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nMaking everyone a software engineer"
+  },
+  {
+    "id": "yc_29735",
+    "name": "FINNY AI",
+    "email": null,
+    "phone": "",
+    "company": "FINNY AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Machine Learning",
+      "Finance",
+      "Sales Enablement",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172668",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nThe OS for independent financial advisors "
+  },
+  {
+    "id": "yc_29736",
+    "name": "MagiCode",
+    "email": null,
+    "phone": "",
+    "company": "MagiCode",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "SaaS",
+      "B2B",
+      "Enterprise Software"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172671",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nA Reliable AI Frontend Engineer"
+  },
+  {
+    "id": "yc_29737",
+    "name": "Hestus, Inc.",
+    "email": null,
+    "phone": "",
+    "company": "Hestus, Inc.",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172674",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAn AI-powered CAD software"
+  },
+  {
+    "id": "yc_29738",
+    "name": "Anara",
+    "email": null,
+    "phone": "",
+    "company": "Anara",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Consumer",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172677",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI for researchers"
+  },
+  {
+    "id": "yc_29739",
+    "name": "Planbase",
+    "email": null,
+    "phone": "",
+    "company": "Planbase",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Health Tech",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172680",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI workforce management for healthcare "
+  },
+  {
+    "id": "yc_29740",
+    "name": "Redouble AI",
+    "email": null,
+    "phone": "",
+    "company": "Redouble AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "B2B",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172683",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nScale human-in-the-loop for AI workflows in regulated industries"
+  },
+  {
+    "id": "yc_29741",
+    "name": "Dimely",
+    "email": null,
+    "phone": "",
+    "company": "Dimely",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172686",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI-Powered Spreadsheet for Billing Automation"
+  },
+  {
+    "id": "yc_29745",
+    "name": "Lumenary",
+    "email": null,
+    "phone": "",
+    "company": "Lumenary",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Finance",
+      "Analytics",
+      "Big Data",
+      "Data Engineering"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172691",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nBuild working software exceedingly fast in Solar"
+  },
+  {
+    "id": "yc_29746",
+    "name": "Drillbit",
+    "email": null,
+    "phone": "",
+    "company": "Drillbit",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Home Services"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172695",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nAutomating Office Work for Residential Contractors."
+  },
+  {
+    "id": "yc_29747",
+    "name": "deepsilicon",
+    "email": null,
+    "phone": "",
+    "company": "deepsilicon",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Edge Computing Semiconductors",
+      "Hard Tech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172699",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nSoftware and hardware to run neural networks faster and cheaper"
+  },
+  {
+    "id": "yc_29748",
+    "name": "Seals AI",
+    "email": null,
+    "phone": "",
+    "company": "Seals AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172702",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAI Employees for Wholesalers & Distributors"
+  },
+  {
+    "id": "yc_29749",
+    "name": "Biocartesian",
+    "email": null,
+    "phone": "",
+    "company": "Biocartesian",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Hard Tech",
+      "B2B",
+      "Biotech",
+      "Diagnostics",
+      "Drug discovery"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172705",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nConverting biology into digital molecular maps"
+  },
+  {
+    "id": "yc_29750",
+    "name": "winfunc",
+    "email": null,
+    "phone": "",
+    "company": "winfunc",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Security",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172708",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nai-native security engineering for mission critical codebases"
+  },
+  {
+    "id": "yc_29751",
+    "name": "Opslane",
+    "email": null,
+    "phone": "",
+    "company": "Opslane",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Open Source",
+      "Enterprise",
+      "DevOps",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172713",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 1\nDeploy to Kubernetes in minutes"
+  },
+  {
+    "id": "yc_29753",
+    "name": "Autumn Labs",
+    "email": null,
+    "phone": "",
+    "company": "Autumn Labs",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Hardware",
+      "Robotic Process Automation",
+      "SaaS",
+      "Robotics",
+      "Manufacturing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172716",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nDatadog for industrial robots"
+  },
+  {
+    "id": "yc_29754",
+    "name": "Conductor Quantum",
+    "email": null,
+    "phone": "",
+    "company": "Conductor Quantum",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hard Tech",
+      "Machine Learning",
+      "Quantum Computing",
+      "Semiconductors"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172720",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nQuantum computers on silicon chips using AI."
+  },
+  {
+    "id": "yc_29755",
+    "name": "Pax",
+    "email": null,
+    "phone": "",
+    "company": "Pax",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172723",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI Broker for Tariff Refunds"
+  },
+  {
+    "id": "yc_29756",
+    "name": "Stempad",
+    "email": null,
+    "phone": "",
+    "company": "Stempad",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172726",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 1\nNotion for science"
+  },
+  {
+    "id": "yc_29758",
+    "name": "BeeBettor",
+    "email": null,
+    "phone": "",
+    "company": "BeeBettor",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172729",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nRobinhood for sports prediction markets"
+  },
+  {
+    "id": "yc_29759",
+    "name": "David AI",
+    "email": null,
+    "phone": "",
+    "company": "David AI",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172731",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nData for audio AI"
+  },
+  {
+    "id": "yc_29760",
+    "name": "Mage Legal",
+    "email": null,
+    "phone": "",
+    "company": "Mage Legal",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Legal",
+      "LegalTech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172735",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAutomatic AI Legal Diligence"
+  },
+  {
+    "id": "yc_29761",
+    "name": "Distro",
+    "email": null,
+    "phone": "",
+    "company": "Distro",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Manufacturing",
+      "Supply Chain",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172738",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 11\nThe AI co-pilot for sales reps at industrial wholesale distributors."
+  },
+  {
+    "id": "yc_29762",
+    "name": "Remade",
+    "email": null,
+    "phone": "",
+    "company": "Remade",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "SaaS",
+      "Consumer",
+      "Social Media"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172741",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAI-native canvas for creative workflows."
+  },
+  {
+    "id": "yc_29764",
+    "name": "Zeit AI",
+    "email": null,
+    "phone": "",
+    "company": "Zeit AI",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172749",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nFrom data to enterprise insights in just a few words."
+  },
+  {
+    "id": "yc_29765",
+    "name": "Emergent",
+    "email": null,
+    "phone": "",
+    "company": "Emergent",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Consumer",
+      "No-code"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172753",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: None\nAI app builder that turns your ideas into monetizable software."
+  },
+  {
+    "id": "yc_29766",
+    "name": "Kura AI",
+    "email": null,
+    "phone": "",
+    "company": "Kura AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172756",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nNew State of the Art for Browser Agents"
+  },
+  {
+    "id": "yc_29767",
+    "name": "Thunder Compute",
+    "email": null,
+    "phone": "",
+    "company": "Thunder Compute",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Data Science",
+      "Cloud Computing",
+      "Infrastructure",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172761",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nThe world's cheapest GPU cloud"
+  },
+  {
+    "id": "yc_29768",
+    "name": "Ember Robotics",
+    "email": null,
+    "phone": "",
+    "company": "Ember Robotics",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Robotics",
+      "B2B",
+      "Analytics",
+      "Data Visualization"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172765",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nDatadog for robots"
+  },
+  {
+    "id": "yc_29769",
+    "name": "Pinnacle",
+    "email": null,
+    "phone": "",
+    "company": "Pinnacle",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "B2B",
+      "Sales",
+      "E-commerce",
+      "SMS"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172768",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAPI & SDK for RCS (the next-generation of texting)"
+  },
+  {
+    "id": "yc_29770",
+    "name": "Intryc",
+    "email": null,
+    "phone": "",
+    "company": "Intryc",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Customer Success",
+      "Analytics",
+      "Customer Support",
+      "Operations"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172773",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 14\nIntryc uses AI to automate quality assurance for customer support"
+  },
+  {
+    "id": "yc_29772",
+    "name": "Parley",
+    "email": null,
+    "phone": "",
+    "company": "Parley",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Legal",
+      "LegalTech",
+      "Immigration"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172776",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAutomating flat-fee legal work, starting with work visas + green cards"
+  },
+  {
+    "id": "yc_29773",
+    "name": "Soff",
+    "email": null,
+    "phone": "",
+    "company": "Soff",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Sales",
+      "Manufacturing",
+      "Supply Chain"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172779",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI Agents for Distributors"
+  },
+  {
+    "id": "yc_29774",
+    "name": "Mineflow",
+    "email": null,
+    "phone": "",
+    "company": "Mineflow",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172782",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nMineflow predicts the shape and location of mineral deposits"
+  },
+  {
+    "id": "yc_29775",
+    "name": "Brighterway",
+    "email": null,
+    "phone": "",
+    "company": "Brighterway",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Health Tech",
+      "Healthcare",
+      "LegalTech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172785",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 14\nStreamlining the medical record review process in workers comp"
+  },
+  {
+    "id": "yc_29776",
+    "name": "SchemeFlow",
+    "email": null,
+    "phone": "",
+    "company": "SchemeFlow",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172788",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI Report Generation for Engineering & Environmental Review"
+  },
+  {
+    "id": "yc_29777",
+    "name": "Zettascale",
+    "email": null,
+    "phone": "",
+    "company": "Zettascale",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hardware",
+      "Semiconductors"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172792",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nEnergy efficient chips for AI"
+  },
+  {
+    "id": "yc_29778",
+    "name": "Praxos",
+    "email": null,
+    "phone": "",
+    "company": "Praxos",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Consumer",
+      "AI",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172796",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nYour personal AI companion"
+  },
+  {
+    "id": "yc_29779",
+    "name": "The Forecasting Company",
+    "email": null,
+    "phone": "",
+    "company": "The Forecasting Company",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Supply Chain",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172799",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nFoundation models for time series"
+  },
+  {
+    "id": "yc_29780",
+    "name": "Presti AI",
+    "email": null,
+    "phone": "",
+    "company": "Presti AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "E-commerce",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172802",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 25\nHelping furniture companies create product visuals with AI"
+  },
+  {
+    "id": "yc_29781",
+    "name": "Cerulion",
+    "email": null,
+    "phone": "",
+    "company": "Cerulion",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172805",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nOpen source operating system for robots"
+  },
+  {
+    "id": "yc_29782",
+    "name": "Laminar",
+    "email": null,
+    "phone": "",
+    "company": "Laminar",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Developer Tools",
+      "SaaS",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172808",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nUnderstand why your AI agent breaks. Iterate fast to fix it."
+  },
+  {
+    "id": "yc_29783",
+    "name": "Guardian RF",
+    "email": null,
+    "phone": "",
+    "company": "Guardian RF",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172811",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 15\nDrone detection for US defense and national security  "
+  },
+  {
+    "id": "yc_29784",
+    "name": "Sensei",
+    "email": null,
+    "phone": "",
+    "company": "Sensei",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hard Tech",
+      "Marketplace",
+      "Robotics",
+      "Data Engineering"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172816",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nRobotic Training Data at Scale"
+  },
+  {
+    "id": "yc_29785",
+    "name": "Simple AI",
+    "email": null,
+    "phone": "",
+    "company": "Simple AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Call Center",
+      "Operations",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172820",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI phone agents for enterprise"
+  },
+  {
+    "id": "yc_29786",
+    "name": "Palmier",
+    "email": null,
+    "phone": "",
+    "company": "Palmier",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Consumer",
+      "Video",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172823",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nFrom idea to cinematic videos in seconds"
+  },
+  {
+    "id": "yc_29787",
+    "name": "Lilac Labs",
+    "email": null,
+    "phone": "",
+    "company": "Lilac Labs",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172826",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nWe automate the person taking orders at drive-thrus with a voice AI"
+  },
+  {
+    "id": "yc_29788",
+    "name": "Refactor",
+    "email": null,
+    "phone": "",
+    "company": "Refactor",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "B2B",
+      "Healthcare",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172829",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nDeploying secure and reliable AI agents across healthcare, retail,\u2026"
+  },
+  {
+    "id": "yc_29789",
+    "name": "Paasa",
+    "email": null,
+    "phone": "",
+    "company": "Paasa",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Consumer",
+      "Investing",
+      "Emerging Markets"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172832",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nInvest in Global Equities from India"
+  },
+  {
+    "id": "yc_29790",
+    "name": "YouShift",
+    "email": null,
+    "phone": "",
+    "company": "YouShift",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172837",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nThe OS for hospital workforce management"
+  },
+  {
+    "id": "yc_29791",
+    "name": "Cartage",
+    "email": null,
+    "phone": "",
+    "company": "Cartage",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Workflow Automation",
+      "Logistics",
+      "Supply Chain"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172843",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 12\nAutonomous freight coordination"
+  },
+  {
+    "id": "yc_29792",
+    "name": "Sonatoria",
+    "email": null,
+    "phone": "",
+    "company": "Sonatoria",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172846",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nHelping Startups Grow Organically"
+  },
+  {
+    "id": "yc_29793",
+    "name": "RiskAngle",
+    "email": null,
+    "phone": "",
+    "company": "RiskAngle",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Legal",
+      "Insurance",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172850",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI medical summaries in minutes"
+  },
+  {
+    "id": "yc_29794",
+    "name": "Baseline AI",
+    "email": null,
+    "phone": "",
+    "company": "Baseline AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Health Tech",
+      "B2B",
+      "Biotech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172853",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI document creation and data management for clinical trials"
+  },
+  {
+    "id": "yc_29795",
+    "name": "Odo",
+    "email": null,
+    "phone": "",
+    "company": "Odo",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Productivity",
+      "Email",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172857",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nYour email assistant because you deserve a better morning"
+  },
+  {
+    "id": "yc_29796",
+    "name": "Finosu",
+    "email": null,
+    "phone": "",
+    "company": "Finosu",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "B2B",
+      "Lending",
+      "Consumer Finance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172860",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI Native Consumer Loan Servicer"
+  },
+  {
+    "id": "yc_29797",
+    "name": "Haystack Software",
+    "email": null,
+    "phone": "",
+    "company": "Haystack Software",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "B2B",
+      "Productivity"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172863",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nUnderstand any pull request in under a minute"
+  },
+  {
+    "id": "yc_29798",
+    "name": "&AI",
+    "email": null,
+    "phone": "",
+    "company": "&AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "LegalTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172866",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 13\nCollaborative workspace for patent litigators"
+  },
+  {
+    "id": "yc_29799",
+    "name": "Helium",
+    "email": null,
+    "phone": "",
+    "company": "Helium",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172869",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nSelf Improving Software"
+  },
+  {
+    "id": "yc_29800",
+    "name": "HeroUI",
+    "email": null,
+    "phone": "",
+    "company": "HeroUI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "SaaS",
+      "Design Tools",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172872",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nThe UI framework for AI agents and developers to build beautiful apps."
+  },
+  {
+    "id": "yc_29801",
+    "name": "Rescript",
+    "email": null,
+    "phone": "",
+    "company": "Rescript",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Civic Tech",
+      "B2B",
+      "LegalTech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172875",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI Regulatory Analyst for Enterprises"
+  },
+  {
+    "id": "yc_29803",
+    "name": "Ionworks",
+    "email": null,
+    "phone": "",
+    "company": "Ionworks",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172877",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nSimulation software used by leading battery and automotive companies"
+  },
+  {
+    "id": "yc_29804",
+    "name": "Thyme",
+    "email": null,
+    "phone": "",
+    "company": "Thyme",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Finance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172881",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe OS for financial advisors"
+  },
+  {
+    "id": "yc_29805",
+    "name": "Handled",
+    "email": null,
+    "phone": "",
+    "company": "Handled",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Workflow Automation",
+      "Logistics",
+      "E-commerce"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172884",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAutomating post-order operations for e-commerce brands and 3PLs"
+  },
+  {
+    "id": "yc_29807",
+    "name": "Dataleap",
+    "email": null,
+    "phone": "",
+    "company": "Dataleap",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172888",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nThe world's first vibe working platform"
+  },
+  {
+    "id": "yc_29808",
+    "name": "Starcloud",
+    "email": null,
+    "phone": "",
+    "company": "Starcloud",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Hard Tech",
+      "Satellites",
+      "Climate",
+      "Cloud Computing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172892",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 12\nData centers in space"
+  },
+  {
+    "id": "yc_29810",
+    "name": "Leviathan",
+    "email": null,
+    "phone": "",
+    "company": "Leviathan",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Automation",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172896",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 1\nAI Wikipedia"
+  },
+  {
+    "id": "yc_29812",
+    "name": "ZeroPath",
+    "email": null,
+    "phone": "",
+    "company": "ZeroPath",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "B2B",
+      "Security",
+      "Cybersecurity"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172899",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAutomatically find and fix your software vulnerabilities"
+  },
+  {
+    "id": "yc_29813",
+    "name": "Argil",
+    "email": null,
+    "phone": "",
+    "company": "Argil",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "Social Media"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172903",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 8\nThe video generation engine for the creator economy "
+  },
+  {
+    "id": "yc_29814",
+    "name": "Vendra",
+    "email": null,
+    "phone": "",
+    "company": "Vendra",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172906",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nCustom Parts, Manufactured in America \ud83c\uddfa\ud83c\uddf8"
+  },
+  {
+    "id": "yc_29815",
+    "name": "Propaya",
+    "email": null,
+    "phone": "",
+    "company": "Propaya",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Real Estate",
+      "Housing",
+      "Proptech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172910",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI commercial lease abstractions and review"
+  },
+  {
+    "id": "yc_29818",
+    "name": "Entropy",
+    "email": null,
+    "phone": "",
+    "company": "Entropy",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172913",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAutonomous intake and RCM for specialty clinics. "
+  },
+  {
+    "id": "yc_29819",
+    "name": "Weel",
+    "email": null,
+    "phone": "",
+    "company": "Weel",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Augmented Reality",
+      "Computer Vision",
+      "Navigation",
+      "Mobility",
+      "Automotive"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172918",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nGPS & dashcam smartphone app"
+  },
+  {
+    "id": "yc_29820",
+    "name": "Kontigo",
+    "email": null,
+    "phone": "",
+    "company": "Kontigo",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172921",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nUSDC-Smart Neobank for Latinos. "
+  },
+  {
+    "id": "yc_29821",
+    "name": "Polymet",
+    "email": null,
+    "phone": "",
+    "company": "Polymet",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172928",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI Product Designer"
+  },
+  {
+    "id": "yc_29822",
+    "name": "omnidock",
+    "email": null,
+    "phone": "",
+    "company": "omnidock",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172931",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 1\nOS for global e-commerce expansion of brands & manufacturers"
+  },
+  {
+    "id": "yc_29823",
+    "name": "autarc",
+    "email": null,
+    "phone": "",
+    "company": "autarc",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Lidar",
+      "Computer Vision",
+      "B2B",
+      "Climate",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172935",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 30\nautarc is the OS for Europe's One-Stop Energy Installers"
+  },
+  {
+    "id": "yc_29824",
+    "name": "Assembly HOA",
+    "email": null,
+    "phone": "",
+    "company": "Assembly HOA",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Real Estate",
+      "Housing",
+      "Proptech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172938",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 9\nAI-enabled HOA Management Company"
+  },
+  {
+    "id": "yc_29825",
+    "name": "Sepal AI",
+    "email": null,
+    "phone": "",
+    "company": "Sepal AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Reinforcement Learning",
+      "Data Labeling",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172943",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 15\nData Development for Advanced AI"
+  },
+  {
+    "id": "yc_29826",
+    "name": "Orca",
+    "email": null,
+    "phone": "",
+    "company": "Orca",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Consumer",
+      "Gaming",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172947",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI Game Engine"
+  },
+  {
+    "id": "yc_29828",
+    "name": "Sterling Labs, Inc",
+    "email": null,
+    "phone": "",
+    "company": "Sterling Labs, Inc",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Consumer",
+      "Productivity",
+      "Mental Health",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172952",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nCurrently in stealth - previously FocusBuddy"
+  },
+  {
+    "id": "yc_29829",
+    "name": "Moreta",
+    "email": null,
+    "phone": "",
+    "company": "Moreta",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Payments",
+      "Consumer",
+      "Travel"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172956",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nPayments made easy for international travelers."
+  },
+  {
+    "id": "yc_29830",
+    "name": "Typa",
+    "email": null,
+    "phone": "",
+    "company": "Typa",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Social Media",
+      "Marketing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172960",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe content engine that wins attention and drives growth."
+  },
+  {
+    "id": "yc_29833",
+    "name": "Quetzal",
+    "email": null,
+    "phone": "",
+    "company": "Quetzal",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Enterprise Software",
+      "International"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172963",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nSimple, LLM-first translation and internationalization for software"
+  },
+  {
+    "id": "yc_29834",
+    "name": "Rastro",
+    "email": null,
+    "phone": "",
+    "company": "Rastro",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Retail Tech",
+      "Retail",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172967",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe fastest way for retailers to launch product catalogs."
+  },
+  {
+    "id": "yc_29835",
+    "name": "Voker",
+    "email": null,
+    "phone": "",
+    "company": "Voker",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Analytics",
+      "Big Data"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172971",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAnalytics for AI Agents"
+  },
+  {
+    "id": "yc_29836",
+    "name": "TradeFlow",
+    "email": null,
+    "phone": "",
+    "company": "TradeFlow",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "FinOps",
+      "Fintech",
+      "SaaS",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172974",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAI-powered settlement for financial securities"
+  },
+  {
+    "id": "yc_29837",
+    "name": "RentFlow",
+    "email": null,
+    "phone": "",
+    "company": "RentFlow",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Generative AI",
+      "SaaS",
+      "Payments",
+      "Proptech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172977",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nThe first 'Buy Now Pay Later' solution for Commercial Rent"
+  },
+  {
+    "id": "yc_29839",
+    "name": "pap!",
+    "email": null,
+    "phone": "",
+    "company": "pap!",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Consumer",
+      "Consumer Finance",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172981",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAgents that earn consumers dollars when they shop, travel, and live."
+  },
+  {
+    "id": "yc_29840",
+    "name": "Blaze",
+    "email": null,
+    "phone": "",
+    "company": "Blaze",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Crypto / Web3",
+      "Payments",
+      "Finance",
+      "Travel"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172985",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nGlobal Venmo for cross border payments"
+  },
+  {
+    "id": "yc_29841",
+    "name": "Elayne",
+    "email": null,
+    "phone": "",
+    "company": "Elayne",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "SaaS",
+      "B2B",
+      "Consumer Finance",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172988",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI copilot for growing, organizing, and transferring family estates"
+  },
+  {
+    "id": "yc_29844",
+    "name": "Oway",
+    "email": null,
+    "phone": "",
+    "company": "Oway",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Logistics",
+      "Infrastructure"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172991",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nAI Infrastructure for America\u2019s Empty Truck Space"
+  },
+  {
+    "id": "yc_29847",
+    "name": "Bucket Robotics",
+    "email": null,
+    "phone": "",
+    "company": "Bucket Robotics",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Robotic Process Automation",
+      "Robotics",
+      "Computer Vision",
+      "Manufacturing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172995",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nDefect detection for manufacturing built from CAD and synthetic data."
+  },
+  {
+    "id": "yc_29848",
+    "name": "Saldor",
+    "email": null,
+    "phone": "",
+    "company": "Saldor",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Productivity",
+      "Consumer Products",
+      "Email",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.172999",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nHands-free email"
+  },
+  {
+    "id": "yc_29849",
+    "name": "Usul",
+    "email": null,
+    "phone": "",
+    "company": "Usul",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173002",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nWin defense contracts with AI"
+  },
+  {
+    "id": "yc_29850",
+    "name": "SureBright",
+    "email": null,
+    "phone": "",
+    "company": "SureBright",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "E-commerce",
+      "Insurance",
+      "Retail",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173006",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 20\nApple Care-like warranty program for every retailer "
+  },
+  {
+    "id": "yc_29851",
+    "name": "Diode Computers, Inc.",
+    "email": null,
+    "phone": "",
+    "company": "Diode Computers, Inc.",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Hardware",
+      "Manufacturing",
+      "Electronics"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173010",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAutomate circuit board design using AI"
+  },
+  {
+    "id": "yc_29852",
+    "name": "Dayflow",
+    "email": null,
+    "phone": "",
+    "company": "Dayflow",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Consumer",
+      "Productivity",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173014",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nGenerate a detailed log of everything you've worked on, automatically."
+  },
+  {
+    "id": "yc_29853",
+    "name": "Terra",
+    "email": null,
+    "phone": "",
+    "company": "Terra",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173017",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nDesign and sell products in minutes"
+  },
+  {
+    "id": "yc_29854",
+    "name": "Keet",
+    "email": null,
+    "phone": "",
+    "company": "Keet",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173021",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nAuthentication for AI Agents"
+  },
+  {
+    "id": "yc_29856",
+    "name": "et al.",
+    "email": null,
+    "phone": "",
+    "company": "et al.",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Consumer",
+      "Productivity",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173025",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nFeed of insights extracted from your go-to sources using LLMs."
+  },
+  {
+    "id": "yc_29857",
+    "name": "Pharos",
+    "email": null,
+    "phone": "",
+    "company": "Pharos",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Healthcare",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173029",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nHelping hospitals identify and prevent avoidable harm using AI"
+  },
+  {
+    "id": "yc_29858",
+    "name": "Vera Health",
+    "email": null,
+    "phone": "",
+    "company": "Vera Health",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Digital Health",
+      "Healthcare"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173033",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nAI-powered clinical decision support for healthcare providers"
+  },
+  {
+    "id": "yc_29950",
+    "name": "Pipeshift",
+    "email": null,
+    "phone": "",
+    "company": "Pipeshift",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AIOps",
+      "Artificial Intelligence",
+      "Generative AI",
+      "Infrastructure",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173038",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 10\nModular Orchestration Platform for Open Source AI"
+  },
+  {
+    "id": "yc_29951",
+    "name": "RowBoat Labs",
+    "email": null,
+    "phone": "",
+    "company": "RowBoat Labs",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "B2B",
+      "Open Source",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173040",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nOpen-source AI-assisted agent builder"
+  },
+  {
+    "id": "yc_29952",
+    "name": "Ficra",
+    "email": null,
+    "phone": "",
+    "company": "Ficra",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "B2B",
+      "Workflow Automation",
+      "Productivity",
+      "Design Tools",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173044",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nReal time, source of truth for every product screen and user flow"
+  },
+  {
+    "id": "yc_29953",
+    "name": "Hey Revia",
+    "email": null,
+    "phone": "",
+    "company": "Hey Revia",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173046",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nVoice AI to automate complex phone calls for healthcare providers"
+  },
+  {
+    "id": "yc_29954",
+    "name": "Henry",
+    "email": null,
+    "phone": "",
+    "company": "Henry",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "SaaS",
+      "Real Estate",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173050",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAutomating Deal Decks for Commercial Real Estate Brokers"
+  },
+  {
+    "id": "yc_29955",
+    "name": "BrowserOS",
+    "email": null,
+    "phone": "",
+    "company": "BrowserOS",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Generative AI",
+      "Consumer",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173053",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nThe Open Source Agentic Browser"
+  },
+  {
+    "id": "yc_29956",
+    "name": "XTraffic",
+    "email": null,
+    "phone": "",
+    "company": "XTraffic",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173056",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nTechnology for cities to automate and manage their traffic lights."
+  },
+  {
+    "id": "yc_29957",
+    "name": "Anglera",
+    "email": null,
+    "phone": "",
+    "company": "Anglera",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Machine Learning",
+      "SaaS",
+      "B2B",
+      "E-commerce",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173059",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nAI-Powered Product Data Enrichment"
+  },
+  {
+    "id": "yc_29959",
+    "name": "Uncommon Therapeutics",
+    "email": null,
+    "phone": "",
+    "company": "Uncommon Therapeutics",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Gene Therapy",
+      "CRISPR",
+      "Biotechnology"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173072",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nA Disease Focused Biotech, Building Multiple Billion Dollar Drugs"
+  },
+  {
+    "id": "yc_29960",
+    "name": "Void",
+    "email": null,
+    "phone": "",
+    "company": "Void",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173077",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nThe open source Cursor alternative"
+  },
+  {
+    "id": "yc_29963",
+    "name": "Capitol AI",
+    "email": null,
+    "phone": "",
+    "company": "Capitol AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Artificial Intelligence",
+      "Workflow Automation",
+      "Analytics",
+      "Media"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173082",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 11\nModel-agnostic AI for enterprises: governed, embedded, decision-grade."
+  },
+  {
+    "id": "yc_29964",
+    "name": "Overlap",
+    "email": null,
+    "phone": "",
+    "company": "Overlap",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Consumer",
+      "Media",
+      "Podcasts"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173086",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 6\nMultimodal AI agents for video"
+  },
+  {
+    "id": "yc_29965",
+    "name": "Formula Insight",
+    "email": null,
+    "phone": "",
+    "company": "Formula Insight",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "SaaS",
+      "B2B",
+      "Workflow Automation",
+      "Enterprise Software"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173089",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nHelp Institutional Investors manage, track & query their Excel models"
+  },
+  {
+    "id": "yc_29966",
+    "name": "Mica AI",
+    "email": null,
+    "phone": "",
+    "company": "Mica AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Data Science",
+      "Data Engineering",
+      "Enterprise Software"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173093",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nReplace the humans fixing bad data"
+  },
+  {
+    "id": "yc_29967",
+    "name": "Village Labs",
+    "email": null,
+    "phone": "",
+    "company": "Village Labs",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "Human Resources"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173096",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nHelping America's businesses become employee owned"
+  },
+  {
+    "id": "yc_29968",
+    "name": "Patched",
+    "email": null,
+    "phone": "",
+    "company": "Patched",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173099",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAgentic workflows for Enterprise IT and Ops teams"
+  },
+  {
+    "id": "yc_29969",
+    "name": "OrgOrg",
+    "email": null,
+    "phone": "",
+    "company": "OrgOrg",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "B2B",
+      "Productivity",
+      "Collaboration",
+      "Operations"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173102",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nOrganizational productivity suite for companies"
+  },
+  {
+    "id": "yc_29972",
+    "name": "Affil.ai",
+    "email": null,
+    "phone": "",
+    "company": "Affil.ai",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Compliance",
+      "Marketing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173105",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nAI Affiliate Network For Financial Companies"
+  },
+  {
+    "id": "yc_29973",
+    "name": "Arva AI",
+    "email": null,
+    "phone": "",
+    "company": "Arva AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Fintech",
+      "B2B",
+      "Compliance",
+      "Regtech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173109",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 14\nAI Agents to scale AML, KYB and KYC operations"
+  },
+  {
+    "id": "yc_29976",
+    "name": "Freestyle",
+    "email": null,
+    "phone": "",
+    "company": "Freestyle",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Developer Tools",
+      "Open Source",
+      "Web Development",
+      "Cloud Computing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173113",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 5\nWe run and deploy code your AI wrote"
+  },
+  {
+    "id": "yc_29977",
+    "name": "Merlin AI",
+    "email": null,
+    "phone": "",
+    "company": "Merlin AI",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Construction",
+      "B2B",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173116",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 28\nAI powered ERP for Construction"
+  },
+  {
+    "id": "yc_29978",
+    "name": "SimCare",
+    "email": null,
+    "phone": "",
+    "company": "SimCare",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Education",
+      "Healthcare",
+      "Edtech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173121",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 7\nAI avatars to scale healthcare training."
+  },
+  {
+    "id": "yc_29980",
+    "name": "Midship",
+    "email": null,
+    "phone": "",
+    "company": "Midship",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173124",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI for SOX testing"
+  },
+  {
+    "id": "yc_29982",
+    "name": "Bits to Atoms",
+    "email": null,
+    "phone": "",
+    "company": "Bits to Atoms",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173127",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nMatch job seekers to roles at deep technology startups."
+  },
+  {
+    "id": "yc_29983",
+    "name": "PathPilot",
+    "email": null,
+    "phone": "",
+    "company": "PathPilot",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "SaaS",
+      "Finance",
+      "B2B",
+      "Customer Support",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173130",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 3\nAI platform helping fintech/bank teams scale efficiently"
+  },
+  {
+    "id": "yc_29986",
+    "name": "Exin Therapeutics",
+    "email": null,
+    "phone": "",
+    "company": "Exin Therapeutics",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Neurotechnology",
+      "Biotech",
+      "Therapeutics"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173134",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAI drug discovery platform for neurotherapeutics"
+  },
+  {
+    "id": "yc_29987",
+    "name": "Syntra",
+    "email": null,
+    "phone": "",
+    "company": "Syntra",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Healthcare IT",
+      "Billing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173139",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 9\nAI chart review for speciality medical clinics."
+  },
+  {
+    "id": "yc_29988",
+    "name": "Delineate",
+    "email": null,
+    "phone": "",
+    "company": "Delineate",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "Biotech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173141",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 20\nAgents for Accelerated Clinical Trial Design"
+  },
+  {
+    "id": "yc_29989",
+    "name": "Conductor",
+    "email": null,
+    "phone": "",
+    "company": "Conductor",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173145",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nRun a team of coding agents on your Mac"
+  },
+  {
+    "id": "yc_29990",
+    "name": "DreamRP",
+    "email": null,
+    "phone": "",
+    "company": "DreamRP",
+    "source": "yc_Summer 2024",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Consumer",
+      "Entertainment",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173150",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 2\nTech and platforms for human creators and the entertainment industry"
+  },
+  {
+    "id": "yc_29992",
+    "name": "Outerport",
+    "email": null,
+    "phone": "",
+    "company": "Outerport",
+    "source": "yc_Summer 2024",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173152",
+    "last_contact": null,
+    "notes": "YC Batch: Summer 2024\nLocation: None\nTeam: 4\nTurn diagrams, technical documents, and CAD into structured data"
+  },
+  {
+    "id": "yc_29999",
+    "name": "Onlook",
+    "email": null,
+    "phone": "",
+    "company": "Onlook",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Design",
+      "Design Tools",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173157",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nCursor for Designers"
+  },
+  {
+    "id": "yc_30020",
+    "name": "Invo",
+    "email": null,
+    "phone": "",
+    "company": "Invo",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173163",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI-Powered Collections Platform for Food Distributors"
+  },
+  {
+    "id": "yc_30160",
+    "name": "Quantstruct",
+    "email": null,
+    "phone": "",
+    "company": "Quantstruct",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "B2B",
+      "API",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173215",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI documentation engineer \u2013\u00a0test & autoimprove stale product docs"
+  },
+  {
+    "id": "yc_30165",
+    "name": "Edexia",
+    "email": null,
+    "phone": "",
+    "company": "Edexia",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Artificial Intelligence",
+      "Education",
+      "SaaS",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173218",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI Teacher Assistant for Grading Essays"
+  },
+  {
+    "id": "yc_30172",
+    "name": "Enhanced Radar",
+    "email": null,
+    "phone": "",
+    "company": "Enhanced Radar",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173221",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI for air traffic control"
+  },
+  {
+    "id": "yc_30174",
+    "name": "Revise Robotics",
+    "email": null,
+    "phone": "",
+    "company": "Revise Robotics",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Robotic Process Automation",
+      "ClimateTech",
+      "Electronics"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173225",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAutomating refurbishment of $1T in consumer electronics"
+  },
+  {
+    "id": "yc_30176",
+    "name": "Trace",
+    "email": null,
+    "phone": "",
+    "company": "Trace",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Finance",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173228",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nVoice AI Customer Support for Financial Services"
+  },
+  {
+    "id": "yc_30177",
+    "name": "Bild AI",
+    "email": null,
+    "phone": "",
+    "company": "Bild AI",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173231",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nAI that understands construction blueprints"
+  },
+  {
+    "id": "yc_30178",
+    "name": "Candor",
+    "email": null,
+    "phone": "",
+    "company": "Candor",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "GovTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173235",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nWe help companies win government funding with AI"
+  },
+  {
+    "id": "yc_30179",
+    "name": "Vetnio",
+    "email": null,
+    "phone": "",
+    "company": "Vetnio",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173238",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nAI Copilot that automates admin work for veterinary professionals"
+  },
+  {
+    "id": "yc_30181",
+    "name": "Leaping AI",
+    "email": null,
+    "phone": "",
+    "company": "Leaping AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "B2B",
+      "AI",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173241",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 8\nVoice AI agents to automate call centers (digital call center workers)"
+  },
+  {
+    "id": "yc_30182",
+    "name": "Flowtel",
+    "email": null,
+    "phone": "",
+    "company": "Flowtel",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173244",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nThe AI Voice agents for hotels"
+  },
+  {
+    "id": "yc_30183",
+    "name": "Tweeks.io",
+    "email": null,
+    "phone": "",
+    "company": "Tweeks.io",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Consumer",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173248",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nLovable for Chrome Plugins"
+  },
+  {
+    "id": "yc_30185",
+    "name": "Excellence Learning",
+    "email": null,
+    "phone": "",
+    "company": "Excellence Learning",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Education",
+      "SaaS",
+      "Edtech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173251",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI tutor starting with maths and science"
+  },
+  {
+    "id": "yc_30187",
+    "name": "Praxim",
+    "email": null,
+    "phone": "",
+    "company": "Praxim",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Consumer",
+      "B2B",
+      "Databases"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173254",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe agentic AI Word editor"
+  },
+  {
+    "id": "yc_30188",
+    "name": "Hey Telo",
+    "email": null,
+    "phone": "",
+    "company": "Hey Telo",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173258",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nVoice AI for Home Services"
+  },
+  {
+    "id": "yc_30189",
+    "name": "SubImage",
+    "email": null,
+    "phone": "",
+    "company": "SubImage",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173262",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nSoftware that maps your infrastructure. Open core alternative to Wiz"
+  },
+  {
+    "id": "yc_30190",
+    "name": "Steinmetz",
+    "email": null,
+    "phone": "",
+    "company": "Steinmetz",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Hardware"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173265",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nHardware for Electric Vehicles."
+  },
+  {
+    "id": "yc_30192",
+    "name": "Axiom",
+    "email": null,
+    "phone": "",
+    "company": "Axiom",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Crypto / Web3",
+      "Consumer Finance",
+      "Trading"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173269",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nTrade memecoins, perpetuals, and earn yield."
+  },
+  {
+    "id": "yc_30193",
+    "name": "Orchids",
+    "email": null,
+    "phone": "",
+    "company": "Orchids",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173272",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nThe AI Full Stack Engineer"
+  },
+  {
+    "id": "yc_30194",
+    "name": "Splash Inc.",
+    "email": null,
+    "phone": "",
+    "company": "Splash Inc.",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173275",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 7\nAutonomous patrol-boats for National Security "
+  },
+  {
+    "id": "yc_30196",
+    "name": "Stamp",
+    "email": null,
+    "phone": "",
+    "company": "Stamp",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173278",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 1\nThe AI Native Email Client"
+  },
+  {
+    "id": "yc_30197",
+    "name": "Alice.tech",
+    "email": null,
+    "phone": "",
+    "company": "Alice.tech",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Artificial Intelligence",
+      "Education",
+      "Generative AI",
+      "SaaS"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173281",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nAI-driven exam prep"
+  },
+  {
+    "id": "yc_30198",
+    "name": "Dollyglot",
+    "email": null,
+    "phone": "",
+    "company": "Dollyglot",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "Consumer",
+      "Social",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173285",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nCharacter.AI with real time video avatars"
+  },
+  {
+    "id": "yc_30199",
+    "name": "awen",
+    "email": null,
+    "phone": "",
+    "company": "awen",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "SaaS",
+      "Creator Economy"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173288",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nWe are rebuilding photoshop with an AI-voice interface."
+  },
+  {
+    "id": "yc_30200",
+    "name": "Karoo",
+    "email": null,
+    "phone": "",
+    "company": "Karoo",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Consumer",
+      "Neobank"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173291",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nCanadian neobank focused on lending"
+  },
+  {
+    "id": "yc_30201",
+    "name": "Dartboard Energy",
+    "email": null,
+    "phone": "",
+    "company": "Dartboard Energy",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Energy Storage",
+      "B2B",
+      "Analytics",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173294",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Analyst for Electricity Markets"
+  },
+  {
+    "id": "yc_30202",
+    "name": "Astro",
+    "email": null,
+    "phone": "",
+    "company": "Astro",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Solar Power",
+      "Energy",
+      "Renewable Energy",
+      "ClimateTech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173299",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 1\nThe world\u2019s first AI energy developer"
+  },
+  {
+    "id": "yc_30203",
+    "name": "Vocality Health",
+    "email": null,
+    "phone": "",
+    "company": "Vocality Health",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Healthcare",
+      "Health & Wellness"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173307",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nVoice AI for medical language translation"
+  },
+  {
+    "id": "yc_30204",
+    "name": "Subtrace",
+    "email": null,
+    "phone": "",
+    "company": "Subtrace",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173310",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nZero code network tracer"
+  },
+  {
+    "id": "yc_30205",
+    "name": "Scout",
+    "email": null,
+    "phone": "",
+    "company": "Scout",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Education",
+      "Workflow Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173314",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 8\nAI-powered student information system for K-12 schools"
+  },
+  {
+    "id": "yc_30207",
+    "name": "Promptless",
+    "email": null,
+    "phone": "",
+    "company": "Promptless",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Generative AI",
+      "SaaS",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173317",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nAn AI teammate that automatically updates your customer-facing docs"
+  },
+  {
+    "id": "yc_30209",
+    "name": "Closure",
+    "email": null,
+    "phone": "",
+    "company": "Closure",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "GovTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173320",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nWe help law enforcement solve crime"
+  },
+  {
+    "id": "yc_30210",
+    "name": "Conntour",
+    "email": null,
+    "phone": "",
+    "company": "Conntour",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173323",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nAI to monitor thousands of security cameras."
+  },
+  {
+    "id": "yc_30212",
+    "name": "superglue",
+    "email": null,
+    "phone": "",
+    "company": "superglue",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Open Source",
+      "API",
+      "Enterprise",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173327",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI that fixes enterprise glue"
+  },
+  {
+    "id": "yc_30213",
+    "name": "Truffle AI",
+    "email": null,
+    "phone": "",
+    "company": "Truffle AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Generative AI",
+      "Infrastructure",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173332",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAWS for AI Agents"
+  },
+  {
+    "id": "yc_30214",
+    "name": "Ovlo",
+    "email": null,
+    "phone": "",
+    "company": "Ovlo",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "Supply Chain",
+      "Retail Tech",
+      "Automation",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173335",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI agents for supply chain workflow automation"
+  },
+  {
+    "id": "yc_30215",
+    "name": "Contrario",
+    "email": null,
+    "phone": "",
+    "company": "Contrario",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "Recruiting",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173338",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 10\nFill critical roles faster with AI-empowered recruiters"
+  },
+  {
+    "id": "yc_30216",
+    "name": "Sublingual",
+    "email": null,
+    "phone": "",
+    "company": "Sublingual",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Open Source",
+      "Infrastructure",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173342",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nDaily productivity tracker"
+  },
+  {
+    "id": "yc_30217",
+    "name": "Rocketable",
+    "email": null,
+    "phone": "",
+    "company": "Rocketable",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173345",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe AI Maximalist Software Holding Company"
+  },
+  {
+    "id": "yc_30218",
+    "name": "Toothy AI",
+    "email": null,
+    "phone": "",
+    "company": "Toothy AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Health Tech",
+      "Healthcare",
+      "Dental",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173354",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 15\nAI for insurance verification & billing at dental clinics"
+  },
+  {
+    "id": "yc_30220",
+    "name": "Verbiflow",
+    "email": null,
+    "phone": "",
+    "company": "Verbiflow",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "Analytics",
+      "Sales",
+      "Sales Enablement",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173357",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nPeople search that works"
+  },
+  {
+    "id": "yc_30221",
+    "name": "A1Base",
+    "email": null,
+    "phone": "",
+    "company": "A1Base",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173360",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nTwilio for AI Agents"
+  },
+  {
+    "id": "yc_30222",
+    "name": "Altrina",
+    "email": null,
+    "phone": "",
+    "company": "Altrina",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Hard Tech",
+      "Reinforcement Learning",
+      "Automation",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173364",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nThe SOP Automation Platform"
+  },
+  {
+    "id": "yc_30223",
+    "name": "a0.dev",
+    "email": null,
+    "phone": "",
+    "company": "a0.dev",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "Design",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173368",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nWe make mobile apps using AI."
+  },
+  {
+    "id": "yc_30224",
+    "name": "Maritime Fusion",
+    "email": null,
+    "phone": "",
+    "company": "Maritime Fusion",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fusion Energy",
+      "Hard Tech",
+      "Energy"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173372",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nFusion reactors for ships"
+  },
+  {
+    "id": "yc_30225",
+    "name": "Trava",
+    "email": null,
+    "phone": "",
+    "company": "Trava",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "B2B",
+      "Compliance",
+      "Logistics",
+      "Supply Chain"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173375",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 1\nAI agents for global trade compliance"
+  },
+  {
+    "id": "yc_30226",
+    "name": "Tejas AI",
+    "email": null,
+    "phone": "",
+    "company": "Tejas AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Finance",
+      "B2B"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173379",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nRisk Decisioning Platform for Banks"
+  },
+  {
+    "id": "yc_30227",
+    "name": "Caseflood.ai",
+    "email": null,
+    "phone": "",
+    "company": "Caseflood.ai",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Legal",
+      "Conversational AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173382",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nthe AI inbound sales team for law firms"
+  },
+  {
+    "id": "yc_30228",
+    "name": "Weave",
+    "email": null,
+    "phone": "",
+    "company": "Weave",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "B2B",
+      "Analytics",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173385",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 9\nAI to understand engineering work"
+  },
+  {
+    "id": "yc_30229",
+    "name": "Maive",
+    "email": null,
+    "phone": "",
+    "company": "Maive",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Home Services"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173389",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI for Home Services"
+  },
+  {
+    "id": "yc_30230",
+    "name": "SalesPatriot",
+    "email": null,
+    "phone": "",
+    "company": "SalesPatriot",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Sales",
+      "Industrial"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173391",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 13\nWe help defense firms win more contracts with the Pentagon"
+  },
+  {
+    "id": "yc_30231",
+    "name": "Paragon",
+    "email": null,
+    "phone": "",
+    "company": "Paragon",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AIOps",
+      "Generative AI",
+      "SaaS",
+      "Manufacturing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173394",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe AI Growth Engine for Industrials"
+  },
+  {
+    "id": "yc_30232",
+    "name": "careCycle",
+    "email": null,
+    "phone": "",
+    "company": "careCycle",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Health Insurance",
+      "Telecommunications",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173398",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nVoice AI teams for medicare agencies."
+  },
+  {
+    "id": "yc_30233",
+    "name": "Inversion Semiconductor",
+    "email": null,
+    "phone": "",
+    "company": "Inversion Semiconductor",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Hardware",
+      "Manufacturing",
+      "Semiconductors"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173406",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nManufacturing the most powerful chips, 15x faster"
+  },
+  {
+    "id": "yc_30234",
+    "name": "Adam",
+    "email": null,
+    "phone": "",
+    "company": "Adam",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Hardware",
+      "Design",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173410",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI Powered CAD"
+  },
+  {
+    "id": "yc_30235",
+    "name": "Rally",
+    "email": null,
+    "phone": "",
+    "company": "Rally",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Logistics",
+      "Transportation",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173414",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nFinancial OS for Modern Fleets"
+  },
+  {
+    "id": "yc_30236",
+    "name": "Tergle",
+    "email": null,
+    "phone": "",
+    "company": "Tergle",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173417",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: None\nAI Agents for Audit"
+  },
+  {
+    "id": "yc_30237",
+    "name": "Trim",
+    "email": null,
+    "phone": "",
+    "company": "Trim",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173421",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nA foundation model for physics."
+  },
+  {
+    "id": "yc_30238",
+    "name": "Amby Health",
+    "email": null,
+    "phone": "",
+    "company": "Amby Health",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "Health Tech",
+      "Digital Health",
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173424",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Copilot for Ambulance Agencies (EMS)"
+  },
+  {
+    "id": "yc_30239",
+    "name": "Cardamon",
+    "email": null,
+    "phone": "",
+    "company": "Cardamon",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Compliance",
+      "Regtech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173427",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI compliance co-pilot for regulated financial businesses"
+  },
+  {
+    "id": "yc_30240",
+    "name": "Bezel",
+    "email": null,
+    "phone": "",
+    "company": "Bezel",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "Machine Learning",
+      "Marketing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173431",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 1\nDigital AI humans that model clothes for e-commerce brands."
+  },
+  {
+    "id": "yc_30241",
+    "name": "ZeroEntropy",
+    "email": null,
+    "phone": "",
+    "company": "ZeroEntropy",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173434",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nHigh accuracy search API over unstructured data."
+  },
+  {
+    "id": "yc_30242",
+    "name": "Oki",
+    "email": null,
+    "phone": "",
+    "company": "Oki",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Enterprise",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173437",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nPersonalized Updates on Company Progress"
+  },
+  {
+    "id": "yc_30243",
+    "name": "Cifrato",
+    "email": null,
+    "phone": "",
+    "company": "Cifrato",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "FinOps",
+      "SaaS"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173440",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 13\nAI Accountant for Accounting Firms"
+  },
+  {
+    "id": "yc_30244",
+    "name": "Mosaic",
+    "email": null,
+    "phone": "",
+    "company": "Mosaic",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173447",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAgentic video editing"
+  },
+  {
+    "id": "yc_30246",
+    "name": "Swerve",
+    "email": null,
+    "phone": "",
+    "company": "Swerve",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Consumer",
+      "Entertainment",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173452",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nChat with AI Characters"
+  },
+  {
+    "id": "yc_30247",
+    "name": "Osmosis",
+    "email": null,
+    "phone": "",
+    "company": "Osmosis",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173455",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nReinforcement Learning for AI Agents"
+  },
+  {
+    "id": "yc_30248",
+    "name": "Operand",
+    "email": null,
+    "phone": "",
+    "company": "Operand",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "B2B",
+      "E-commerce",
+      "Retail"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173458",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nAI to run Business Strategy"
+  },
+  {
+    "id": "yc_30249",
+    "name": "HealthKey",
+    "email": null,
+    "phone": "",
+    "company": "HealthKey",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173461",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 10\nAI-powered Patient Identification for Clinical Trials"
+  },
+  {
+    "id": "yc_30250",
+    "name": "GradeWiz",
+    "email": null,
+    "phone": "",
+    "company": "GradeWiz",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AI-Enhanced Learning",
+      "Edtech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173465",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Grading for Teachers"
+  },
+  {
+    "id": "yc_30251",
+    "name": "Mecha Health",
+    "email": null,
+    "phone": "",
+    "company": "Mecha Health",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "Health Tech",
+      "Healthcare"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173470",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nFoundation models to automate x-ray analysis for radiologists"
+  },
+  {
+    "id": "yc_30252",
+    "name": "Cuckoo Labs",
+    "email": null,
+    "phone": "",
+    "company": "Cuckoo Labs",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Sales",
+      "Marketing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173473",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nReal-time AI translator for global sales and marketing"
+  },
+  {
+    "id": "yc_30253",
+    "name": "finbar",
+    "email": null,
+    "phone": "",
+    "company": "finbar",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Documents",
+      "Fintech",
+      "Finance",
+      "Workflow Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173476",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nThe AI investment analyst"
+  },
+  {
+    "id": "yc_30254",
+    "name": "hud",
+    "email": null,
+    "phone": "",
+    "company": "hud",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Reinforcement Learning"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173480",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nPlatform for building RL environments and evals "
+  },
+  {
+    "id": "yc_30255",
+    "name": "Olive",
+    "email": null,
+    "phone": "",
+    "company": "Olive",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Productivity",
+      "Team Collaboration"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173485",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe context layer for your team"
+  },
+  {
+    "id": "yc_30256",
+    "name": "PAX Markets",
+    "email": null,
+    "phone": "",
+    "company": "PAX Markets",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173488",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nMore \ud835\udefc, less latency: exchange and HFT on one chip."
+  },
+  {
+    "id": "yc_30257",
+    "name": "Pave Robotics",
+    "email": null,
+    "phone": "",
+    "company": "Pave Robotics",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173490",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nRobots that repair roads"
+  },
+  {
+    "id": "yc_30258",
+    "name": "Gale",
+    "email": null,
+    "phone": "",
+    "company": "Gale",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Legal",
+      "HR Tech",
+      "Immigration"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173493",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nFast and Data-Driven Immigration Platform"
+  },
+  {
+    "id": "yc_30259",
+    "name": "Asteroid",
+    "email": null,
+    "phone": "",
+    "company": "Asteroid",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Robotic Process Automation",
+      "B2B",
+      "Automation",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173497",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI Browser Agents for the Back-Office"
+  },
+  {
+    "id": "yc_30260",
+    "name": "Macadamia",
+    "email": null,
+    "phone": "",
+    "company": "Macadamia",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173500",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Agents for Complex Engineering Projects"
+  },
+  {
+    "id": "yc_30261",
+    "name": "Lucid",
+    "email": null,
+    "phone": "",
+    "company": "Lucid",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173503",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\ninteractive video models"
+  },
+  {
+    "id": "yc_30262",
+    "name": "Pickle",
+    "email": null,
+    "phone": "",
+    "company": "Pickle",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Hardware",
+      "Augmented Reality",
+      "Consumer"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173507",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 15\nWhere your life context becomes understanding."
+  },
+  {
+    "id": "yc_30263",
+    "name": "Bindwell",
+    "email": null,
+    "phone": "",
+    "company": "Bindwell",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173510",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nDiscovering new pesticides with AI"
+  },
+  {
+    "id": "yc_30264",
+    "name": "Stillwind",
+    "email": null,
+    "phone": "",
+    "company": "Stillwind",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AIOps",
+      "Artificial Intelligence",
+      "Electronics"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173518",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAutonomous Electrical Engineering"
+  },
+  {
+    "id": "yc_30265",
+    "name": "Harbera",
+    "email": null,
+    "phone": "",
+    "company": "Harbera",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Health Tech",
+      "Healthcare",
+      "Healthcare IT",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173522",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Healthcare Provider Credentialing Software"
+  },
+  {
+    "id": "yc_30266",
+    "name": "Cenote",
+    "email": null,
+    "phone": "",
+    "company": "Cenote",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Robotic Process Automation",
+      "Health Tech",
+      "B2B",
+      "Healthcare"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173525",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAI agents that convert and retain patients for digital clinics"
+  },
+  {
+    "id": "yc_30267",
+    "name": "Lopus AI",
+    "email": null,
+    "phone": "",
+    "company": "Lopus AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Analytics",
+      "Market Research",
+      "Enterprise"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173529",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nData Unification for GTM Analytics "
+  },
+  {
+    "id": "yc_30268",
+    "name": "AthenaHQ",
+    "email": null,
+    "phone": "",
+    "company": "AthenaHQ",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173531",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 12\nGet Your Brand Discovered on AI Search."
+  },
+  {
+    "id": "yc_30269",
+    "name": "Strike",
+    "email": null,
+    "phone": "",
+    "company": "Strike",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Infrastructure"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173535",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 8\nRegulated futures exchange"
+  },
+  {
+    "id": "yc_30270",
+    "name": "G LNK",
+    "email": null,
+    "phone": "",
+    "company": "G LNK",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "Health Tech",
+      "B2B",
+      "Digital Health",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173539",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nSimplifying Collaboration for Healthcare Organizations & Professionals"
+  },
+  {
+    "id": "yc_30271",
+    "name": "Mundo AI",
+    "email": null,
+    "phone": "",
+    "company": "Mundo AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173543",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nHigh Quality Multilingual Training Data for AI Models"
+  },
+  {
+    "id": "yc_30272",
+    "name": "Lucidic AI",
+    "email": null,
+    "phone": "",
+    "company": "Lucidic AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AIOps",
+      "Developer Tools",
+      "SaaS",
+      "Automation",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173547",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI Agent Training via Simulations"
+  },
+  {
+    "id": "yc_30273",
+    "name": "Haleum",
+    "email": null,
+    "phone": "",
+    "company": "Haleum",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Cybersecurity"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173550",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nHuman Risk Intelligence for the AI-era"
+  },
+  {
+    "id": "yc_30274",
+    "name": "Trata",
+    "email": null,
+    "phone": "",
+    "company": "Trata",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Finance",
+      "B2B",
+      "Community",
+      "Investing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173553",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAI-powered research desk for hedge funds"
+  },
+  {
+    "id": "yc_30275",
+    "name": "Solidroad",
+    "email": null,
+    "phone": "",
+    "company": "Solidroad",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173556",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nAI agents for CX teams, starting with training and QA."
+  },
+  {
+    "id": "yc_30276",
+    "name": "General Trajectory",
+    "email": null,
+    "phone": "",
+    "company": "General Trajectory",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Robotics",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173560",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 1\nAI for the physical world"
+  },
+  {
+    "id": "yc_30277",
+    "name": "ReJot",
+    "email": null,
+    "phone": "",
+    "company": "ReJot",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "API",
+      "Infrastructure",
+      "Databases"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173565",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nWe turn complex API integrations into drop\u2011in full\u2011stack libraries "
+  },
+  {
+    "id": "yc_30278",
+    "name": "Agentin AI",
+    "email": null,
+    "phone": "",
+    "company": "Agentin AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Reinforcement Learning",
+      "Enterprise",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173570",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Agents that automate enterprise software processes"
+  },
+  {
+    "id": "yc_30279",
+    "name": "Bystreet",
+    "email": null,
+    "phone": "",
+    "company": "Bystreet",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Proptech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173574",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nFind your next hospitality deal."
+  },
+  {
+    "id": "yc_30281",
+    "name": "Waypoint Transit",
+    "email": null,
+    "phone": "",
+    "company": "Waypoint Transit",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173577",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nWe automate urban planning so cities can build cheaper and faster."
+  },
+  {
+    "id": "yc_30282",
+    "name": "Riviera",
+    "email": null,
+    "phone": "",
+    "company": "Riviera",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Travel",
+      "Analytics",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173580",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Employees for Hotels"
+  },
+  {
+    "id": "yc_30283",
+    "name": "Confident AI",
+    "email": null,
+    "phone": "",
+    "company": "Confident AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "Open Source",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173584",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 7\nThe Leading LLM Eval and Observability Platform for AI Quality"
+  },
+  {
+    "id": "yc_30284",
+    "name": "Exla",
+    "email": null,
+    "phone": "",
+    "company": "Exla",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Edge Computing Semiconductors",
+      "Computer Vision",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173588",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 0\nAn SDK to run transformer models anywhere"
+  },
+  {
+    "id": "yc_30285",
+    "name": "Karsa",
+    "email": null,
+    "phone": "",
+    "company": "Karsa",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Emerging Markets",
+      "Cryptocurrency"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173592",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nStablecoin neobank for emerging markets"
+  },
+  {
+    "id": "yc_30286",
+    "name": "Nitrode",
+    "email": null,
+    "phone": "",
+    "company": "Nitrode",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173595",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI game development engine & platform"
+  },
+  {
+    "id": "yc_30287",
+    "name": "Calltree",
+    "email": null,
+    "phone": "",
+    "company": "Calltree",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "SaaS",
+      "B2B",
+      "Customer Service",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173598",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nEnterprise-grade AI support reps for call centers"
+  },
+  {
+    "id": "yc_30288",
+    "name": "Harper",
+    "email": null,
+    "phone": "",
+    "company": "Harper",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Insurance",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173601",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 25\nAI-native commercial insurance brokerage"
+  },
+  {
+    "id": "yc_30290",
+    "name": "Tire Swing",
+    "email": null,
+    "phone": "",
+    "company": "Tire Swing",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "GovTech",
+      "Real Estate",
+      "Housing",
+      "Compliance",
+      "Legal"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173605",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Powered Affordable Housing Eligibility"
+  },
+  {
+    "id": "yc_30291",
+    "name": "Outlit",
+    "email": null,
+    "phone": "",
+    "company": "Outlit",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173608",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAccount-level Customer Journey"
+  },
+  {
+    "id": "yc_30292",
+    "name": "Mesh",
+    "email": null,
+    "phone": "",
+    "company": "Mesh",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "FinOps",
+      "Fintech",
+      "Finance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173612",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nKnow where your money is going, regardless of when invoices arrive"
+  },
+  {
+    "id": "yc_30293",
+    "name": "Orbital Operations",
+    "email": null,
+    "phone": "",
+    "company": "Orbital Operations",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173614",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nHigh Thrust Space Vehicles for Satellite Defense"
+  },
+  {
+    "id": "yc_30294",
+    "name": "Sennu AI",
+    "email": null,
+    "phone": "",
+    "company": "Sennu AI",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "SaaS",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173617",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI Code Review for Salesforce Development"
+  },
+  {
+    "id": "yc_30295",
+    "name": "Infinite",
+    "email": null,
+    "phone": "",
+    "company": "Infinite",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Payments",
+      "B2B",
+      "Compliance"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173620",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nGlobal B2B Stablecoin Processor"
+  },
+  {
+    "id": "yc_30296",
+    "name": "Peppr AI",
+    "email": null,
+    "phone": "",
+    "company": "Peppr AI",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173623",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nSelf-improving knowledge base synthesizing scattered company data"
+  },
+  {
+    "id": "yc_30297",
+    "name": "OpenIntake",
+    "email": null,
+    "phone": "",
+    "company": "OpenIntake",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "Sales",
+      "Legal",
+      "LegalTech"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173628",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe AI Front Door For Law Firms"
+  },
+  {
+    "id": "yc_30298",
+    "name": "Artificial Societies",
+    "email": null,
+    "phone": "",
+    "company": "Artificial Societies",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "SaaS",
+      "B2B",
+      "Market Research"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173631",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nWe use AI to simulate entire human societies"
+  },
+  {
+    "id": "yc_30299",
+    "name": "Miyagi Labs",
+    "email": null,
+    "phone": "",
+    "company": "Miyagi Labs",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173634",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI tutors for exam prep"
+  },
+  {
+    "id": "yc_30301",
+    "name": "FuseAI",
+    "email": null,
+    "phone": "",
+    "company": "FuseAI",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173637",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 8\nThe only outbound sales software you will ever need. "
+  },
+  {
+    "id": "yc_30302",
+    "name": "Misprint",
+    "email": null,
+    "phone": "",
+    "company": "Misprint",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Marketplace",
+      "Consumer"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173640",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nMisprint is building Robinhood for Pokemon cards"
+  },
+  {
+    "id": "yc_30303",
+    "name": "AfterQuery",
+    "email": null,
+    "phone": "",
+    "company": "AfterQuery",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "B2B",
+      "Data Labeling",
+      "Big Data",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173644",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 20\nResearch lab investigating the boundaries of AI capabilities."
+  },
+  {
+    "id": "yc_30304",
+    "name": "Mastra",
+    "email": null,
+    "phone": "",
+    "company": "Mastra",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Developer Tools",
+      "Open Source",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173648",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 8\nThe Javascript framework for building AI agents, from the Gatsby devs"
+  },
+  {
+    "id": "yc_30305",
+    "name": "Forge Automation",
+    "email": null,
+    "phone": "",
+    "company": "Forge Automation",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Hard Tech",
+      "Hardware",
+      "Robotics",
+      "Manufacturing",
+      "Industrial"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173653",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 10\nSoftware Enabled CNC Parts Supplier"
+  },
+  {
+    "id": "yc_30307",
+    "name": "Archon",
+    "email": null,
+    "phone": "",
+    "company": "Archon",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "GovTech",
+      "Compliance",
+      "Cybersecurity",
+      "Cloud Computing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173657",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nWe help software companies sell to government."
+  },
+  {
+    "id": "yc_30312",
+    "name": "Retrofit",
+    "email": null,
+    "phone": "",
+    "company": "Retrofit",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173660",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nA vintage marketplace curated by AI"
+  },
+  {
+    "id": "yc_30314",
+    "name": "Pinch",
+    "email": null,
+    "phone": "",
+    "company": "Pinch",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Telecommunications"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173664",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nReal-time AI Voice Translation for Developers"
+  },
+  {
+    "id": "yc_30315",
+    "name": "Optifye.ai",
+    "email": null,
+    "phone": "",
+    "company": "Optifye.ai",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Hard Tech",
+      "Computer Vision",
+      "Manufacturing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173668",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAI performance monitoring for factory workers"
+  },
+  {
+    "id": "yc_30316",
+    "name": "Reditus Space",
+    "email": null,
+    "phone": "",
+    "company": "Reditus Space",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Hard Tech",
+      "Manufacturing",
+      "Aerospace"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173672",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 20\nReusable Satellites for zero-g manufacturing"
+  },
+  {
+    "id": "yc_30317",
+    "name": "Permitify",
+    "email": null,
+    "phone": "",
+    "company": "Permitify",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "GovTech",
+      "Computer Vision",
+      "Construction"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173676",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAI co-pilot for building plan review and building code compliance"
+  },
+  {
+    "id": "yc_30318",
+    "name": "Wildcard",
+    "email": null,
+    "phone": "",
+    "company": "Wildcard",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Generative AI",
+      "E-commerce",
+      "Marketing",
+      "Retail Tech",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173680",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nSell Products in ChatGPT Shopping"
+  },
+  {
+    "id": "yc_30319",
+    "name": "Corsair",
+    "email": null,
+    "phone": "",
+    "company": "Corsair",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "B2B",
+      "Workflow Automation",
+      "Open Source",
+      "API"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173683",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe TypeScript Integration Framework"
+  },
+  {
+    "id": "yc_30320",
+    "name": "Proception Inc",
+    "email": null,
+    "phone": "",
+    "company": "Proception Inc",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Robotics"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173687",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 10\nMaking humanoids dexterous enough to thread a needle"
+  },
+  {
+    "id": "yc_30321",
+    "name": "Woz",
+    "email": null,
+    "phone": "",
+    "company": "Woz",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "Design",
+      "No-code",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173690",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nAI platform enabling anyone to build and scale software businesses"
+  },
+  {
+    "id": "yc_30322",
+    "name": "Spott",
+    "email": null,
+    "phone": "",
+    "company": "Spott",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "SaaS",
+      "B2B",
+      "HR Tech",
+      "Enterprise Software",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173693",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 20\nAI-native ATS/CRM for recruiting firms"
+  },
+  {
+    "id": "yc_30324",
+    "name": "Rebolt",
+    "email": null,
+    "phone": "",
+    "company": "Rebolt",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Enterprise Software",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173697",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nBuild apps and agents by speaking with AI"
+  },
+  {
+    "id": "yc_30325",
+    "name": "Roark",
+    "email": null,
+    "phone": "",
+    "company": "Roark",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Analytics",
+      "AI",
+      "Conversational AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173701",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nTest, monitor, and improve your voice agents"
+  },
+  {
+    "id": "yc_30328",
+    "name": "Dalus",
+    "email": null,
+    "phone": "",
+    "company": "Dalus",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173704",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAI-Powered Hardware System Design Software"
+  },
+  {
+    "id": "yc_30333",
+    "name": "TensorPool",
+    "email": null,
+    "phone": "",
+    "company": "TensorPool",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "AIOps",
+      "Developer Tools",
+      "SaaS",
+      "DevOps",
+      "Cloud Computing"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173707",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nVercel For GPUs"
+  },
+  {
+    "id": "yc_30334",
+    "name": "Bluebook",
+    "email": null,
+    "phone": "",
+    "company": "Bluebook",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "B2B",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173710",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI for accounting"
+  },
+  {
+    "id": "yc_30335",
+    "name": "Butter",
+    "email": null,
+    "phone": "",
+    "company": "Butter",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173712",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nMuscle Memory Cache for Agents"
+  },
+  {
+    "id": "yc_30337",
+    "name": "Paratus Health",
+    "email": null,
+    "phone": "",
+    "company": "Paratus Health",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Digital Health",
+      "Healthcare IT",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173718",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nMedical Voice Agents for Patient Management"
+  },
+  {
+    "id": "yc_30338",
+    "name": "CopyCat",
+    "email": null,
+    "phone": "",
+    "company": "CopyCat",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Health Tech",
+      "B2B",
+      "Healthcare",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173722",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAI Biopsy Callback Platform for Dermatologists"
+  },
+  {
+    "id": "yc_30339",
+    "name": "Ergo",
+    "email": null,
+    "phone": "",
+    "company": "Ergo",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "SaaS",
+      "B2B",
+      "Sales"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173725",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 0\nAI Agents for Revenue Teams"
+  },
+  {
+    "id": "yc_30340",
+    "name": "TamLabs",
+    "email": null,
+    "phone": "",
+    "company": "TamLabs",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Finance",
+      "Productivity",
+      "Legal",
+      "AI",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173729",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nCursor for Microsoft Word"
+  },
+  {
+    "id": "yc_30341",
+    "name": "Browser Use",
+    "email": null,
+    "phone": "",
+    "company": "Browser Use",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Open Source",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173732",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 7\nLeading open-source web agent project with 50k stars in 3 months"
+  },
+  {
+    "id": "yc_30343",
+    "name": "Cedar",
+    "email": null,
+    "phone": "",
+    "company": "Cedar",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173735",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe open source copilot for any app"
+  },
+  {
+    "id": "yc_30345",
+    "name": "Lightbox",
+    "email": null,
+    "phone": "",
+    "company": "Lightbox",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Design",
+      "Design Tools"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173741",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nCursor for Content Creation"
+  },
+  {
+    "id": "yc_30346",
+    "name": "Mercura",
+    "email": null,
+    "phone": "",
+    "company": "Mercura",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173745",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 14\nAI Quote and Order Automation for Distributors & Manufacturers"
+  },
+  {
+    "id": "yc_30347",
+    "name": "Instinct",
+    "email": null,
+    "phone": "",
+    "company": "Instinct",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173748",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nBuilding lunar landers"
+  },
+  {
+    "id": "yc_30348",
+    "name": "SAMMY Labs",
+    "email": null,
+    "phone": "",
+    "company": "SAMMY Labs",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173751",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 10\nSAMMY Labs, the knowledge layer for your people and AI"
+  },
+  {
+    "id": "yc_30349",
+    "name": "Candid",
+    "email": null,
+    "phone": "",
+    "company": "Candid",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173754",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nThe hiring platform for exceptional talent"
+  },
+  {
+    "id": "yc_30350",
+    "name": "TrainLoop",
+    "email": null,
+    "phone": "",
+    "company": "TrainLoop",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "Reinforcement Learning"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173758",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 6\nReasoning Fine-Tuning"
+  },
+  {
+    "id": "yc_30351",
+    "name": "ThirdLayer",
+    "email": null,
+    "phone": "",
+    "company": "ThirdLayer",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Productivity",
+      "Consumer Products",
+      "AI"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173763",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nBuilding Dex, the AI Browser Copilot"
+  },
+  {
+    "id": "yc_30353",
+    "name": "Axal",
+    "email": null,
+    "phone": "",
+    "company": "Axal",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Manufacturing",
+      "Enterprise Software",
+      "Automation"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173767",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 2\nAutomate Data Entry From Inbox to ERP"
+  },
+  {
+    "id": "yc_30354",
+    "name": "Artifact",
+    "email": null,
+    "phone": "",
+    "company": "Artifact",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173771",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nAn Collaborative, AI-native IDE for Hardware Engineers"
+  },
+  {
+    "id": "yc_30355",
+    "name": "assistant-ui",
+    "email": null,
+    "phone": "",
+    "company": "assistant-ui",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Developer Tools",
+      "Generative AI",
+      "Chat",
+      "Web Development",
+      "AI Assistant"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173775",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 3\nOpen Source React.js Library for AI Chat"
+  },
+  {
+    "id": "yc_30356",
+    "name": "Fira",
+    "email": null,
+    "phone": "",
+    "company": "Fira",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173778",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nFinancial research platform for investment firms"
+  },
+  {
+    "id": "yc_30357",
+    "name": "Vantel",
+    "email": null,
+    "phone": "",
+    "company": "Vantel",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Documents",
+      "Insurance",
+      "CRM"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173782",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nAI Platform for Commercial Insurance Brokerages"
+  },
+  {
+    "id": "yc_30363",
+    "name": "BlindPay",
+    "email": null,
+    "phone": "",
+    "company": "BlindPay",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Fintech",
+      "Crypto / Web3",
+      "Payments",
+      "API"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173786",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 4\nStablecoin API for global payments"
+  },
+  {
+    "id": "yc_30365",
+    "name": "Mentra",
+    "email": null,
+    "phone": "",
+    "company": "Mentra",
+    "source": "yc_Winter 2025",
+    "tags": [
+      "Artificial Intelligence",
+      "Hardware",
+      "Consumer",
+      "Open Source",
+      "AR"
+    ],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173791",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 12\nBuilding the open source smart glasses operating system."
+  },
+  {
+    "id": "yc_30368",
+    "name": "Red Barn Robotics",
+    "email": null,
+    "phone": "",
+    "company": "Red Barn Robotics",
+    "source": "yc_Winter 2025",
+    "tags": [],
+    "status": "lead",
+    "created_at": "2026-04-01T18:57:34.173795",
+    "last_contact": null,
+    "notes": "YC Batch: Winter 2025\nLocation: None\nTeam: 5\nA Roomba for weeds on a farm. "
+  }
+]

@@ -1,0 +1,382 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.0.0.2:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+2026-04-01 19:25:50.749 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 19:25:53.906 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 19:37:45.195 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-04-01 19:43:13.802 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 21:26:02.197 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 23:40:08.276 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 23:40:18.282 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 23:40:19.195 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 23:40:22.910 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 23:40:33.748 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-01 23:41:26.181 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-02 00:19:20.323 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:19:20.387 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:19:20.395 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:19:20.406 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:19:20.419 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:20:15.826 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-02 00:20:19.394 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block
+2026-04-02 00:20:24.215 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:20:24.265 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:20:24.275 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:20:24.281 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:20:24.287 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:21:27.033 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:21:27.059 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:21:27.064 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:21:27.068 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:21:27.074 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-04-02 00:21:46.181 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/navigation/page.py", line 296, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/raghavshah/Desktop/Agency OS/.venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/raghavshah/Desktop/Agency OS/pages/2_Leads.py", line 379
+    if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+IndentationError: expected an indented block

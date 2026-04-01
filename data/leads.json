@@ -13547,5 +13547,90 @@
       "linkedin": ""
     },
     "tags": []
+  },
+  {
+    "id": "lawyer_0_20260402",
+    "name": "Karan Thukral",
+    "title": "Advocate at Thukral & Associates",
+    "company": "Thukral & Associates",
+    "location": "Delhi",
+    "platform": "Legal Database",
+    "status": "NEW",
+    "tags": [
+      "lawyer",
+      "delhi",
+      "priority"
+    ],
+    "extracted_at": "2026-04-02T01:08:53.510277",
+    "score": 55,
+    "category": "\u26a1 WARM"
+  },
+  {
+    "id": "lawyer_1_20260402",
+    "name": "Ahlawat Associates",
+    "title": "Advocate at Ahlawat Law Firm",
+    "company": "Ahlawat Law Firm",
+    "location": "Gurgaon",
+    "platform": "Legal Database",
+    "status": "NEW",
+    "tags": [
+      "lawyer",
+      "delhi",
+      "priority"
+    ],
+    "extracted_at": "2026-04-02T01:08:55.802864",
+    "score": 55,
+    "category": "\u26a1 WARM"
+  },
+  {
+    "id": "lawyer_2_20260402",
+    "name": "Aegis Legal",
+    "title": "Advocate at Aegis Legal LLP",
+    "company": "Aegis Legal LLP",
+    "location": "Delhi",
+    "platform": "Legal Database",
+    "status": "NEW",
+    "tags": [
+      "lawyer",
+      "delhi",
+      "priority"
+    ],
+    "extracted_at": "2026-04-02T01:08:56.567731",
+    "score": 55,
+    "category": "\u26a1 WARM"
+  },
+  {
+    "id": "lawyer_3_20260402",
+    "name": "Century Law Firm",
+    "title": "Advocate at Century",
+    "company": "Century",
+    "location": "Noida",
+    "platform": "Legal Database",
+    "status": "NEW",
+    "tags": [
+      "lawyer",
+      "delhi",
+      "priority"
+    ],
+    "extracted_at": "2026-04-02T01:08:57.048067",
+    "score": 55,
+    "category": "\u26a1 WARM"
+  },
+  {
+    "id": "lawyer_4_20260402",
+    "name": "Ashok Gupta",
+    "title": "Advocate at Ashok Gupta & Co",
+    "company": "Ashok Gupta & Co",
+    "location": "Delhi",
+    "platform": "Legal Database",
+    "status": "NEW",
+    "tags": [
+      "lawyer",
+      "delhi",
+      "priority"
+    ],
+    "extracted_at": "2026-04-02T01:08:57.502710",
+    "score": 55,
+    "category": "\u26a1 WARM"
   }
 ]

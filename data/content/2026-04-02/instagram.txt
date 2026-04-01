@@ -1,0 +1,21 @@
+unpopular opinion: 💰
+
+Swipe to see how I built an AI tool that drafts legal documents in 2 minutes ⚡
+
+Lawyers used to take 2 hours.
+Now? 2 minutes.
+
+Tech stack:
+✅ Next.js 14
+✅ OpenAI
+✅ Supabase
+✅ 20 days
+
+Save karo, share karo, DM karo 📩
+
+.
+.
+.
+.
+.
+#LegalTech #AI #SaaS #StartupIndia #Delhi #NoCode #IndieHackers #BuildInPublic #RAGSPRO #AITools #LawyerLife #TechStartup #MVP #AIAutomation

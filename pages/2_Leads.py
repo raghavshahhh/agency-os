@@ -375,28 +375,27 @@ for lead in paginated_leads:
                 st.markdown("---")
                 st.markdown("##### 🧬 Lead Enrichment (Get Verified Emails)")
                 enrich_col1, enrich_col2 = st.columns(2)
-                with enrich_col1:
-        if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
-            with st.spinner("🔍 Finding contact info..."):
-                result = enrich_single_lead(lead_id)
-                if result.get("success"):
-                    emails = result.get("emails_found", 0)
-                    phones = result.get("phones_found", 0)
-                    score_up = result.get("score_increase", 0)
-                    sources = result.get("sources", [])
-                    if emails > 0 or phones > 0:
-                        st.success(f"🎉 Found {emails} emails, {phones} phones! +{score_up} points")
-                        st.caption(f"Sources: {', '.join(sources)}")
-                    else:
-                        st.warning("No new contact info found. Try manual search.")
-                else:
-                    st.error(f"❌ {result.get('error', 'Enrichment failed')}")
-            time.sleep(1)
-            st.rerun()
-                with enrich_col2:
-        if st.button("📊 Stats", key=f"enrich_stats_{lead_id}", use_container_width=True):
-            st.json(get_enrichment_stats())
-
+            with enrich_col1:
+                if st.button("🚀 Enrich Lead", key=f"enrich_{lead_id}", use_container_width=True, help="Uses Apollo.io + Hunter.io + Email Permutation to find contact info"):
+                    with st.spinner("🔍 Finding contact info..."):
+                        result = enrich_single_lead(lead_id)
+                        if result.get("success"):
+                            emails = result.get("emails_found", 0)
+                            phones = result.get("phones_found", 0)
+                            score_up = result.get("score_increase", 0)
+                            sources = result.get("sources", [])
+                            if emails > 0 or phones > 0:
+                                st.success(f"🎉 Found {emails} emails, {phones} phones! +{score_up} points")
+                                st.caption(f"Sources: {', '.join(sources)}")
+                            else:
+                                st.warning("No new contact info found. Try manual search.")
+                        else:
+                            st.error(f"❌ {result.get('error', 'Enrichment failed')}")
+                    time.sleep(1)
+                    st.rerun()
+            with enrich_col2:
+                if st.button("📊 Stats", key=f"enrich_stats_{lead_id}", use_container_width=True):
+                    st.json(get_enrichment_stats())
                 st.markdown("---")
             if linkedin:
                 st.markdown(f"🔗 **LinkedIn:** [{linkedin}]({linkedin})")
