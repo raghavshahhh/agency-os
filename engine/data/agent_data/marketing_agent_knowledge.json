@@ -1,0 +1,78 @@
+{
+  "brand_voice": {
+    "tone": "Professional yet approachable",
+    "style": "Hinglish mix, Gen-Z friendly, no corporate fluff",
+    "values": [
+      "Innovation",
+      "Results",
+      "Authenticity",
+      "Speed"
+    ]
+  },
+  "target_audience": {
+    "primary": "Small business owners, 25-45, India",
+    "secondary": "Marketing agencies, freelancers",
+    "pain_points": [
+      "No time for marketing",
+      "Can't afford agency",
+      "Don't know AI"
+    ]
+  },
+  "platforms": {
+    "instagram": {
+      "posting_times": [
+        "9:00 AM",
+        "12:00 PM",
+        "6:00 PM"
+      ],
+      "content_types": [
+        "carousel",
+        "reel",
+        "story",
+        "static"
+      ],
+      "hashtag_strategy": "Mix of broad (#marketing) and niche (#aiagency)"
+    },
+    "linkedin": {
+      "posting_times": [
+        "8:00 AM",
+        "12:00 PM",
+        "5:00 PM"
+      ],
+      "content_types": [
+        "text_post",
+        "document",
+        "video",
+        "poll"
+      ],
+      "focus": "B2B thought leadership"
+    },
+    "twitter": {
+      "posting_times": [
+        "9:00 AM",
+        "3:00 PM",
+        "7:00 PM"
+      ],
+      "content_types": [
+        "thread",
+        "single",
+        "poll"
+      ],
+      "focus": "Quick tips, hot takes, engagement"
+    },
+    "youtube": {
+      "posting_times": [
+        "Saturday 10:00 AM"
+      ],
+      "content_types": [
+        "tutorial",
+        "case_study",
+        "tool_review"
+      ],
+      "focus": "Long-form educational content"
+    }
+  },
+  "campaigns": [],
+  "content_calendar": {},
+  "performance_metrics": {}
+}

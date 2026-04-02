@@ -24,6 +24,12 @@ from outreach_engine import (
 )
 from enrichment import enrich_single_lead, get_enrichment_stats
 
+# File locking - Unix/Linux only (Windows uses different mechanism)
+try:
+    import fcntl
+except ImportError:
+    fcntl = None  # Windows - no file locking
+
 st.set_page_config(page_title=f"{AGENCY_NAME} - Leads CRM", page_icon="👥", layout="wide")
 
 LEADS_FILE = DATA_DIR / "leads.json"
@@ -114,19 +120,52 @@ st.markdown("""
 # ─── Data Functions ───────────────────────────────────────────────────────────
 
 def load_leads():
-    if LEADS_FILE.exists():
+    """Load leads with file locking for thread safety"""
+    if not LEADS_FILE.exists():
+        return []
+    try:
+        with open(LEADS_FILE, 'r') as f:
+            # Try to acquire shared lock (Unix/Linux only)
+            if fcntl:
+                try:
+                    fcntl.flock(f.fileno(), fcntl.LOCK_SH | fcntl.LOCK_NB)
+                    data = json.load(f)
+                    fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+                    return data if isinstance(data, list) else []
+                except (IOError, OSError):
+                    # If lock fails, try without lock
+                    f.seek(0)
+            return json.load(f)
+    except json.JSONDecodeError:
+        st.error("Leads file corrupted. Creating backup.")
+        # Backup corrupted file
+        backup_path = LEADS_FILE.with_suffix('.json.backup')
         try:
-            with open(LEADS_FILE, 'r') as f:
-                return json.load(f)
-        except Exception:
-            return []
-    return []
+            LEADS_FILE.rename(backup_path)
+        except:
+            pass
+        return []
+    except Exception as e:
+        st.error(f"Error loading leads: {str(e)[:50]}")
+        return []
 
 
 def save_leads(leads):
+    """Save leads with file locking for atomic writes"""
     LEADS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(LEADS_FILE, 'w') as f:
-        json.dump(leads, f, indent=2, default=str)
+    temp_file = LEADS_FILE.with_suffix('.tmp')
+    try:
+        # Write to temp file first
+        with open(temp_file, 'w') as f:
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+            json.dump(leads, f, indent=2, default=str)
+            fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+        # Atomic rename
+        temp_file.rename(LEADS_FILE)
+    except Exception as e:
+        st.error(f"Error saving leads: {str(e)[:50]}")
+        if temp_file.exists():
+            temp_file.unlink()
 
 
 def get_score_class(score):
@@ -470,8 +509,17 @@ for lead in paginated_leads:
 
                     with send_col2:
                         if st.button("📋 Copy Email", key=f"copy_email_{lead_id}", use_container_width=True):
-                            log_outreach(lead_id, "email", st.session_state[draft_key], sent_via="manual")
-                            st.toast("Email copied! Log entry created.")
+                            try:
+                                import pyperclip
+                                pyperclip.copy(st.session_state[draft_key])
+                                log_outreach(lead_id, "email", st.session_state[draft_key], sent_via="manual")
+                                st.toast("✅ Email copied! Log entry created.")
+                            except ImportError:
+                                st.code(st.session_state[draft_key], language="text")
+                                st.info("Install pyperclip: pip install pyperclip")
+                                log_outreach(lead_id, "email", st.session_state[draft_key], sent_via="manual")
+                            except Exception as e:
+                                st.error(f"Copy failed: {e}")
 
                     # Follow-up option
                     history = get_lead_outreach_history(lead_id)
@@ -496,8 +544,17 @@ for lead in paginated_leads:
                     st.text_area("Call Script", value=st.session_state[call_key], height=250, key=f"cs_display_{lead_id}")
 
                     if st.button("📋 Copy & Log Call", key=f"log_call_{lead_id}", use_container_width=True):
-                        log_outreach(lead_id, "call", st.session_state[call_key], sent_via="manual")
-                        st.toast("Call script copied! Log entry created.")
+                        try:
+                            import pyperclip
+                            pyperclip.copy(st.session_state[call_key])
+                            log_outreach(lead_id, "call", st.session_state[call_key], sent_via="manual")
+                            st.toast("✅ Call script copied! Log entry created.")
+                        except ImportError:
+                            st.code(st.session_state[call_key], language="text")
+                            st.info("Install pyperclip: pip install pyperclip")
+                            log_outreach(lead_id, "call", st.session_state[call_key], sent_via="manual")
+                        except Exception as e:
+                            st.error(f"Copy failed: {e}")
 
             with tab_linkedin:
                 if st.button("🤖 Generate LinkedIn DM", key=f"gen_li_{lead_id}", use_container_width=True):
@@ -513,8 +570,17 @@ for lead in paginated_leads:
                     st.caption(f"{char_count}/280 characters")
 
                     if st.button("📋 Copy & Log DM", key=f"log_li_{lead_id}", use_container_width=True):
-                        log_outreach(lead_id, "linkedin_dm", st.session_state[dm_key], sent_via="manual")
-                        st.toast("LinkedIn DM copied! Log entry created.")
+                        try:
+                            import pyperclip
+                            pyperclip.copy(st.session_state[dm_key])
+                            log_outreach(lead_id, "linkedin_dm", st.session_state[dm_key], sent_via="manual")
+                            st.toast("✅ LinkedIn DM copied! Log entry created.")
+                        except ImportError:
+                            st.code(st.session_state[dm_key], language="text")
+                            st.info("Install pyperclip: pip install pyperclip")
+                            log_outreach(lead_id, "linkedin_dm", st.session_state[dm_key], sent_via="manual")
+                        except Exception as e:
+                            st.error(f"Copy failed: {e}")
 
             # ─── Communication Timeline ───────────────────────────────────────
             st.markdown("---")

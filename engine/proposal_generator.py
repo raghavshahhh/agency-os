@@ -8,8 +8,11 @@ import json
 import requests
 from datetime import datetime
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-NVIDIA_API_KEY = "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"
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "")
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 PROPOSALS_DIR = DATA_DIR / "proposals"

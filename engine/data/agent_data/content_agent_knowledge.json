@@ -1,0 +1,93 @@
+{
+  "hooks": {
+    "instagram": [
+      "POV: You finally found the AI tool that...",
+      "Stop doing this if you want to grow...",
+      "This changed everything for my agency...",
+      "3 AI tools that will 10x your output:",
+      "I spent \u20b91L on marketing so you don't have to..."
+    ],
+    "linkedin": [
+      "I helped a client 10x their leads in 30 days. Here's how:",
+      "The biggest mistake I see agency owners make:",
+      "3 lessons from running an AI agency for 6 months:",
+      "Most people get AI automation wrong. Here's the fix:",
+      "Unpopular opinion: {controversial_take}"
+    ],
+    "twitter": [
+      "Hot take: {controversial_take}",
+      "3 AI tools that actually work (no fluff):",
+      "Agency owners, stop doing this \ud83d\udc47",
+      "The AI automation playbook (Thread):",
+      "I built an AI agency from \u20b90 to \u20b950K. Here's what I learned:"
+    ]
+  },
+  "content_patterns": {
+    "carousel": {
+      "structure": [
+        "Hook slide",
+        "Problem",
+        "Solution",
+        "Steps",
+        "CTA"
+      ],
+      "slide_count": 5
+    },
+    "reel": {
+      "structure": [
+        "Hook (0-3s)",
+        "Value delivery",
+        "CTA"
+      ],
+      "duration": "30-60s"
+    },
+    "thread": {
+      "structure": [
+        "Strong opener",
+        "Main points",
+        "Takeaways",
+        "CTA"
+      ],
+      "tweet_count": "5-10"
+    }
+  },
+  "brand_voice": {
+    "words_to_use": [
+      "crushing it",
+      "10x",
+      "scale",
+      "automate",
+      "growth"
+    ],
+    "words_to_avoid": [
+      "synergy",
+      "leverage",
+      "robust",
+      "scalable"
+    ],
+    "tone": "Direct, energetic, no fluff"
+  },
+  "hashtag_sets": {
+    "instagram": [
+      "#aiagency",
+      "#marketingautomation",
+      "#leadgeneration",
+      "#aicommunity",
+      "#growthhacking"
+    ],
+    "linkedin": [
+      "#artificialintelligence",
+      "#marketing",
+      "#agencylife",
+      "#automation",
+      "#businessgrowth"
+    ],
+    "twitter": [
+      "#AI",
+      "#Marketing",
+      "#Automation",
+      "#AgencyLife",
+      "#BuildInPublic"
+    ]
+  }
+}

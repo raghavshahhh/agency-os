@@ -1,0 +1,77 @@
+{
+  "posting_schedule": {
+    "instagram": [
+      "09:00",
+      "12:00",
+      "18:00"
+    ],
+    "linkedin": [
+      "08:00",
+      "12:00",
+      "17:00"
+    ],
+    "twitter": [
+      "09:00",
+      "15:00",
+      "19:00"
+    ],
+    "youtube": [
+      "Saturday 10:00"
+    ]
+  },
+  "best_times": {
+    "instagram": {
+      "weekday": [
+        "12:00",
+        "18:00"
+      ],
+      "weekend": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "linkedin": {
+      "weekday": [
+        "08:00",
+        "12:00",
+        "17:00"
+      ],
+      "weekend": []
+    },
+    "twitter": {
+      "weekday": [
+        "09:00",
+        "15:00",
+        "19:00"
+      ],
+      "weekend": [
+        "10:00",
+        "20:00"
+      ]
+    }
+  },
+  "content_queue": [],
+  "posted_content": [],
+  "platforms": {
+    "instagram": {
+      "enabled": true,
+      "auto_post": false,
+      "last_post": null
+    },
+    "linkedin": {
+      "enabled": true,
+      "auto_post": true,
+      "last_post": null
+    },
+    "twitter": {
+      "enabled": true,
+      "auto_post": true,
+      "last_post": null
+    },
+    "youtube": {
+      "enabled": false,
+      "auto_post": false,
+      "last_post": null
+    }
+  }
+}

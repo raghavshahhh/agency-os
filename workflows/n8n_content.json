@@ -19,7 +19,7 @@
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {"name": "Authorization", "value": "Bearer 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"},
+            {"name": "Authorization", "value": "Bearer {{ $env.NVIDIA_API_KEY }}"},
             {"name": "Content-Type", "value": "application/json"}
           ]
         },
@@ -35,7 +35,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://api.telegram.org/bot8708095134:AAFGDnlmWn6D9tDozP8PXmBDb-vfXoXbn3M/sendMessage",
+        "url": "https://api.telegram.org/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
         "sendBody": true,
         "contentType": "json",
         "body": "={\"chat_id\": \"1451671418\", \"text\": \"🎨 RAGSPRO Daily Content\\n\\n\" + $json.choices[0].message.content + \"\\n\\n⏰ \" + new Date().toISOString(), \"parse_mode\": \"Markdown\"}"

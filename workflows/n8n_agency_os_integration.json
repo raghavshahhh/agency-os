@@ -1,0 +1,136 @@
+{
+  "name": "Agency OS - Full Integration",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 4
+            }
+          ]
+        }
+      },
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.apify.com/v2/acts/compass~crawler-google-places/run-sync-get-dataset-items",
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "body": {
+          "queries": "={{ $json.queries }}",
+          "maxCrawledPlaces": "={{ $json.maxResults }}",
+          "language": "en"
+        },
+        "options": {
+          "headers": {
+            "Authorization": "Bearer={{ $credentials.apifyApi.apiKey }}"
+          }
+        }
+      },
+      "name": "Apify Google Maps",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Transform Apify results to Agency OS format\nconst leads = items[0].json.map(place => {\n  return {\n    json: {\n      id: `gmaps_${place.placeId || Math.random().toString(36).substr(2, 9)}`,\n      name: place.title || '',\n      company: place.title || '',\n      title: `${place.title || ''} - ${place.categoryName || 'Business'}`,\n      industry: place.categoryName || '',\n      url: place.website || '',\n      platform: 'Google Maps',\n      score: place.website ? 80 : 60,\n      status: 'NEW',\n      extracted_at: new Date().toISOString(),\n      location: place.address || '',\n      phone: place.phone || '',\n      contact: {\n        emails: [],\n        phones: place.phone ? [place.phone] : [],\n        website: place.website || ''\n      },\n      source: 'apify_google_maps',\n      metadata: {\n        rating: place.totalScore,\n        reviews: place.reviewsCount\n      }\n    }\n  };\n});\n\nreturn leads;"
+      },
+      "name": "Transform Leads",
+      "type": "n8n-nodes-base.code",
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "postgres",
+        "operation": "insert",
+        "table": "=leads",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.id }}",
+            "name": "={{ $json.name }}",
+            "company": "={{ $json.company }}",
+            "title": "={{ $json.title }}",
+            "industry": "={{ $json.industry }}",
+            "url": "={{ $json.url }}",
+            "platform": "={{ $json.platform }}",
+            "score": "={{ $json.score }}",
+            "status": "={{ $json.status }}",
+            "extracted_at": "={{ $json.extracted_at }}",
+            "location": "={{ $json.location }}",
+            "phone": "={{ $json.phone }}",
+            "source": "={{ $json.source }}"
+          }
+        }
+      },
+      "name": "Save to Database",
+      "type": "n8n-nodes-base.postgres",
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "text": "📊 <b>New Leads Found!</b>\n\nSource: {{ $json.platform }}\nCount: {{ $items.length }}\n\nTop leads:\n{{ $items.slice(0, 3).map(i => `• ${i.json.name} (${i.json.industry})`).join('\\n') }}"
+      },
+      "name": "Telegram Notification",
+      "type": "n8n-nodes-base.telegram",
+      "position": [1050, 300]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Apify Google Maps",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Apify Google Maps": {
+      "main": [
+        [
+          {
+            "node": "Transform Leads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Leads": {
+      "main": [
+        [
+          {
+            "node": "Save to Database",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to Database": {
+      "main": [
+        [
+          {
+            "node": "Telegram Notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  }
+}

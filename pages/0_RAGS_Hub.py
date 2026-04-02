@@ -274,15 +274,37 @@ with tab1:
                     """, unsafe_allow_html=True)
 
                     # Copy button using streamlit
-                    if st.button(f"📋 Copy {label}", key=f"copy_{filename}"):
-                        st.code(content, language="text")
-                        st.toast(f"{label} copied!")
+                    if st.button(f"📋 Copy", key=f"copy_{filename}"):
+                        try:
+                            import pyperclip
+                            pyperclip.copy(content)
+                            st.toast(f"✅ {label} copied to clipboard!")
+                        except ImportError:
+                            st.code(content, language="text")
+                            st.info("Install pyperclip for automatic copying")
                 else:
                     st.info(f"No {label} generated yet")
     else:
         st.warning("⚠️ No content for today. Generate content first!")
         if st.button("🚀 Generate Today's Content"):
-            st.info("Run: `python engine/content_engine.py`")
+            import subprocess
+            import sys
+            ENGINE_DIR = Path(__file__).parent.parent / "engine"
+            with st.spinner("Generating content..."):
+                try:
+                    result = subprocess.run(
+                        [sys.executable, str(ENGINE_DIR / "content_engine.py")],
+                        capture_output=True,
+                        text=True,
+                        timeout=180
+                    )
+                    if result.returncode == 0:
+                        st.success("✅ Content generated successfully!")
+                        st.rerun()
+                    else:
+                        st.error(f"Error: {result.stderr[:200]}")
+                except Exception as e:
+                    st.error(f"Failed: {e}")
 
 # ─── TAB 2: DM TEMPLATES ────────────────────────────────────────────────────
 
@@ -351,7 +373,13 @@ with tab2:
         with st.expander(f"📱 {name}"):
             st.code(template, language="text")
             if st.button(f"📋 Copy", key=f"dm_{name}"):
-                st.toast(f"Copied: {name}")
+                try:
+                    import pyperclip
+                    pyperclip.copy(template)
+                    st.toast(f"✅ Copied: {name}")
+                except ImportError:
+                    st.code(template, language="text")
+                    st.info("Install pyperclip for automatic copying")
 
 # ─── TAB 3: EMAIL TEMPLATES ─────────────────────────────────────────────────
 
@@ -465,7 +493,13 @@ with tab3:
         with st.expander(f"📧 {name}"):
             st.code(template, language="text")
             if st.button(f"📋 Copy", key=f"email_{name}"):
-                st.toast(f"Copied: {name}")
+                try:
+                    import pyperclip
+                    pyperclip.copy(template)
+                    st.toast(f"✅ Copied: {name}")
+                except ImportError:
+                    st.code(template, language="text")
+                    st.info("Install pyperclip for automatic copying")
 
 # ─── TAB 4: LEAD LISTS ───────────────────────────────────────────────────────
 
@@ -495,7 +529,13 @@ with tab4:
                     email_list = ", ".join(emails[:20])
                     st.code(email_list, language="text")
                     if st.button(f"📋 Copy Emails", key=f"emails_{category_name}"):
-                        st.toast("Emails copied!")
+                        try:
+                            import pyperclip
+                            pyperclip.copy(email_list)
+                            st.toast("✅ Emails copied!")
+                        except ImportError:
+                            st.code(email_list, language="text")
+                            st.info("Install pyperclip for automatic copying")
             else:
                 st.info("No leads in this category. Scrape more!")
 
@@ -570,7 +610,13 @@ with tab5:
         with st.expander(f"🎤 {name}"):
             st.code(script, language="text")
             if st.button(f"📋 Copy", key=f"script_{name}"):
-                st.toast(f"Copied: {name}")
+                try:
+                    import pyperclip
+                    pyperclip.copy(script)
+                    st.toast(f"✅ Copied: {name}")
+                except ImportError:
+                    st.code(script, language="text")
+                    st.info("Install pyperclip for automatic copying")
 
 # ─── TAB 6: WHAT RAGS CAN DO ─────────────────────────────────────────────────
 

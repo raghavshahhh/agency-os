@@ -25,9 +25,10 @@ fi
 # Create data directory
 mkdir -p data leads content reports config/templates
 
-# Export API keys
-export NVIDIA_API_KEY="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"
-export TELEGRAM_BOT_TOKEN="8708095134:AAFGDnlmWn6D9tDozP8PXmBDb-vfXoXbn3M"
+# Load API keys from .env file if it exists
+if [ -f .env ]; then
+    export $(grep -v '^#' .env | xargs)
+fi
 
 echo ""
 echo "${GREEN}✅ RAGSPRO Agency System Ready!${NC}"

@@ -8,6 +8,7 @@ Uses NVIDIA NIM (Qwen) API
 import json
 import sys
 import requests
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -21,7 +22,7 @@ from config import (
 
 
 def call_nvidia(prompt, max_tokens=600):
-    """Call NVIDIA NIM API for content generation"""
+    """Call NVIDIA NIM API for content generation with error handling"""
     if not NVIDIA_API_KEY:
         print("✗ NVIDIA_API_KEY not set!")
         return None
@@ -53,9 +54,53 @@ def call_nvidia(prompt, max_tokens=600):
     try:
         response = requests.post(NVIDIA_API_URL, headers=headers, json=payload, timeout=60)
         response.raise_for_status()
-        return response.json()["choices"][0]["message"]["content"]
+        data = response.json()
+
+        # Validate response structure
+        if not isinstance(data, dict):
+            print(f"✗ API Error: Invalid response format")
+            return None
+
+        choices = data.get("choices", [])
+        if not choices or not isinstance(choices, list):
+            print(f"✗ API Error: No choices in response")
+            return None
+
+        first_choice = choices[0]
+        if not isinstance(first_choice, dict):
+            print(f"✗ API Error: Invalid choice format")
+            return None
+
+        message = first_choice.get("message", {})
+        if not isinstance(message, dict):
+            print(f"✗ API Error: Invalid message format")
+            return None
+
+        content = message.get("content", "")
+        if not content:
+            print(f"✗ API Error: Empty content")
+            return None
+
+        return content.strip()
+
+    except requests.exceptions.Timeout:
+        print(f"✗ API Error: Request timeout after 60s")
+        return None
+    except requests.exceptions.ConnectionError:
+        print(f"✗ API Error: Connection failed")
+        return None
+    except requests.exceptions.HTTPError as e:
+        status_code = e.response.status_code if e.response else 0
+        if status_code == 429:
+            print(f"✗ API Error: Rate limited (429). Try again in a few minutes.")
+        else:
+            print(f"✗ API Error: HTTP {status_code}")
+        return None
+    except json.JSONDecodeError:
+        print(f"✗ API Error: Invalid JSON response")
+        return None
     except Exception as e:
-        print(f"✗ API Error: {e}")
+        print(f"✗ API Error: {type(e).__name__}: {str(e)[:50]}")
         return None
 
 
@@ -185,6 +230,9 @@ def main():
             print(f" ✓ ({len(content)} chars)")
         else:
             print(" ✗ Failed")
+
+        # Rate limiting delay between API calls
+        time.sleep(2)
 
     print(f"\n{'=' * 40}")
     print(f"✅ Generated {generated}/{len(content_files)} pieces of content")

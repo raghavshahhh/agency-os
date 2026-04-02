@@ -15,10 +15,14 @@ from pathlib import Path
 import threading
 
 # API Keys from env
-NVIDIA_API_KEY = "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"
-RESEND_API_KEY = "re_EmcSqu27_5jtz6LZqGjmWm7VTYaCj62Xn"
-TELEGRAM_BOT_TOKEN = "8634839248:AAForsp1IbNxQgP9s7GnM3YMQUiMCNrkKTA"
-TELEGRAM_CHAT_ID = "1451671418"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "")
+RESEND_API_KEY = os.getenv("RESEND_API_KEY", "")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -522,24 +526,6 @@ _Agent running since {self.stats['started_at'][:10]}_
                 last_report = now
 
             time.sleep(60)  # Check every minute
-
-    def start(self):
-        """Start the autonomous agent"""
-        self.running = True
-        self.log("agent_start", "RAGSPRO Autonomous Agent v1.0 starting")
-
-        # Run initial tasks
-        self.log("initial_run", "Running initial scrape and outreach")
-        self.scrape_reddit_leads()
-        time.sleep(5)
-        self.run_outreach(limit=3)
-
-        # Start scheduler in background
-        self.scheduler_thread = threading.Thread(target=self.run_scheduler)
-        self.scheduler_thread.daemon = True
-        self.scheduler_thread.start()
-
-        self.log("agent_ready", "Agent is running autonomously")
 
     def stop(self):
         """Stop the agent"""

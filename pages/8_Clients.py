@@ -396,7 +396,37 @@ col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     if st.button("🚀 Import YC Leads", use_container_width=True, type="primary"):
-        st.info("Run: `python engine/yc_lead_scraper_v4.py`")
+        with st.spinner("🔍 Scraping Y Combinator companies..."):
+            import subprocess
+            import sys
+            ENGINE_DIR = Path(__file__).parent.parent / "engine"
+            try:
+                result = subprocess.run(
+                    [sys.executable, str(ENGINE_DIR / "yc_lead_scraper_v4.py")],
+                    capture_output=True,
+                    text=True,
+                    timeout=180
+                )
+                # Parse output for stats
+                output = result.stdout
+                if "companies" in output.lower() or "saved" in output.lower():
+                    # Extract number if available
+                    import re
+                    match = re.search(r'(\d+)\s*companies', output, re.IGNORECASE)
+                    if match:
+                        count = match.group(1)
+                        st.success(f"✅ Imported {count} YC companies!")
+                    else:
+                        st.success("✅ YC leads imported successfully!")
+                    st.rerun()
+                else:
+                    st.info("YC scraper completed. Check logs for details.")
+                    with st.expander("View Output"):
+                        st.code(output or "No output", language="text")
+            except subprocess.TimeoutExpired:
+                st.error("⏱️ YC scraper timed out after 3 minutes")
+            except Exception as e:
+                st.error(f"❌ Error running YC scraper: {e}")
 
 with col2:
     if st.button("🔍 Enrich Emails", use_container_width=True):

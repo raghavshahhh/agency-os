@@ -159,7 +159,15 @@ with col_left:
                     st.markdown(f"<div class='post-content'>{content}</div>", unsafe_allow_html=True)
 
                     if st.button(f"📋 Copy", key=f"copy_{label}", type="secondary"):
-                        st.toast(f"{label} copied to clipboard!", icon="✓")
+                        try:
+                            import pyperclip
+                            pyperclip.copy(content)
+                            st.toast(f"✅ {label} copied to clipboard!", icon="✓")
+                        except ImportError:
+                            st.code(content, language="text")
+                            st.info("Install pyperclip: pip install pyperclip")
+                        except Exception as e:
+                            st.error(f"Copy failed: {e}")
 
                 st.markdown("<div style='margin: 0.75rem 0;'></div>", unsafe_allow_html=True)
     else:
@@ -220,7 +228,41 @@ with col_right:
                     st.markdown(f"<span class='platform-tag'>{lead.get('platform', 'Unknown')}</span> Score: {lead.get('score', 0)}", unsafe_allow_html=True)
                 with col2:
                     if st.button("Copy 📝", key=f"copy_{lead['id']}", use_container_width=True):
-                        st.toast("Proposal copied!", icon="✓")
+                        # Generate proposal template
+                        company = lead.get('company', lead.get('name', 'your company'))
+                        title = lead.get('title', 'Business Owner')
+                        platform = lead.get('platform', 'LinkedIn')
+                        proposal = f"""Hi {company},
+
+I noticed you're active on {platform} and wanted to reach out.
+
+I build AI solutions that help businesses automate their workflows:
+
+**Services:**
+- AI Chatbots (WhatsApp, Web, Discord)
+- Document Processing & Automation
+- Custom AI Agents for your workflow
+- Data pipelines & ETL automation
+
+**Recent work:**
+- LAW AI: Legal document drafting in 2 minutes
+- E-commerce automation: 40% cost reduction
+- CRM integration: 3x lead response speed
+
+Would you be open to a 15-minute chat to explore how AI could help {company}?
+
+Best,
+Raghav Shah
+RAGSPRO | ragspro.com
++91-8700048490"""
+
+                        try:
+                            import pyperclip
+                            pyperclip.copy(proposal)
+                            st.toast("✅ Proposal copied!", icon="✓")
+                        except ImportError:
+                            st.code(proposal, language="text")
+                            st.info("Install pyperclip for auto-copy")
                     if st.button("Contact ✉️", key=f"contact_{lead['id']}", use_container_width=True):
                         with open(DATA_DIR / "leads.json", 'r') as f:
                             all_leads = json.load(f)
